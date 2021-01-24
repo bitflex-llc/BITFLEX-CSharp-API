@@ -1,0 +1,11 @@
+# Org.OpenAPITools.Model.ErrorModel
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Result** | **bool** |  | [optional] [readonly] 
+**Message** | **string** |  | [optional] 
+**Data** | **Object** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
