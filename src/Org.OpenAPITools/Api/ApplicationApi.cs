@@ -30,11 +30,9 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="clientCode"></param>
-        /// <param name="pincode"></param>
-        /// <param name="backupCode"></param>
+        /// <param name="enableDisable2Fa"> (optional)</param>
         /// <returns></returns>
-        void ApiApplicationDisableGoogle2stepPost(string clientCode, string pincode, string backupCode);
+        void ApiApplicationDisableGoogle2stepPost(EnableDisable2Fa enableDisable2Fa = default(EnableDisable2Fa));
 
         /// <summary>
         /// 
@@ -43,20 +41,16 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="clientCode"></param>
-        /// <param name="pincode"></param>
-        /// <param name="backupCode"></param>
+        /// <param name="enableDisable2Fa"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> ApiApplicationDisableGoogle2stepPostWithHttpInfo(string clientCode, string pincode, string backupCode);
+        ApiResponse<Object> ApiApplicationDisableGoogle2stepPostWithHttpInfo(EnableDisable2Fa enableDisable2Fa = default(EnableDisable2Fa));
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="clientCode"></param>
-        /// <param name="pincode"></param>
-        /// <param name="backupCode"></param>
+        /// <param name="enableDisable2Fa"> (optional)</param>
         /// <returns></returns>
-        void ApiApplicationEnableGoogle2stepPost(string clientCode, string pincode, string backupCode);
+        void ApiApplicationEnableGoogle2stepPost(EnableDisable2Fa enableDisable2Fa = default(EnableDisable2Fa));
 
         /// <summary>
         /// 
@@ -65,18 +59,16 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="clientCode"></param>
-        /// <param name="pincode"></param>
-        /// <param name="backupCode"></param>
+        /// <param name="enableDisable2Fa"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> ApiApplicationEnableGoogle2stepPostWithHttpInfo(string clientCode, string pincode, string backupCode);
+        ApiResponse<Object> ApiApplicationEnableGoogle2stepPostWithHttpInfo(EnableDisable2Fa enableDisable2Fa = default(EnableDisable2Fa));
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="containerUUID"> (optional)</param>
+        /// <param name="processFaceImageRequest"> (optional)</param>
         /// <returns>string</returns>
-        string ApiApplicationProcessFaceImagePost(string containerUUID = default(string));
+        string ApiApplicationProcessFaceImagePost(ProcessFaceImageRequest processFaceImageRequest = default(ProcessFaceImageRequest));
 
         /// <summary>
         /// 
@@ -85,19 +77,16 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="containerUUID"> (optional)</param>
+        /// <param name="processFaceImageRequest"> (optional)</param>
         /// <returns>ApiResponse of string</returns>
-        ApiResponse<string> ApiApplicationProcessFaceImagePostWithHttpInfo(string containerUUID = default(string));
+        ApiResponse<string> ApiApplicationProcessFaceImagePostWithHttpInfo(ProcessFaceImageRequest processFaceImageRequest = default(ProcessFaceImageRequest));
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pushToken"> (optional)</param>
-        /// <param name="description"> (optional)</param>
-        /// <param name="device"> (optional)</param>
-        /// <param name="bitflexDeviceId"> (optional)</param>
-        /// <returns>bool</returns>
-        bool ApiApplicationSetpushtokenPost(string pushToken = default(string), string description = default(string), DeviceType? device = default(DeviceType?), string bitflexDeviceId = default(string));
+        /// <param name="processFaceImageRequest"> (optional)</param>
+        /// <returns>string</returns>
+        string ApiApplicationProcessPassportImagePost(ProcessFaceImageRequest processFaceImageRequest = default(ProcessFaceImageRequest));
 
         /// <summary>
         /// 
@@ -106,19 +95,16 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pushToken"> (optional)</param>
-        /// <param name="description"> (optional)</param>
-        /// <param name="device"> (optional)</param>
-        /// <param name="bitflexDeviceId"> (optional)</param>
-        /// <returns>ApiResponse of bool</returns>
-        ApiResponse<bool> ApiApplicationSetpushtokenPostWithHttpInfo(string pushToken = default(string), string description = default(string), DeviceType? device = default(DeviceType?), string bitflexDeviceId = default(string));
+        /// <param name="processFaceImageRequest"> (optional)</param>
+        /// <returns>ApiResponse of string</returns>
+        ApiResponse<string> ApiApplicationProcessPassportImagePostWithHttpInfo(ProcessFaceImageRequest processFaceImageRequest = default(ProcessFaceImageRequest));
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pinCode"> (optional)</param>
+        /// <param name="setPushTokenRequest"> (optional)</param>
         /// <returns>bool</returns>
-        bool ApiApplicationValidatePinPost(string pinCode = default(string));
+        bool ApiApplicationSetpushtokenPost(SetPushTokenRequest setPushTokenRequest = default(SetPushTokenRequest));
 
         /// <summary>
         /// 
@@ -127,19 +113,34 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pinCode"> (optional)</param>
+        /// <param name="setPushTokenRequest"> (optional)</param>
         /// <returns>ApiResponse of bool</returns>
-        ApiResponse<bool> ApiApplicationValidatePinPostWithHttpInfo(string pinCode = default(string));
+        ApiResponse<bool> ApiApplicationSetpushtokenPostWithHttpInfo(SetPushTokenRequest setPushTokenRequest = default(SetPushTokenRequest));
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceInfo"> (optional)</param>
-        /// <param name="pushToken"> (optional)</param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="deviceId"> (optional)</param>
+        /// <param name="validatePinPostRequest"> (optional)</param>
+        /// <returns>bool</returns>
+        bool ApiApplicationValidatePinPost(ValidatePinPostRequest validatePinPostRequest = default(ValidatePinPostRequest));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="validatePinPostRequest"> (optional)</param>
+        /// <returns>ApiResponse of bool</returns>
+        ApiResponse<bool> ApiApplicationValidatePinPostWithHttpInfo(ValidatePinPostRequest validatePinPostRequest = default(ValidatePinPostRequest));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="validateAppTokenRequest"> (optional)</param>
         /// <returns></returns>
-        void ApiApplicationValidateapptokenPost(string deviceInfo = default(string), string pushToken = default(string), string token = default(string), string deviceId = default(string));
+        void ApiApplicationValidateapptokenPost(ValidateAppTokenRequest validateAppTokenRequest = default(ValidateAppTokenRequest));
 
         /// <summary>
         /// 
@@ -148,20 +149,16 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceInfo"> (optional)</param>
-        /// <param name="pushToken"> (optional)</param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="deviceId"> (optional)</param>
+        /// <param name="validateAppTokenRequest"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> ApiApplicationValidateapptokenPostWithHttpInfo(string deviceInfo = default(string), string pushToken = default(string), string token = default(string), string deviceId = default(string));
+        ApiResponse<Object> ApiApplicationValidateapptokenPostWithHttpInfo(ValidateAppTokenRequest validateAppTokenRequest = default(ValidateAppTokenRequest));
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="faceId1"> (optional)</param>
-        /// <param name="faceId2"> (optional)</param>
+        /// <param name="verifyFaceData"> (optional)</param>
         /// <returns>VerifyResult</returns>
-        VerifyResult ApiApplicationVerifyfacesPost(string faceId1 = default(string), string faceId2 = default(string));
+        VerifyResult ApiApplicationVerifyfacesPost(VerifyFaceData verifyFaceData = default(VerifyFaceData));
 
         /// <summary>
         /// 
@@ -170,10 +167,9 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="faceId1"> (optional)</param>
-        /// <param name="faceId2"> (optional)</param>
+        /// <param name="verifyFaceData"> (optional)</param>
         /// <returns>ApiResponse of VerifyResult</returns>
-        ApiResponse<VerifyResult> ApiApplicationVerifyfacesPostWithHttpInfo(string faceId1 = default(string), string faceId2 = default(string));
+        ApiResponse<VerifyResult> ApiApplicationVerifyfacesPostWithHttpInfo(VerifyFaceData verifyFaceData = default(VerifyFaceData));
         #endregion Synchronous Operations
     }
 
@@ -190,12 +186,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="clientCode"></param>
-        /// <param name="pincode"></param>
-        /// <param name="backupCode"></param>
+        /// <param name="enableDisable2Fa"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task ApiApplicationDisableGoogle2stepPostAsync(string clientCode, string pincode, string backupCode, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task ApiApplicationDisableGoogle2stepPostAsync(EnableDisable2Fa enableDisable2Fa = default(EnableDisable2Fa), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -204,12 +198,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="clientCode"></param>
-        /// <param name="pincode"></param>
-        /// <param name="backupCode"></param>
+        /// <param name="enableDisable2Fa"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> ApiApplicationDisableGoogle2stepPostWithHttpInfoAsync(string clientCode, string pincode, string backupCode, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> ApiApplicationDisableGoogle2stepPostWithHttpInfoAsync(EnableDisable2Fa enableDisable2Fa = default(EnableDisable2Fa), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -217,12 +209,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="clientCode"></param>
-        /// <param name="pincode"></param>
-        /// <param name="backupCode"></param>
+        /// <param name="enableDisable2Fa"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task ApiApplicationEnableGoogle2stepPostAsync(string clientCode, string pincode, string backupCode, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task ApiApplicationEnableGoogle2stepPostAsync(EnableDisable2Fa enableDisable2Fa = default(EnableDisable2Fa), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -231,12 +221,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="clientCode"></param>
-        /// <param name="pincode"></param>
-        /// <param name="backupCode"></param>
+        /// <param name="enableDisable2Fa"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> ApiApplicationEnableGoogle2stepPostWithHttpInfoAsync(string clientCode, string pincode, string backupCode, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> ApiApplicationEnableGoogle2stepPostWithHttpInfoAsync(EnableDisable2Fa enableDisable2Fa = default(EnableDisable2Fa), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -244,10 +232,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="containerUUID"> (optional)</param>
+        /// <param name="processFaceImageRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of string</returns>
-        System.Threading.Tasks.Task<string> ApiApplicationProcessFaceImagePostAsync(string containerUUID = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<string> ApiApplicationProcessFaceImagePostAsync(ProcessFaceImageRequest processFaceImageRequest = default(ProcessFaceImageRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -256,10 +244,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="containerUUID"> (optional)</param>
+        /// <param name="processFaceImageRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (string)</returns>
-        System.Threading.Tasks.Task<ApiResponse<string>> ApiApplicationProcessFaceImagePostWithHttpInfoAsync(string containerUUID = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<string>> ApiApplicationProcessFaceImagePostWithHttpInfoAsync(ProcessFaceImageRequest processFaceImageRequest = default(ProcessFaceImageRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -267,13 +255,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pushToken"> (optional)</param>
-        /// <param name="description"> (optional)</param>
-        /// <param name="device"> (optional)</param>
-        /// <param name="bitflexDeviceId"> (optional)</param>
+        /// <param name="processFaceImageRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of bool</returns>
-        System.Threading.Tasks.Task<bool> ApiApplicationSetpushtokenPostAsync(string pushToken = default(string), string description = default(string), DeviceType? device = default(DeviceType?), string bitflexDeviceId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of string</returns>
+        System.Threading.Tasks.Task<string> ApiApplicationProcessPassportImagePostAsync(ProcessFaceImageRequest processFaceImageRequest = default(ProcessFaceImageRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -282,13 +267,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pushToken"> (optional)</param>
-        /// <param name="description"> (optional)</param>
-        /// <param name="device"> (optional)</param>
-        /// <param name="bitflexDeviceId"> (optional)</param>
+        /// <param name="processFaceImageRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (bool)</returns>
-        System.Threading.Tasks.Task<ApiResponse<bool>> ApiApplicationSetpushtokenPostWithHttpInfoAsync(string pushToken = default(string), string description = default(string), DeviceType? device = default(DeviceType?), string bitflexDeviceId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (string)</returns>
+        System.Threading.Tasks.Task<ApiResponse<string>> ApiApplicationProcessPassportImagePostWithHttpInfoAsync(ProcessFaceImageRequest processFaceImageRequest = default(ProcessFaceImageRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -296,10 +278,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pinCode"> (optional)</param>
+        /// <param name="setPushTokenRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of bool</returns>
-        System.Threading.Tasks.Task<bool> ApiApplicationValidatePinPostAsync(string pinCode = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<bool> ApiApplicationSetpushtokenPostAsync(SetPushTokenRequest setPushTokenRequest = default(SetPushTokenRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -308,10 +290,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pinCode"> (optional)</param>
+        /// <param name="setPushTokenRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (bool)</returns>
-        System.Threading.Tasks.Task<ApiResponse<bool>> ApiApplicationValidatePinPostWithHttpInfoAsync(string pinCode = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<bool>> ApiApplicationSetpushtokenPostWithHttpInfoAsync(SetPushTokenRequest setPushTokenRequest = default(SetPushTokenRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -319,13 +301,33 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceInfo"> (optional)</param>
-        /// <param name="pushToken"> (optional)</param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="deviceId"> (optional)</param>
+        /// <param name="validatePinPostRequest"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of bool</returns>
+        System.Threading.Tasks.Task<bool> ApiApplicationValidatePinPostAsync(ValidatePinPostRequest validatePinPostRequest = default(ValidatePinPostRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="validatePinPostRequest"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (bool)</returns>
+        System.Threading.Tasks.Task<ApiResponse<bool>> ApiApplicationValidatePinPostWithHttpInfoAsync(ValidatePinPostRequest validatePinPostRequest = default(ValidatePinPostRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="validateAppTokenRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task ApiApplicationValidateapptokenPostAsync(string deviceInfo = default(string), string pushToken = default(string), string token = default(string), string deviceId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task ApiApplicationValidateapptokenPostAsync(ValidateAppTokenRequest validateAppTokenRequest = default(ValidateAppTokenRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -334,13 +336,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceInfo"> (optional)</param>
-        /// <param name="pushToken"> (optional)</param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="deviceId"> (optional)</param>
+        /// <param name="validateAppTokenRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> ApiApplicationValidateapptokenPostWithHttpInfoAsync(string deviceInfo = default(string), string pushToken = default(string), string token = default(string), string deviceId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> ApiApplicationValidateapptokenPostWithHttpInfoAsync(ValidateAppTokenRequest validateAppTokenRequest = default(ValidateAppTokenRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -348,11 +347,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="faceId1"> (optional)</param>
-        /// <param name="faceId2"> (optional)</param>
+        /// <param name="verifyFaceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of VerifyResult</returns>
-        System.Threading.Tasks.Task<VerifyResult> ApiApplicationVerifyfacesPostAsync(string faceId1 = default(string), string faceId2 = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<VerifyResult> ApiApplicationVerifyfacesPostAsync(VerifyFaceData verifyFaceData = default(VerifyFaceData), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -361,11 +359,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="faceId1"> (optional)</param>
-        /// <param name="faceId2"> (optional)</param>
+        /// <param name="verifyFaceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (VerifyResult)</returns>
-        System.Threading.Tasks.Task<ApiResponse<VerifyResult>> ApiApplicationVerifyfacesPostWithHttpInfoAsync(string faceId1 = default(string), string faceId2 = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<VerifyResult>> ApiApplicationVerifyfacesPostWithHttpInfoAsync(VerifyFaceData verifyFaceData = default(VerifyFaceData), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -490,40 +487,25 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="clientCode"></param>
-        /// <param name="pincode"></param>
-        /// <param name="backupCode"></param>
+        /// <param name="enableDisable2Fa"> (optional)</param>
         /// <returns></returns>
-        public void ApiApplicationDisableGoogle2stepPost(string clientCode, string pincode, string backupCode)
+        public void ApiApplicationDisableGoogle2stepPost(EnableDisable2Fa enableDisable2Fa = default(EnableDisable2Fa))
         {
-            ApiApplicationDisableGoogle2stepPostWithHttpInfo(clientCode, pincode, backupCode);
+            ApiApplicationDisableGoogle2stepPostWithHttpInfo(enableDisable2Fa);
         }
 
         /// <summary>
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="clientCode"></param>
-        /// <param name="pincode"></param>
-        /// <param name="backupCode"></param>
+        /// <param name="enableDisable2Fa"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Object> ApiApplicationDisableGoogle2stepPostWithHttpInfo(string clientCode, string pincode, string backupCode)
+        public Org.OpenAPITools.Client.ApiResponse<Object> ApiApplicationDisableGoogle2stepPostWithHttpInfo(EnableDisable2Fa enableDisable2Fa = default(EnableDisable2Fa))
         {
-            // verify the required parameter 'clientCode' is set
-            if (clientCode == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'clientCode' when calling ApplicationApi->ApiApplicationDisableGoogle2stepPost");
-
-            // verify the required parameter 'pincode' is set
-            if (pincode == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'pincode' when calling ApplicationApi->ApiApplicationDisableGoogle2stepPost");
-
-            // verify the required parameter 'backupCode' is set
-            if (backupCode == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'backupCode' when calling ApplicationApi->ApiApplicationDisableGoogle2stepPost");
-
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json"
             };
 
             // to determine the Accept header
@@ -536,9 +518,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ClientCode", clientCode));
-            localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Pincode", pincode));
-            localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "BackupCode", backupCode));
+            localVarRequestOptions.Data = enableDisable2Fa;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -562,43 +542,28 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="clientCode"></param>
-        /// <param name="pincode"></param>
-        /// <param name="backupCode"></param>
+        /// <param name="enableDisable2Fa"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task ApiApplicationDisableGoogle2stepPostAsync(string clientCode, string pincode, string backupCode, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task ApiApplicationDisableGoogle2stepPostAsync(EnableDisable2Fa enableDisable2Fa = default(EnableDisable2Fa), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            await ApiApplicationDisableGoogle2stepPostWithHttpInfoAsync(clientCode, pincode, backupCode, cancellationToken).ConfigureAwait(false);
+            await ApiApplicationDisableGoogle2stepPostWithHttpInfoAsync(enableDisable2Fa, cancellationToken).ConfigureAwait(false);
         }
 
         /// <summary>
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="clientCode"></param>
-        /// <param name="pincode"></param>
-        /// <param name="backupCode"></param>
+        /// <param name="enableDisable2Fa"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ApiApplicationDisableGoogle2stepPostWithHttpInfoAsync(string clientCode, string pincode, string backupCode, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ApiApplicationDisableGoogle2stepPostWithHttpInfoAsync(EnableDisable2Fa enableDisable2Fa = default(EnableDisable2Fa), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            // verify the required parameter 'clientCode' is set
-            if (clientCode == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'clientCode' when calling ApplicationApi->ApiApplicationDisableGoogle2stepPost");
-
-            // verify the required parameter 'pincode' is set
-            if (pincode == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'pincode' when calling ApplicationApi->ApiApplicationDisableGoogle2stepPost");
-
-            // verify the required parameter 'backupCode' is set
-            if (backupCode == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'backupCode' when calling ApplicationApi->ApiApplicationDisableGoogle2stepPost");
-
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json"
             };
 
             // to determine the Accept header
@@ -612,9 +577,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ClientCode", clientCode));
-            localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Pincode", pincode));
-            localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "BackupCode", backupCode));
+            localVarRequestOptions.Data = enableDisable2Fa;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -639,40 +602,25 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="clientCode"></param>
-        /// <param name="pincode"></param>
-        /// <param name="backupCode"></param>
+        /// <param name="enableDisable2Fa"> (optional)</param>
         /// <returns></returns>
-        public void ApiApplicationEnableGoogle2stepPost(string clientCode, string pincode, string backupCode)
+        public void ApiApplicationEnableGoogle2stepPost(EnableDisable2Fa enableDisable2Fa = default(EnableDisable2Fa))
         {
-            ApiApplicationEnableGoogle2stepPostWithHttpInfo(clientCode, pincode, backupCode);
+            ApiApplicationEnableGoogle2stepPostWithHttpInfo(enableDisable2Fa);
         }
 
         /// <summary>
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="clientCode"></param>
-        /// <param name="pincode"></param>
-        /// <param name="backupCode"></param>
+        /// <param name="enableDisable2Fa"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Object> ApiApplicationEnableGoogle2stepPostWithHttpInfo(string clientCode, string pincode, string backupCode)
+        public Org.OpenAPITools.Client.ApiResponse<Object> ApiApplicationEnableGoogle2stepPostWithHttpInfo(EnableDisable2Fa enableDisable2Fa = default(EnableDisable2Fa))
         {
-            // verify the required parameter 'clientCode' is set
-            if (clientCode == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'clientCode' when calling ApplicationApi->ApiApplicationEnableGoogle2stepPost");
-
-            // verify the required parameter 'pincode' is set
-            if (pincode == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'pincode' when calling ApplicationApi->ApiApplicationEnableGoogle2stepPost");
-
-            // verify the required parameter 'backupCode' is set
-            if (backupCode == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'backupCode' when calling ApplicationApi->ApiApplicationEnableGoogle2stepPost");
-
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json"
             };
 
             // to determine the Accept header
@@ -685,9 +633,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ClientCode", clientCode));
-            localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Pincode", pincode));
-            localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "BackupCode", backupCode));
+            localVarRequestOptions.Data = enableDisable2Fa;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -711,43 +657,28 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="clientCode"></param>
-        /// <param name="pincode"></param>
-        /// <param name="backupCode"></param>
+        /// <param name="enableDisable2Fa"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task ApiApplicationEnableGoogle2stepPostAsync(string clientCode, string pincode, string backupCode, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task ApiApplicationEnableGoogle2stepPostAsync(EnableDisable2Fa enableDisable2Fa = default(EnableDisable2Fa), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            await ApiApplicationEnableGoogle2stepPostWithHttpInfoAsync(clientCode, pincode, backupCode, cancellationToken).ConfigureAwait(false);
+            await ApiApplicationEnableGoogle2stepPostWithHttpInfoAsync(enableDisable2Fa, cancellationToken).ConfigureAwait(false);
         }
 
         /// <summary>
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="clientCode"></param>
-        /// <param name="pincode"></param>
-        /// <param name="backupCode"></param>
+        /// <param name="enableDisable2Fa"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ApiApplicationEnableGoogle2stepPostWithHttpInfoAsync(string clientCode, string pincode, string backupCode, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ApiApplicationEnableGoogle2stepPostWithHttpInfoAsync(EnableDisable2Fa enableDisable2Fa = default(EnableDisable2Fa), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            // verify the required parameter 'clientCode' is set
-            if (clientCode == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'clientCode' when calling ApplicationApi->ApiApplicationEnableGoogle2stepPost");
-
-            // verify the required parameter 'pincode' is set
-            if (pincode == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'pincode' when calling ApplicationApi->ApiApplicationEnableGoogle2stepPost");
-
-            // verify the required parameter 'backupCode' is set
-            if (backupCode == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'backupCode' when calling ApplicationApi->ApiApplicationEnableGoogle2stepPost");
-
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json"
             };
 
             // to determine the Accept header
@@ -761,9 +692,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ClientCode", clientCode));
-            localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Pincode", pincode));
-            localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "BackupCode", backupCode));
+            localVarRequestOptions.Data = enableDisable2Fa;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -788,11 +717,11 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="containerUUID"> (optional)</param>
+        /// <param name="processFaceImageRequest"> (optional)</param>
         /// <returns>string</returns>
-        public string ApiApplicationProcessFaceImagePost(string containerUUID = default(string))
+        public string ApiApplicationProcessFaceImagePost(ProcessFaceImageRequest processFaceImageRequest = default(ProcessFaceImageRequest))
         {
-            Org.OpenAPITools.Client.ApiResponse<string> localVarResponse = ApiApplicationProcessFaceImagePostWithHttpInfo(containerUUID);
+            Org.OpenAPITools.Client.ApiResponse<string> localVarResponse = ApiApplicationProcessFaceImagePostWithHttpInfo(processFaceImageRequest);
             return localVarResponse.Data;
         }
 
@@ -800,13 +729,17 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="containerUUID"> (optional)</param>
+        /// <param name="processFaceImageRequest"> (optional)</param>
         /// <returns>ApiResponse of string</returns>
-        public Org.OpenAPITools.Client.ApiResponse<string> ApiApplicationProcessFaceImagePostWithHttpInfo(string containerUUID = default(string))
+        public Org.OpenAPITools.Client.ApiResponse<string> ApiApplicationProcessFaceImagePostWithHttpInfo(ProcessFaceImageRequest processFaceImageRequest = default(ProcessFaceImageRequest))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json-patch+json",
+                "application/json",
+                "text/json",
+                "application/_*+json"
             };
 
             // to determine the Accept header
@@ -822,10 +755,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (containerUUID != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "containerUUID", containerUUID));
-            }
+            localVarRequestOptions.Data = processFaceImageRequest;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -849,12 +779,12 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="containerUUID"> (optional)</param>
+        /// <param name="processFaceImageRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of string</returns>
-        public async System.Threading.Tasks.Task<string> ApiApplicationProcessFaceImagePostAsync(string containerUUID = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<string> ApiApplicationProcessFaceImagePostAsync(ProcessFaceImageRequest processFaceImageRequest = default(ProcessFaceImageRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<string> localVarResponse = await ApiApplicationProcessFaceImagePostWithHttpInfoAsync(containerUUID, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<string> localVarResponse = await ApiApplicationProcessFaceImagePostWithHttpInfoAsync(processFaceImageRequest, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -862,15 +792,19 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="containerUUID"> (optional)</param>
+        /// <param name="processFaceImageRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (string)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<string>> ApiApplicationProcessFaceImagePostWithHttpInfoAsync(string containerUUID = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<string>> ApiApplicationProcessFaceImagePostWithHttpInfoAsync(ProcessFaceImageRequest processFaceImageRequest = default(ProcessFaceImageRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json-patch+json", 
+                "application/json", 
+                "text/json", 
+                "application/_*+json"
             };
 
             // to determine the Accept header
@@ -887,10 +821,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (containerUUID != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "containerUUID", containerUUID));
-            }
+            localVarRequestOptions.Data = processFaceImageRequest;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -915,14 +846,11 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pushToken"> (optional)</param>
-        /// <param name="description"> (optional)</param>
-        /// <param name="device"> (optional)</param>
-        /// <param name="bitflexDeviceId"> (optional)</param>
-        /// <returns>bool</returns>
-        public bool ApiApplicationSetpushtokenPost(string pushToken = default(string), string description = default(string), DeviceType? device = default(DeviceType?), string bitflexDeviceId = default(string))
+        /// <param name="processFaceImageRequest"> (optional)</param>
+        /// <returns>string</returns>
+        public string ApiApplicationProcessPassportImagePost(ProcessFaceImageRequest processFaceImageRequest = default(ProcessFaceImageRequest))
         {
-            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = ApiApplicationSetpushtokenPostWithHttpInfo(pushToken, description, device, bitflexDeviceId);
+            Org.OpenAPITools.Client.ApiResponse<string> localVarResponse = ApiApplicationProcessPassportImagePostWithHttpInfo(processFaceImageRequest);
             return localVarResponse.Data;
         }
 
@@ -930,16 +858,17 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pushToken"> (optional)</param>
-        /// <param name="description"> (optional)</param>
-        /// <param name="device"> (optional)</param>
-        /// <param name="bitflexDeviceId"> (optional)</param>
-        /// <returns>ApiResponse of bool</returns>
-        public Org.OpenAPITools.Client.ApiResponse<bool> ApiApplicationSetpushtokenPostWithHttpInfo(string pushToken = default(string), string description = default(string), DeviceType? device = default(DeviceType?), string bitflexDeviceId = default(string))
+        /// <param name="processFaceImageRequest"> (optional)</param>
+        /// <returns>ApiResponse of string</returns>
+        public Org.OpenAPITools.Client.ApiResponse<string> ApiApplicationProcessPassportImagePostWithHttpInfo(ProcessFaceImageRequest processFaceImageRequest = default(ProcessFaceImageRequest))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json-patch+json",
+                "application/json",
+                "text/json",
+                "application/_*+json"
             };
 
             // to determine the Accept header
@@ -955,22 +884,136 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (pushToken != null)
+            localVarRequestOptions.Data = processFaceImageRequest;
+
+            // authentication (Bearer) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
             {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "pushToken", pushToken));
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
             }
-            if (description != null)
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<string>("/api/Application/ProcessPassportImage", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
             {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "description", description));
+                Exception _exception = this.ExceptionFactory("ApiApplicationProcessPassportImagePost", localVarResponse);
+                if (_exception != null) throw _exception;
             }
-            if (device != null)
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="processFaceImageRequest"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of string</returns>
+        public async System.Threading.Tasks.Task<string> ApiApplicationProcessPassportImagePostAsync(ProcessFaceImageRequest processFaceImageRequest = default(ProcessFaceImageRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            Org.OpenAPITools.Client.ApiResponse<string> localVarResponse = await ApiApplicationProcessPassportImagePostWithHttpInfoAsync(processFaceImageRequest, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="processFaceImageRequest"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (string)</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<string>> ApiApplicationProcessPassportImagePostWithHttpInfoAsync(ProcessFaceImageRequest processFaceImageRequest = default(ProcessFaceImageRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json-patch+json", 
+                "application/json", 
+                "text/json", 
+                "application/_*+json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "text/plain",
+                "application/json",
+                "text/json"
+            };
+
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            localVarRequestOptions.Data = processFaceImageRequest;
+
+            // authentication (Bearer) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
             {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "device", device));
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
             }
-            if (bitflexDeviceId != null)
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.PostAsync<string>("/api/Application/ProcessPassportImage", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
             {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "bitflexDeviceId", bitflexDeviceId));
+                Exception _exception = this.ExceptionFactory("ApiApplicationProcessPassportImagePost", localVarResponse);
+                if (_exception != null) throw _exception;
             }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="setPushTokenRequest"> (optional)</param>
+        /// <returns>bool</returns>
+        public bool ApiApplicationSetpushtokenPost(SetPushTokenRequest setPushTokenRequest = default(SetPushTokenRequest))
+        {
+            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = ApiApplicationSetpushtokenPostWithHttpInfo(setPushTokenRequest);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="setPushTokenRequest"> (optional)</param>
+        /// <returns>ApiResponse of bool</returns>
+        public Org.OpenAPITools.Client.ApiResponse<bool> ApiApplicationSetpushtokenPostWithHttpInfo(SetPushTokenRequest setPushTokenRequest = default(SetPushTokenRequest))
+        {
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json-patch+json",
+                "application/json",
+                "text/json",
+                "application/_*+json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "text/plain",
+                "application/json",
+                "text/json"
+            };
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            localVarRequestOptions.Data = setPushTokenRequest;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -994,15 +1037,12 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pushToken"> (optional)</param>
-        /// <param name="description"> (optional)</param>
-        /// <param name="device"> (optional)</param>
-        /// <param name="bitflexDeviceId"> (optional)</param>
+        /// <param name="setPushTokenRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of bool</returns>
-        public async System.Threading.Tasks.Task<bool> ApiApplicationSetpushtokenPostAsync(string pushToken = default(string), string description = default(string), DeviceType? device = default(DeviceType?), string bitflexDeviceId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<bool> ApiApplicationSetpushtokenPostAsync(SetPushTokenRequest setPushTokenRequest = default(SetPushTokenRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = await ApiApplicationSetpushtokenPostWithHttpInfoAsync(pushToken, description, device, bitflexDeviceId, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = await ApiApplicationSetpushtokenPostWithHttpInfoAsync(setPushTokenRequest, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1010,18 +1050,19 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pushToken"> (optional)</param>
-        /// <param name="description"> (optional)</param>
-        /// <param name="device"> (optional)</param>
-        /// <param name="bitflexDeviceId"> (optional)</param>
+        /// <param name="setPushTokenRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (bool)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<bool>> ApiApplicationSetpushtokenPostWithHttpInfoAsync(string pushToken = default(string), string description = default(string), DeviceType? device = default(DeviceType?), string bitflexDeviceId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<bool>> ApiApplicationSetpushtokenPostWithHttpInfoAsync(SetPushTokenRequest setPushTokenRequest = default(SetPushTokenRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json-patch+json", 
+                "application/json", 
+                "text/json", 
+                "application/_*+json"
             };
 
             // to determine the Accept header
@@ -1038,22 +1079,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (pushToken != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "pushToken", pushToken));
-            }
-            if (description != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "description", description));
-            }
-            if (device != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "device", device));
-            }
-            if (bitflexDeviceId != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "bitflexDeviceId", bitflexDeviceId));
-            }
+            localVarRequestOptions.Data = setPushTokenRequest;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -1078,11 +1104,11 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pinCode"> (optional)</param>
+        /// <param name="validatePinPostRequest"> (optional)</param>
         /// <returns>bool</returns>
-        public bool ApiApplicationValidatePinPost(string pinCode = default(string))
+        public bool ApiApplicationValidatePinPost(ValidatePinPostRequest validatePinPostRequest = default(ValidatePinPostRequest))
         {
-            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = ApiApplicationValidatePinPostWithHttpInfo(pinCode);
+            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = ApiApplicationValidatePinPostWithHttpInfo(validatePinPostRequest);
             return localVarResponse.Data;
         }
 
@@ -1090,13 +1116,17 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pinCode"> (optional)</param>
+        /// <param name="validatePinPostRequest"> (optional)</param>
         /// <returns>ApiResponse of bool</returns>
-        public Org.OpenAPITools.Client.ApiResponse<bool> ApiApplicationValidatePinPostWithHttpInfo(string pinCode = default(string))
+        public Org.OpenAPITools.Client.ApiResponse<bool> ApiApplicationValidatePinPostWithHttpInfo(ValidatePinPostRequest validatePinPostRequest = default(ValidatePinPostRequest))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json-patch+json",
+                "application/json",
+                "text/json",
+                "application/_*+json"
             };
 
             // to determine the Accept header
@@ -1112,10 +1142,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (pinCode != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "PinCode", pinCode));
-            }
+            localVarRequestOptions.Data = validatePinPostRequest;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -1139,12 +1166,12 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pinCode"> (optional)</param>
+        /// <param name="validatePinPostRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of bool</returns>
-        public async System.Threading.Tasks.Task<bool> ApiApplicationValidatePinPostAsync(string pinCode = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<bool> ApiApplicationValidatePinPostAsync(ValidatePinPostRequest validatePinPostRequest = default(ValidatePinPostRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = await ApiApplicationValidatePinPostWithHttpInfoAsync(pinCode, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = await ApiApplicationValidatePinPostWithHttpInfoAsync(validatePinPostRequest, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1152,15 +1179,19 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pinCode"> (optional)</param>
+        /// <param name="validatePinPostRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (bool)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<bool>> ApiApplicationValidatePinPostWithHttpInfoAsync(string pinCode = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<bool>> ApiApplicationValidatePinPostWithHttpInfoAsync(ValidatePinPostRequest validatePinPostRequest = default(ValidatePinPostRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json-patch+json", 
+                "application/json", 
+                "text/json", 
+                "application/_*+json"
             };
 
             // to determine the Accept header
@@ -1177,10 +1208,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (pinCode != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "PinCode", pinCode));
-            }
+            localVarRequestOptions.Data = validatePinPostRequest;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -1205,30 +1233,28 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceInfo"> (optional)</param>
-        /// <param name="pushToken"> (optional)</param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="deviceId"> (optional)</param>
+        /// <param name="validateAppTokenRequest"> (optional)</param>
         /// <returns></returns>
-        public void ApiApplicationValidateapptokenPost(string deviceInfo = default(string), string pushToken = default(string), string token = default(string), string deviceId = default(string))
+        public void ApiApplicationValidateapptokenPost(ValidateAppTokenRequest validateAppTokenRequest = default(ValidateAppTokenRequest))
         {
-            ApiApplicationValidateapptokenPostWithHttpInfo(deviceInfo, pushToken, token, deviceId);
+            ApiApplicationValidateapptokenPostWithHttpInfo(validateAppTokenRequest);
         }
 
         /// <summary>
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceInfo"> (optional)</param>
-        /// <param name="pushToken"> (optional)</param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="deviceId"> (optional)</param>
+        /// <param name="validateAppTokenRequest"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Object> ApiApplicationValidateapptokenPostWithHttpInfo(string deviceInfo = default(string), string pushToken = default(string), string token = default(string), string deviceId = default(string))
+        public Org.OpenAPITools.Client.ApiResponse<Object> ApiApplicationValidateapptokenPostWithHttpInfo(ValidateAppTokenRequest validateAppTokenRequest = default(ValidateAppTokenRequest))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json-patch+json",
+                "application/json",
+                "text/json",
+                "application/_*+json"
             };
 
             // to determine the Accept header
@@ -1241,22 +1267,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (deviceInfo != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "DeviceInfo", deviceInfo));
-            }
-            if (pushToken != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "PushToken", pushToken));
-            }
-            if (token != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Token", token));
-            }
-            if (deviceId != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "DeviceId", deviceId));
-            }
+            localVarRequestOptions.Data = validateAppTokenRequest;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -1280,33 +1291,31 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceInfo"> (optional)</param>
-        /// <param name="pushToken"> (optional)</param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="deviceId"> (optional)</param>
+        /// <param name="validateAppTokenRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task ApiApplicationValidateapptokenPostAsync(string deviceInfo = default(string), string pushToken = default(string), string token = default(string), string deviceId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task ApiApplicationValidateapptokenPostAsync(ValidateAppTokenRequest validateAppTokenRequest = default(ValidateAppTokenRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            await ApiApplicationValidateapptokenPostWithHttpInfoAsync(deviceInfo, pushToken, token, deviceId, cancellationToken).ConfigureAwait(false);
+            await ApiApplicationValidateapptokenPostWithHttpInfoAsync(validateAppTokenRequest, cancellationToken).ConfigureAwait(false);
         }
 
         /// <summary>
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceInfo"> (optional)</param>
-        /// <param name="pushToken"> (optional)</param>
-        /// <param name="token"> (optional)</param>
-        /// <param name="deviceId"> (optional)</param>
+        /// <param name="validateAppTokenRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ApiApplicationValidateapptokenPostWithHttpInfoAsync(string deviceInfo = default(string), string pushToken = default(string), string token = default(string), string deviceId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ApiApplicationValidateapptokenPostWithHttpInfoAsync(ValidateAppTokenRequest validateAppTokenRequest = default(ValidateAppTokenRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json-patch+json", 
+                "application/json", 
+                "text/json", 
+                "application/_*+json"
             };
 
             // to determine the Accept header
@@ -1320,22 +1329,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (deviceInfo != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "DeviceInfo", deviceInfo));
-            }
-            if (pushToken != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "PushToken", pushToken));
-            }
-            if (token != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Token", token));
-            }
-            if (deviceId != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "DeviceId", deviceId));
-            }
+            localVarRequestOptions.Data = validateAppTokenRequest;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -1360,12 +1354,11 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="faceId1"> (optional)</param>
-        /// <param name="faceId2"> (optional)</param>
+        /// <param name="verifyFaceData"> (optional)</param>
         /// <returns>VerifyResult</returns>
-        public VerifyResult ApiApplicationVerifyfacesPost(string faceId1 = default(string), string faceId2 = default(string))
+        public VerifyResult ApiApplicationVerifyfacesPost(VerifyFaceData verifyFaceData = default(VerifyFaceData))
         {
-            Org.OpenAPITools.Client.ApiResponse<VerifyResult> localVarResponse = ApiApplicationVerifyfacesPostWithHttpInfo(faceId1, faceId2);
+            Org.OpenAPITools.Client.ApiResponse<VerifyResult> localVarResponse = ApiApplicationVerifyfacesPostWithHttpInfo(verifyFaceData);
             return localVarResponse.Data;
         }
 
@@ -1373,14 +1366,17 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="faceId1"> (optional)</param>
-        /// <param name="faceId2"> (optional)</param>
+        /// <param name="verifyFaceData"> (optional)</param>
         /// <returns>ApiResponse of VerifyResult</returns>
-        public Org.OpenAPITools.Client.ApiResponse<VerifyResult> ApiApplicationVerifyfacesPostWithHttpInfo(string faceId1 = default(string), string faceId2 = default(string))
+        public Org.OpenAPITools.Client.ApiResponse<VerifyResult> ApiApplicationVerifyfacesPostWithHttpInfo(VerifyFaceData verifyFaceData = default(VerifyFaceData))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json-patch+json",
+                "application/json",
+                "text/json",
+                "application/_*+json"
             };
 
             // to determine the Accept header
@@ -1396,14 +1392,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (faceId1 != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "faceId1", faceId1));
-            }
-            if (faceId2 != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "faceId2", faceId2));
-            }
+            localVarRequestOptions.Data = verifyFaceData;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -1427,13 +1416,12 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="faceId1"> (optional)</param>
-        /// <param name="faceId2"> (optional)</param>
+        /// <param name="verifyFaceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of VerifyResult</returns>
-        public async System.Threading.Tasks.Task<VerifyResult> ApiApplicationVerifyfacesPostAsync(string faceId1 = default(string), string faceId2 = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<VerifyResult> ApiApplicationVerifyfacesPostAsync(VerifyFaceData verifyFaceData = default(VerifyFaceData), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<VerifyResult> localVarResponse = await ApiApplicationVerifyfacesPostWithHttpInfoAsync(faceId1, faceId2, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<VerifyResult> localVarResponse = await ApiApplicationVerifyfacesPostWithHttpInfoAsync(verifyFaceData, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1441,16 +1429,19 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="faceId1"> (optional)</param>
-        /// <param name="faceId2"> (optional)</param>
+        /// <param name="verifyFaceData"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (VerifyResult)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<VerifyResult>> ApiApplicationVerifyfacesPostWithHttpInfoAsync(string faceId1 = default(string), string faceId2 = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<VerifyResult>> ApiApplicationVerifyfacesPostWithHttpInfoAsync(VerifyFaceData verifyFaceData = default(VerifyFaceData), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json-patch+json", 
+                "application/json", 
+                "text/json", 
+                "application/_*+json"
             };
 
             // to determine the Accept header
@@ -1467,14 +1458,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (faceId1 != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "faceId1", faceId1));
-            }
-            if (faceId2 != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "faceId2", faceId2));
-            }
+            localVarRequestOptions.Data = verifyFaceData;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))

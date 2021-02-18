@@ -30,24 +30,6 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="payload"> (optional)</param>
-        /// <returns>Post2faResponse</returns>
-        Post2faResponse ApiUser2faPost(string payload = default(string));
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="payload"> (optional)</param>
-        /// <returns>ApiResponse of Post2faResponse</returns>
-        ApiResponse<Post2faResponse> ApiUser2faPostWithHttpInfo(string payload = default(string));
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="page"> (optional)</param>
         /// <param name="size"> (optional)</param>
         /// <returns>GetBalanceActionsResponse</returns>
@@ -101,8 +83,8 @@ namespace Org.OpenAPITools.Api
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"> (optional)</param>
-        /// <returns>GetDepositsResponse</returns>
-        GetDepositsResponse ApiUserDepositsGet(string currency = default(string));
+        /// <returns>List&lt;ApiGetDepositsWitdrawals&gt;</returns>
+        List<ApiGetDepositsWitdrawals> ApiUserDepositsGet(string currency = default(string));
 
         /// <summary>
         /// 
@@ -112,8 +94,42 @@ namespace Org.OpenAPITools.Api
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"> (optional)</param>
-        /// <returns>ApiResponse of GetDepositsResponse</returns>
-        ApiResponse<GetDepositsResponse> ApiUserDepositsGetWithHttpInfo(string currency = default(string));
+        /// <returns>ApiResponse of List&lt;ApiGetDepositsWitdrawals&gt;</returns>
+        ApiResponse<List<ApiGetDepositsWitdrawals>> ApiUserDepositsGetWithHttpInfo(string currency = default(string));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="finishTier1VerificationModel"> (optional)</param>
+        /// <returns>bool</returns>
+        bool ApiUserFinishTier1VerificationPost(FinishTier1VerificationModel finishTier1VerificationModel = default(FinishTier1VerificationModel));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="finishTier1VerificationModel"> (optional)</param>
+        /// <returns>ApiResponse of bool</returns>
+        ApiResponse<bool> ApiUserFinishTier1VerificationPostWithHttpInfo(FinishTier1VerificationModel finishTier1VerificationModel = default(FinishTier1VerificationModel));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>GetVerificationLevelResponse</returns>
+        GetVerificationLevelResponse ApiUserGetVerificationLevelGet();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>ApiResponse of GetVerificationLevelResponse</returns>
+        ApiResponse<GetVerificationLevelResponse> ApiUserGetVerificationLevelGetWithHttpInfo();
         /// <summary>
         /// 
         /// </summary>
@@ -132,6 +148,24 @@ namespace Org.OpenAPITools.Api
         /// <param name="pair"> (optional)</param>
         /// <returns>ApiResponse of GetOrdersResponse</returns>
         ApiResponse<GetOrdersResponse> ApiUserOrdersGetWithHttpInfo(string pair = default(string));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="phoneNumber"> (optional)</param>
+        /// <returns>VerificationResource</returns>
+        VerificationResource ApiUserSetPhoneNumberPost(string phoneNumber = default(string));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="phoneNumber"> (optional)</param>
+        /// <returns>ApiResponse of VerificationResource</returns>
+        ApiResponse<VerificationResource> ApiUserSetPhoneNumberPostWithHttpInfo(string phoneNumber = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -172,9 +206,27 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="postVefirySms"> (optional)</param>
+        /// <returns>SmsVefiryResult</returns>
+        SmsVefiryResult ApiUserVerifyPhoneNumberPost(PostVefirySms postVefirySms = default(PostVefirySms));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="postVefirySms"> (optional)</param>
+        /// <returns>ApiResponse of SmsVefiryResult</returns>
+        ApiResponse<SmsVefiryResult> ApiUserVerifyPhoneNumberPostWithHttpInfo(PostVefirySms postVefirySms = default(PostVefirySms));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"> (optional)</param>
-        /// <returns>GetWithdrawalsResponse</returns>
-        GetWithdrawalsResponse ApiUserWithdrawalsGet(string currency = default(string));
+        /// <returns>List&lt;ApiGetDepositsWitdrawals&gt;</returns>
+        List<ApiGetDepositsWitdrawals> ApiUserWithdrawalsGet(string currency = default(string));
 
         /// <summary>
         /// 
@@ -184,8 +236,8 @@ namespace Org.OpenAPITools.Api
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"> (optional)</param>
-        /// <returns>ApiResponse of GetWithdrawalsResponse</returns>
-        ApiResponse<GetWithdrawalsResponse> ApiUserWithdrawalsGetWithHttpInfo(string currency = default(string));
+        /// <returns>ApiResponse of List&lt;ApiGetDepositsWitdrawals&gt;</returns>
+        ApiResponse<List<ApiGetDepositsWitdrawals>> ApiUserWithdrawalsGetWithHttpInfo(string currency = default(string));
         #endregion Synchronous Operations
     }
 
@@ -195,29 +247,6 @@ namespace Org.OpenAPITools.Api
     public interface IUserApiAsync : IApiAccessor
     {
         #region Asynchronous Operations
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="payload"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of Post2faResponse</returns>
-        System.Threading.Tasks.Task<Post2faResponse> ApiUser2faPostAsync(string payload = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="payload"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (Post2faResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Post2faResponse>> ApiUser2faPostWithHttpInfoAsync(string payload = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -294,8 +323,8 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of GetDepositsResponse</returns>
-        System.Threading.Tasks.Task<GetDepositsResponse> ApiUserDepositsGetAsync(string currency = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of List&lt;ApiGetDepositsWitdrawals&gt;</returns>
+        System.Threading.Tasks.Task<List<ApiGetDepositsWitdrawals>> ApiUserDepositsGetAsync(string currency = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -306,8 +335,52 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (GetDepositsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetDepositsResponse>> ApiUserDepositsGetWithHttpInfoAsync(string currency = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (List&lt;ApiGetDepositsWitdrawals&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<ApiGetDepositsWitdrawals>>> ApiUserDepositsGetWithHttpInfoAsync(string currency = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="finishTier1VerificationModel"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of bool</returns>
+        System.Threading.Tasks.Task<bool> ApiUserFinishTier1VerificationPostAsync(FinishTier1VerificationModel finishTier1VerificationModel = default(FinishTier1VerificationModel), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="finishTier1VerificationModel"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (bool)</returns>
+        System.Threading.Tasks.Task<ApiResponse<bool>> ApiUserFinishTier1VerificationPostWithHttpInfoAsync(FinishTier1VerificationModel finishTier1VerificationModel = default(FinishTier1VerificationModel), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GetVerificationLevelResponse</returns>
+        System.Threading.Tasks.Task<GetVerificationLevelResponse> ApiUserGetVerificationLevelGetAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GetVerificationLevelResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GetVerificationLevelResponse>> ApiUserGetVerificationLevelGetWithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -331,6 +404,29 @@ namespace Org.OpenAPITools.Api
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (GetOrdersResponse)</returns>
         System.Threading.Tasks.Task<ApiResponse<GetOrdersResponse>> ApiUserOrdersGetWithHttpInfoAsync(string pair = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="phoneNumber"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of VerificationResource</returns>
+        System.Threading.Tasks.Task<VerificationResource> ApiUserSetPhoneNumberPostAsync(string phoneNumber = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="phoneNumber"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (VerificationResource)</returns>
+        System.Threading.Tasks.Task<ApiResponse<VerificationResource>> ApiUserSetPhoneNumberPostWithHttpInfoAsync(string phoneNumber = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -384,10 +480,33 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="postVefirySms"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of SmsVefiryResult</returns>
+        System.Threading.Tasks.Task<SmsVefiryResult> ApiUserVerifyPhoneNumberPostAsync(PostVefirySms postVefirySms = default(PostVefirySms), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="postVefirySms"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (SmsVefiryResult)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SmsVefiryResult>> ApiUserVerifyPhoneNumberPostWithHttpInfoAsync(PostVefirySms postVefirySms = default(PostVefirySms), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of GetWithdrawalsResponse</returns>
-        System.Threading.Tasks.Task<GetWithdrawalsResponse> ApiUserWithdrawalsGetAsync(string currency = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of List&lt;ApiGetDepositsWitdrawals&gt;</returns>
+        System.Threading.Tasks.Task<List<ApiGetDepositsWitdrawals>> ApiUserWithdrawalsGetAsync(string currency = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -398,8 +517,8 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (GetWithdrawalsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetWithdrawalsResponse>> ApiUserWithdrawalsGetWithHttpInfoAsync(string currency = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (List&lt;ApiGetDepositsWitdrawals&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<ApiGetDepositsWitdrawals>>> ApiUserWithdrawalsGetWithHttpInfoAsync(string currency = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -518,133 +637,6 @@ namespace Org.OpenAPITools.Api
                 return _exceptionFactory;
             }
             set { _exceptionFactory = value; }
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="payload"> (optional)</param>
-        /// <returns>Post2faResponse</returns>
-        public Post2faResponse ApiUser2faPost(string payload = default(string))
-        {
-            Org.OpenAPITools.Client.ApiResponse<Post2faResponse> localVarResponse = ApiUser2faPostWithHttpInfo(payload);
-            return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="payload"> (optional)</param>
-        /// <returns>ApiResponse of Post2faResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Post2faResponse> ApiUser2faPostWithHttpInfo(string payload = default(string))
-        {
-            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
-
-            String[] _contentTypes = new String[] {
-            };
-
-            // to determine the Accept header
-            String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
-            };
-
-            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-
-            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-
-            if (payload != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Payload", payload));
-            }
-
-            // authentication (Bearer) required
-            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
-            }
-
-            // make the HTTP request
-            var localVarResponse = this.Client.Post<Post2faResponse>("/api/User/2fa", localVarRequestOptions, this.Configuration);
-
-            if (this.ExceptionFactory != null)
-            {
-                Exception _exception = this.ExceptionFactory("ApiUser2faPost", localVarResponse);
-                if (_exception != null) throw _exception;
-            }
-
-            return localVarResponse;
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="payload"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of Post2faResponse</returns>
-        public async System.Threading.Tasks.Task<Post2faResponse> ApiUser2faPostAsync(string payload = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
-        {
-            Org.OpenAPITools.Client.ApiResponse<Post2faResponse> localVarResponse = await ApiUser2faPostWithHttpInfoAsync(payload, cancellationToken).ConfigureAwait(false);
-            return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="payload"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (Post2faResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Post2faResponse>> ApiUser2faPostWithHttpInfoAsync(string payload = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
-        {
-
-            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
-
-            String[] _contentTypes = new String[] {
-            };
-
-            // to determine the Accept header
-            String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
-            };
-
-
-            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-
-            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-
-            if (payload != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Payload", payload));
-            }
-
-            // authentication (Bearer) required
-            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
-            }
-
-            // make the HTTP request
-
-            var localVarResponse = await this.AsynchronousClient.PostAsync<Post2faResponse>("/api/User/2fa", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
-
-            if (this.ExceptionFactory != null)
-            {
-                Exception _exception = this.ExceptionFactory("ApiUser2faPost", localVarResponse);
-                if (_exception != null) throw _exception;
-            }
-
-            return localVarResponse;
         }
 
         /// <summary>
@@ -1021,10 +1013,10 @@ namespace Org.OpenAPITools.Api
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"> (optional)</param>
-        /// <returns>GetDepositsResponse</returns>
-        public GetDepositsResponse ApiUserDepositsGet(string currency = default(string))
+        /// <returns>List&lt;ApiGetDepositsWitdrawals&gt;</returns>
+        public List<ApiGetDepositsWitdrawals> ApiUserDepositsGet(string currency = default(string))
         {
-            Org.OpenAPITools.Client.ApiResponse<GetDepositsResponse> localVarResponse = ApiUserDepositsGetWithHttpInfo(currency);
+            Org.OpenAPITools.Client.ApiResponse<List<ApiGetDepositsWitdrawals>> localVarResponse = ApiUserDepositsGetWithHttpInfo(currency);
             return localVarResponse.Data;
         }
 
@@ -1033,8 +1025,8 @@ namespace Org.OpenAPITools.Api
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"> (optional)</param>
-        /// <returns>ApiResponse of GetDepositsResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<GetDepositsResponse> ApiUserDepositsGetWithHttpInfo(string currency = default(string))
+        /// <returns>ApiResponse of List&lt;ApiGetDepositsWitdrawals&gt;</returns>
+        public Org.OpenAPITools.Client.ApiResponse<List<ApiGetDepositsWitdrawals>> ApiUserDepositsGetWithHttpInfo(string currency = default(string))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1066,7 +1058,7 @@ namespace Org.OpenAPITools.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<GetDepositsResponse>("/api/User/deposits", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<List<ApiGetDepositsWitdrawals>>("/api/User/deposits", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1083,10 +1075,10 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of GetDepositsResponse</returns>
-        public async System.Threading.Tasks.Task<GetDepositsResponse> ApiUserDepositsGetAsync(string currency = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of List&lt;ApiGetDepositsWitdrawals&gt;</returns>
+        public async System.Threading.Tasks.Task<List<ApiGetDepositsWitdrawals>> ApiUserDepositsGetAsync(string currency = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<GetDepositsResponse> localVarResponse = await ApiUserDepositsGetWithHttpInfoAsync(currency, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<List<ApiGetDepositsWitdrawals>> localVarResponse = await ApiUserDepositsGetWithHttpInfoAsync(currency, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1096,8 +1088,8 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (GetDepositsResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<GetDepositsResponse>> ApiUserDepositsGetWithHttpInfoAsync(string currency = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (List&lt;ApiGetDepositsWitdrawals&gt;)</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<List<ApiGetDepositsWitdrawals>>> ApiUserDepositsGetWithHttpInfoAsync(string currency = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1132,11 +1124,255 @@ namespace Org.OpenAPITools.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<GetDepositsResponse>("/api/User/deposits", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<List<ApiGetDepositsWitdrawals>>("/api/User/deposits", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("ApiUserDepositsGet", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="finishTier1VerificationModel"> (optional)</param>
+        /// <returns>bool</returns>
+        public bool ApiUserFinishTier1VerificationPost(FinishTier1VerificationModel finishTier1VerificationModel = default(FinishTier1VerificationModel))
+        {
+            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = ApiUserFinishTier1VerificationPostWithHttpInfo(finishTier1VerificationModel);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="finishTier1VerificationModel"> (optional)</param>
+        /// <returns>ApiResponse of bool</returns>
+        public Org.OpenAPITools.Client.ApiResponse<bool> ApiUserFinishTier1VerificationPostWithHttpInfo(FinishTier1VerificationModel finishTier1VerificationModel = default(FinishTier1VerificationModel))
+        {
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json-patch+json",
+                "application/json",
+                "text/json",
+                "application/_*+json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "text/plain",
+                "application/json",
+                "text/json"
+            };
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            localVarRequestOptions.Data = finishTier1VerificationModel;
+
+            // authentication (Bearer) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<bool>("/api/User/FinishTier1Verification", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("ApiUserFinishTier1VerificationPost", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="finishTier1VerificationModel"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of bool</returns>
+        public async System.Threading.Tasks.Task<bool> ApiUserFinishTier1VerificationPostAsync(FinishTier1VerificationModel finishTier1VerificationModel = default(FinishTier1VerificationModel), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = await ApiUserFinishTier1VerificationPostWithHttpInfoAsync(finishTier1VerificationModel, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="finishTier1VerificationModel"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (bool)</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<bool>> ApiUserFinishTier1VerificationPostWithHttpInfoAsync(FinishTier1VerificationModel finishTier1VerificationModel = default(FinishTier1VerificationModel), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json-patch+json", 
+                "application/json", 
+                "text/json", 
+                "application/_*+json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "text/plain",
+                "application/json",
+                "text/json"
+            };
+
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            localVarRequestOptions.Data = finishTier1VerificationModel;
+
+            // authentication (Bearer) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.PostAsync<bool>("/api/User/FinishTier1Verification", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("ApiUserFinishTier1VerificationPost", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>GetVerificationLevelResponse</returns>
+        public GetVerificationLevelResponse ApiUserGetVerificationLevelGet()
+        {
+            Org.OpenAPITools.Client.ApiResponse<GetVerificationLevelResponse> localVarResponse = ApiUserGetVerificationLevelGetWithHttpInfo();
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <returns>ApiResponse of GetVerificationLevelResponse</returns>
+        public Org.OpenAPITools.Client.ApiResponse<GetVerificationLevelResponse> ApiUserGetVerificationLevelGetWithHttpInfo()
+        {
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "text/plain",
+                "application/json",
+                "text/json"
+            };
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+
+            // authentication (Bearer) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Get<GetVerificationLevelResponse>("/api/User/GetVerificationLevel", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("ApiUserGetVerificationLevelGet", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of GetVerificationLevelResponse</returns>
+        public async System.Threading.Tasks.Task<GetVerificationLevelResponse> ApiUserGetVerificationLevelGetAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            Org.OpenAPITools.Client.ApiResponse<GetVerificationLevelResponse> localVarResponse = await ApiUserGetVerificationLevelGetWithHttpInfoAsync(cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (GetVerificationLevelResponse)</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<GetVerificationLevelResponse>> ApiUserGetVerificationLevelGetWithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "text/plain",
+                "application/json",
+                "text/json"
+            };
+
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+
+            // authentication (Bearer) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.GetAsync<GetVerificationLevelResponse>("/api/User/GetVerificationLevel", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("ApiUserGetVerificationLevelGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -1264,6 +1500,133 @@ namespace Org.OpenAPITools.Api
             if (this.ExceptionFactory != null)
             {
                 Exception _exception = this.ExceptionFactory("ApiUserOrdersGet", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="phoneNumber"> (optional)</param>
+        /// <returns>VerificationResource</returns>
+        public VerificationResource ApiUserSetPhoneNumberPost(string phoneNumber = default(string))
+        {
+            Org.OpenAPITools.Client.ApiResponse<VerificationResource> localVarResponse = ApiUserSetPhoneNumberPostWithHttpInfo(phoneNumber);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="phoneNumber"> (optional)</param>
+        /// <returns>ApiResponse of VerificationResource</returns>
+        public Org.OpenAPITools.Client.ApiResponse<VerificationResource> ApiUserSetPhoneNumberPostWithHttpInfo(string phoneNumber = default(string))
+        {
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "text/plain",
+                "application/json",
+                "text/json"
+            };
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            if (phoneNumber != null)
+            {
+                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "phoneNumber", phoneNumber));
+            }
+
+            // authentication (Bearer) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<VerificationResource>("/api/User/SetPhoneNumber", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("ApiUserSetPhoneNumberPost", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="phoneNumber"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of VerificationResource</returns>
+        public async System.Threading.Tasks.Task<VerificationResource> ApiUserSetPhoneNumberPostAsync(string phoneNumber = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            Org.OpenAPITools.Client.ApiResponse<VerificationResource> localVarResponse = await ApiUserSetPhoneNumberPostWithHttpInfoAsync(phoneNumber, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="phoneNumber"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (VerificationResource)</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<VerificationResource>> ApiUserSetPhoneNumberPostWithHttpInfoAsync(string phoneNumber = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "text/plain",
+                "application/json",
+                "text/json"
+            };
+
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            if (phoneNumber != null)
+            {
+                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "phoneNumber", phoneNumber));
+            }
+
+            // authentication (Bearer) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.PostAsync<VerificationResource>("/api/User/SetPhoneNumber", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("ApiUserSetPhoneNumberPost", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -1520,11 +1883,140 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="currency"> (optional)</param>
-        /// <returns>GetWithdrawalsResponse</returns>
-        public GetWithdrawalsResponse ApiUserWithdrawalsGet(string currency = default(string))
+        /// <param name="postVefirySms"> (optional)</param>
+        /// <returns>SmsVefiryResult</returns>
+        public SmsVefiryResult ApiUserVerifyPhoneNumberPost(PostVefirySms postVefirySms = default(PostVefirySms))
         {
-            Org.OpenAPITools.Client.ApiResponse<GetWithdrawalsResponse> localVarResponse = ApiUserWithdrawalsGetWithHttpInfo(currency);
+            Org.OpenAPITools.Client.ApiResponse<SmsVefiryResult> localVarResponse = ApiUserVerifyPhoneNumberPostWithHttpInfo(postVefirySms);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="postVefirySms"> (optional)</param>
+        /// <returns>ApiResponse of SmsVefiryResult</returns>
+        public Org.OpenAPITools.Client.ApiResponse<SmsVefiryResult> ApiUserVerifyPhoneNumberPostWithHttpInfo(PostVefirySms postVefirySms = default(PostVefirySms))
+        {
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json-patch+json",
+                "application/json",
+                "text/json",
+                "application/_*+json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "text/plain",
+                "application/json",
+                "text/json"
+            };
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            localVarRequestOptions.Data = postVefirySms;
+
+            // authentication (Bearer) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<SmsVefiryResult>("/api/User/VerifyPhoneNumber", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("ApiUserVerifyPhoneNumberPost", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="postVefirySms"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of SmsVefiryResult</returns>
+        public async System.Threading.Tasks.Task<SmsVefiryResult> ApiUserVerifyPhoneNumberPostAsync(PostVefirySms postVefirySms = default(PostVefirySms), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            Org.OpenAPITools.Client.ApiResponse<SmsVefiryResult> localVarResponse = await ApiUserVerifyPhoneNumberPostWithHttpInfoAsync(postVefirySms, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="postVefirySms"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (SmsVefiryResult)</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<SmsVefiryResult>> ApiUserVerifyPhoneNumberPostWithHttpInfoAsync(PostVefirySms postVefirySms = default(PostVefirySms), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json-patch+json", 
+                "application/json", 
+                "text/json", 
+                "application/_*+json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "text/plain",
+                "application/json",
+                "text/json"
+            };
+
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            localVarRequestOptions.Data = postVefirySms;
+
+            // authentication (Bearer) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.PostAsync<SmsVefiryResult>("/api/User/VerifyPhoneNumber", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("ApiUserVerifyPhoneNumberPost", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="currency"> (optional)</param>
+        /// <returns>List&lt;ApiGetDepositsWitdrawals&gt;</returns>
+        public List<ApiGetDepositsWitdrawals> ApiUserWithdrawalsGet(string currency = default(string))
+        {
+            Org.OpenAPITools.Client.ApiResponse<List<ApiGetDepositsWitdrawals>> localVarResponse = ApiUserWithdrawalsGetWithHttpInfo(currency);
             return localVarResponse.Data;
         }
 
@@ -1533,8 +2025,8 @@ namespace Org.OpenAPITools.Api
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"> (optional)</param>
-        /// <returns>ApiResponse of GetWithdrawalsResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<GetWithdrawalsResponse> ApiUserWithdrawalsGetWithHttpInfo(string currency = default(string))
+        /// <returns>ApiResponse of List&lt;ApiGetDepositsWitdrawals&gt;</returns>
+        public Org.OpenAPITools.Client.ApiResponse<List<ApiGetDepositsWitdrawals>> ApiUserWithdrawalsGetWithHttpInfo(string currency = default(string))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1566,7 +2058,7 @@ namespace Org.OpenAPITools.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<GetWithdrawalsResponse>("/api/User/withdrawals", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<List<ApiGetDepositsWitdrawals>>("/api/User/withdrawals", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -1583,10 +2075,10 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of GetWithdrawalsResponse</returns>
-        public async System.Threading.Tasks.Task<GetWithdrawalsResponse> ApiUserWithdrawalsGetAsync(string currency = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of List&lt;ApiGetDepositsWitdrawals&gt;</returns>
+        public async System.Threading.Tasks.Task<List<ApiGetDepositsWitdrawals>> ApiUserWithdrawalsGetAsync(string currency = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<GetWithdrawalsResponse> localVarResponse = await ApiUserWithdrawalsGetWithHttpInfoAsync(currency, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<List<ApiGetDepositsWitdrawals>> localVarResponse = await ApiUserWithdrawalsGetWithHttpInfoAsync(currency, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1596,8 +2088,8 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (GetWithdrawalsResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<GetWithdrawalsResponse>> ApiUserWithdrawalsGetWithHttpInfoAsync(string currency = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (List&lt;ApiGetDepositsWitdrawals&gt;)</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<List<ApiGetDepositsWitdrawals>>> ApiUserWithdrawalsGetWithHttpInfoAsync(string currency = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1632,7 +2124,7 @@ namespace Org.OpenAPITools.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<GetWithdrawalsResponse>("/api/User/withdrawals", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<List<ApiGetDepositsWitdrawals>>("/api/User/withdrawals", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {

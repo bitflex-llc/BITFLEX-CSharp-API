@@ -30,7 +30,7 @@ namespace Org.OpenAPITools.Api
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns></returns>
-        void StaticPagesAffiliateGet();
+        void ApiStaticPagesAffiliateGet();
 
         /// <summary>
         /// 
@@ -40,13 +40,13 @@ namespace Org.OpenAPITools.Api
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> StaticPagesAffiliateGetWithHttpInfo();
+        ApiResponse<Object> ApiStaticPagesAffiliateGetWithHttpInfo();
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns></returns>
-        void StaticPagesStatusGet();
+        void ApiStaticPagesStatusGet();
 
         /// <summary>
         /// 
@@ -56,7 +56,7 @@ namespace Org.OpenAPITools.Api
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> StaticPagesStatusGetWithHttpInfo();
+        ApiResponse<Object> ApiStaticPagesStatusGetWithHttpInfo();
         #endregion Synchronous Operations
     }
 
@@ -75,7 +75,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task StaticPagesAffiliateGetAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task ApiStaticPagesAffiliateGetAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -86,7 +86,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> StaticPagesAffiliateGetWithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> ApiStaticPagesAffiliateGetWithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -96,7 +96,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task StaticPagesStatusGetAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task ApiStaticPagesStatusGetAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -107,7 +107,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> StaticPagesStatusGetWithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> ApiStaticPagesStatusGetWithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -233,9 +233,9 @@ namespace Org.OpenAPITools.Api
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns></returns>
-        public void StaticPagesAffiliateGet()
+        public void ApiStaticPagesAffiliateGet()
         {
-            StaticPagesAffiliateGetWithHttpInfo();
+            ApiStaticPagesAffiliateGetWithHttpInfo();
         }
 
         /// <summary>
@@ -243,7 +243,7 @@ namespace Org.OpenAPITools.Api
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of Object(void)</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Object> StaticPagesAffiliateGetWithHttpInfo()
+        public Org.OpenAPITools.Client.ApiResponse<Object> ApiStaticPagesAffiliateGetWithHttpInfo()
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -268,11 +268,11 @@ namespace Org.OpenAPITools.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<Object>("/StaticPages/affiliate", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<Object>("/api/StaticPages/affiliate", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("StaticPagesAffiliateGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiStaticPagesAffiliateGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -285,9 +285,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task StaticPagesAffiliateGetAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task ApiStaticPagesAffiliateGetAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            await StaticPagesAffiliateGetWithHttpInfoAsync(cancellationToken).ConfigureAwait(false);
+            await ApiStaticPagesAffiliateGetWithHttpInfoAsync(cancellationToken).ConfigureAwait(false);
         }
 
         /// <summary>
@@ -296,7 +296,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> StaticPagesAffiliateGetWithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ApiStaticPagesAffiliateGetWithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -324,11 +324,11 @@ namespace Org.OpenAPITools.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/StaticPages/affiliate", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/api/StaticPages/affiliate", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("StaticPagesAffiliateGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiStaticPagesAffiliateGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -340,9 +340,9 @@ namespace Org.OpenAPITools.Api
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns></returns>
-        public void StaticPagesStatusGet()
+        public void ApiStaticPagesStatusGet()
         {
-            StaticPagesStatusGetWithHttpInfo();
+            ApiStaticPagesStatusGetWithHttpInfo();
         }
 
         /// <summary>
@@ -350,7 +350,7 @@ namespace Org.OpenAPITools.Api
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of Object(void)</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Object> StaticPagesStatusGetWithHttpInfo()
+        public Org.OpenAPITools.Client.ApiResponse<Object> ApiStaticPagesStatusGetWithHttpInfo()
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -375,11 +375,11 @@ namespace Org.OpenAPITools.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<Object>("/StaticPages/status", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<Object>("/api/StaticPages/status", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("StaticPagesStatusGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiStaticPagesStatusGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -392,9 +392,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task StaticPagesStatusGetAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task ApiStaticPagesStatusGetAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            await StaticPagesStatusGetWithHttpInfoAsync(cancellationToken).ConfigureAwait(false);
+            await ApiStaticPagesStatusGetWithHttpInfoAsync(cancellationToken).ConfigureAwait(false);
         }
 
         /// <summary>
@@ -403,7 +403,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> StaticPagesStatusGetWithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ApiStaticPagesStatusGetWithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -431,11 +431,11 @@ namespace Org.OpenAPITools.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/StaticPages/status", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/api/StaticPages/status", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("StaticPagesStatusGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiStaticPagesStatusGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 

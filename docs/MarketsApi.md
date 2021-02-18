@@ -5,6 +5,7 @@ All URIs are relative to *http://172.16.1.20:5001*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**ApiMarketsCurrenciesGet**](MarketsApi.md#apimarketscurrenciesget) | **GET** /api/Markets/currencies | 
+[**ApiMarketsCurrencyInfoGet**](MarketsApi.md#apimarketscurrencyinfoget) | **GET** /api/Markets/currencyInfo | 
 [**ApiMarketsGet**](MarketsApi.md#apimarketsget) | **GET** /api/Markets | 
 [**ApiMarketsHistoryGet**](MarketsApi.md#apimarketshistoryget) | **GET** /api/Markets/history | 
 [**ApiMarketsOrderbookGet**](MarketsApi.md#apimarketsorderbookget) | **GET** /api/Markets/orderbook | 
@@ -62,6 +63,78 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**List&lt;GetApiMarketsCurrenciesResponse&gt;**](GetApiMarketsCurrenciesResponse.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Success |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="apimarketscurrencyinfoget"></a>
+# **ApiMarketsCurrencyInfoGet**
+> CryptoCurrency ApiMarketsCurrencyInfoGet (string currency = null)
+
+
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
+
+namespace Example
+{
+    public class ApiMarketsCurrencyInfoGetExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "http://172.16.1.20:5001";
+            // Configure API key authorization: Bearer
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new MarketsApi(config);
+            var currency = currency_example;  // string |  (optional) 
+
+            try
+            {
+                CryptoCurrency result = apiInstance.ApiMarketsCurrencyInfoGet(currency);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling MarketsApi.ApiMarketsCurrencyInfoGet: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **currency** | **string**|  | [optional] 
+
+### Return type
+
+[**CryptoCurrency**](CryptoCurrency.md)
 
 ### Authorization
 

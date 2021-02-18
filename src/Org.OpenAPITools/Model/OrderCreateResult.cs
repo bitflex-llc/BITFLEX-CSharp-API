@@ -37,11 +37,13 @@ namespace Org.OpenAPITools.Model
         /// <param name="success">success.</param>
         /// <param name="errorMessage">errorMessage.</param>
         /// <param name="order">order.</param>
-        public OrderCreateResult(bool success = default(bool), string errorMessage = default(string), Order order = default(Order))
+        /// <param name="balanceActions">balanceActions.</param>
+        public OrderCreateResult(bool success = default(bool), string errorMessage = default(string), Order order = default(Order), List<BalanceActionModel> balanceActions = default(List<BalanceActionModel>))
         {
             this.Success = success;
             this.ErrorMessage = errorMessage;
             this.Order = order;
+            this.BalanceActions = balanceActions;
         }
 
         /// <summary>
@@ -108,6 +110,12 @@ namespace Org.OpenAPITools.Model
         }
 
         /// <summary>
+        /// Gets or Sets BalanceActions
+        /// </summary>
+        [DataMember(Name = "balanceActions", EmitDefaultValue = true)]
+        public List<BalanceActionModel> BalanceActions { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -121,6 +129,7 @@ namespace Org.OpenAPITools.Model
             sb.Append("  Balance: ").Append(Balance).Append("\n");
             sb.Append("  Execution: ").Append(Execution).Append("\n");
             sb.Append("  Trades: ").Append(Trades).Append("\n");
+            sb.Append("  BalanceActions: ").Append(BalanceActions).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -184,6 +193,12 @@ namespace Org.OpenAPITools.Model
                     this.Trades != null &&
                     input.Trades != null &&
                     this.Trades.SequenceEqual(input.Trades)
+                ) && 
+                (
+                    this.BalanceActions == input.BalanceActions ||
+                    this.BalanceActions != null &&
+                    input.BalanceActions != null &&
+                    this.BalanceActions.SequenceEqual(input.BalanceActions)
                 );
         }
 
@@ -206,6 +221,8 @@ namespace Org.OpenAPITools.Model
                 hashCode = hashCode * 59 + this.Execution.GetHashCode();
                 if (this.Trades != null)
                     hashCode = hashCode * 59 + this.Trades.GetHashCode();
+                if (this.BalanceActions != null)
+                    hashCode = hashCode * 59 + this.BalanceActions.GetHashCode();
                 return hashCode;
             }
         }

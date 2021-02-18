@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**ApiApplicationDisableGoogle2stepPost**](ApplicationApi.md#apiapplicationdisablegoogle2steppost) | **POST** /api/Application/DisableGoogle2step | 
 [**ApiApplicationEnableGoogle2stepPost**](ApplicationApi.md#apiapplicationenablegoogle2steppost) | **POST** /api/Application/EnableGoogle2step | 
 [**ApiApplicationProcessFaceImagePost**](ApplicationApi.md#apiapplicationprocessfaceimagepost) | **POST** /api/Application/ProcessFaceImage | 
+[**ApiApplicationProcessPassportImagePost**](ApplicationApi.md#apiapplicationprocesspassportimagepost) | **POST** /api/Application/ProcessPassportImage | 
 [**ApiApplicationSetpushtokenPost**](ApplicationApi.md#apiapplicationsetpushtokenpost) | **POST** /api/Application/setpushtoken | 
 [**ApiApplicationValidatePinPost**](ApplicationApi.md#apiapplicationvalidatepinpost) | **POST** /api/Application/validatePin | 
 [**ApiApplicationValidateapptokenPost**](ApplicationApi.md#apiapplicationvalidateapptokenpost) | **POST** /api/Application/validateapptoken | 
@@ -15,7 +16,7 @@ Method | HTTP request | Description
 
 <a name="apiapplicationdisablegoogle2steppost"></a>
 # **ApiApplicationDisableGoogle2stepPost**
-> void ApiApplicationDisableGoogle2stepPost (string clientCode, string pincode, string backupCode)
+> void ApiApplicationDisableGoogle2stepPost (EnableDisable2Fa enableDisable2Fa = null)
 
 
 
@@ -41,13 +42,11 @@ namespace Example
             // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ApplicationApi(config);
-            var clientCode = clientCode_example;  // string | 
-            var pincode = pincode_example;  // string | 
-            var backupCode = backupCode_example;  // string | 
+            var enableDisable2Fa = new EnableDisable2Fa(); // EnableDisable2Fa |  (optional) 
 
             try
             {
-                apiInstance.ApiApplicationDisableGoogle2stepPost(clientCode, pincode, backupCode);
+                apiInstance.ApiApplicationDisableGoogle2stepPost(enableDisable2Fa);
             }
             catch (ApiException  e)
             {
@@ -64,9 +63,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **clientCode** | **string**|  | 
- **pincode** | **string**|  | 
- **backupCode** | **string**|  | 
+ **enableDisable2Fa** | [**EnableDisable2Fa**](EnableDisable2Fa.md)|  | [optional] 
 
 ### Return type
 
@@ -78,7 +75,7 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: Not defined
 
 ### HTTP response details
@@ -90,7 +87,7 @@ void (empty response body)
 
 <a name="apiapplicationenablegoogle2steppost"></a>
 # **ApiApplicationEnableGoogle2stepPost**
-> void ApiApplicationEnableGoogle2stepPost (string clientCode, string pincode, string backupCode)
+> void ApiApplicationEnableGoogle2stepPost (EnableDisable2Fa enableDisable2Fa = null)
 
 
 
@@ -116,13 +113,11 @@ namespace Example
             // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ApplicationApi(config);
-            var clientCode = clientCode_example;  // string | 
-            var pincode = pincode_example;  // string | 
-            var backupCode = backupCode_example;  // string | 
+            var enableDisable2Fa = new EnableDisable2Fa(); // EnableDisable2Fa |  (optional) 
 
             try
             {
-                apiInstance.ApiApplicationEnableGoogle2stepPost(clientCode, pincode, backupCode);
+                apiInstance.ApiApplicationEnableGoogle2stepPost(enableDisable2Fa);
             }
             catch (ApiException  e)
             {
@@ -139,9 +134,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **clientCode** | **string**|  | 
- **pincode** | **string**|  | 
- **backupCode** | **string**|  | 
+ **enableDisable2Fa** | [**EnableDisable2Fa**](EnableDisable2Fa.md)|  | [optional] 
 
 ### Return type
 
@@ -153,7 +146,7 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: Not defined
 
 ### HTTP response details
@@ -165,7 +158,7 @@ void (empty response body)
 
 <a name="apiapplicationprocessfaceimagepost"></a>
 # **ApiApplicationProcessFaceImagePost**
-> string ApiApplicationProcessFaceImagePost (string containerUUID = null)
+> string ApiApplicationProcessFaceImagePost (ProcessFaceImageRequest processFaceImageRequest = null)
 
 
 
@@ -191,11 +184,11 @@ namespace Example
             // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ApplicationApi(config);
-            var containerUUID = containerUUID_example;  // string |  (optional) 
+            var processFaceImageRequest = new ProcessFaceImageRequest(); // ProcessFaceImageRequest |  (optional) 
 
             try
             {
-                string result = apiInstance.ApiApplicationProcessFaceImagePost(containerUUID);
+                string result = apiInstance.ApiApplicationProcessFaceImagePost(processFaceImageRequest);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -213,7 +206,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **containerUUID** | **string**|  | [optional] 
+ **processFaceImageRequest** | [**ProcessFaceImageRequest**](ProcessFaceImageRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -225,7 +218,79 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Success |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="apiapplicationprocesspassportimagepost"></a>
+# **ApiApplicationProcessPassportImagePost**
+> string ApiApplicationProcessPassportImagePost (ProcessFaceImageRequest processFaceImageRequest = null)
+
+
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
+
+namespace Example
+{
+    public class ApiApplicationProcessPassportImagePostExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "http://172.16.1.20:5001";
+            // Configure API key authorization: Bearer
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new ApplicationApi(config);
+            var processFaceImageRequest = new ProcessFaceImageRequest(); // ProcessFaceImageRequest |  (optional) 
+
+            try
+            {
+                string result = apiInstance.ApiApplicationProcessPassportImagePost(processFaceImageRequest);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling ApplicationApi.ApiApplicationProcessPassportImagePost: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **processFaceImageRequest** | [**ProcessFaceImageRequest**](ProcessFaceImageRequest.md)|  | [optional] 
+
+### Return type
+
+**string**
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
  - **Accept**: text/plain, application/json, text/json
 
 ### HTTP response details
@@ -237,7 +302,7 @@ Name | Type | Description  | Notes
 
 <a name="apiapplicationsetpushtokenpost"></a>
 # **ApiApplicationSetpushtokenPost**
-> bool ApiApplicationSetpushtokenPost (string pushToken = null, string description = null, DeviceType? device = null, string bitflexDeviceId = null)
+> bool ApiApplicationSetpushtokenPost (SetPushTokenRequest setPushTokenRequest = null)
 
 
 
@@ -263,14 +328,11 @@ namespace Example
             // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ApplicationApi(config);
-            var pushToken = pushToken_example;  // string |  (optional) 
-            var description = description_example;  // string |  (optional) 
-            var device = ;  // DeviceType? |  (optional) 
-            var bitflexDeviceId = bitflexDeviceId_example;  // string |  (optional) 
+            var setPushTokenRequest = new SetPushTokenRequest(); // SetPushTokenRequest |  (optional) 
 
             try
             {
-                bool result = apiInstance.ApiApplicationSetpushtokenPost(pushToken, description, device, bitflexDeviceId);
+                bool result = apiInstance.ApiApplicationSetpushtokenPost(setPushTokenRequest);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -288,10 +350,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **pushToken** | **string**|  | [optional] 
- **description** | **string**|  | [optional] 
- **device** | **DeviceType?**|  | [optional] 
- **bitflexDeviceId** | **string**|  | [optional] 
+ **setPushTokenRequest** | [**SetPushTokenRequest**](SetPushTokenRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -303,7 +362,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
  - **Accept**: text/plain, application/json, text/json
 
 ### HTTP response details
@@ -315,7 +374,7 @@ Name | Type | Description  | Notes
 
 <a name="apiapplicationvalidatepinpost"></a>
 # **ApiApplicationValidatePinPost**
-> bool ApiApplicationValidatePinPost (string pinCode = null)
+> bool ApiApplicationValidatePinPost (ValidatePinPostRequest validatePinPostRequest = null)
 
 
 
@@ -341,11 +400,11 @@ namespace Example
             // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ApplicationApi(config);
-            var pinCode = pinCode_example;  // string |  (optional) 
+            var validatePinPostRequest = new ValidatePinPostRequest(); // ValidatePinPostRequest |  (optional) 
 
             try
             {
-                bool result = apiInstance.ApiApplicationValidatePinPost(pinCode);
+                bool result = apiInstance.ApiApplicationValidatePinPost(validatePinPostRequest);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -363,7 +422,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **pinCode** | **string**|  | [optional] 
+ **validatePinPostRequest** | [**ValidatePinPostRequest**](ValidatePinPostRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -375,7 +434,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
  - **Accept**: text/plain, application/json, text/json
 
 ### HTTP response details
@@ -387,7 +446,7 @@ Name | Type | Description  | Notes
 
 <a name="apiapplicationvalidateapptokenpost"></a>
 # **ApiApplicationValidateapptokenPost**
-> void ApiApplicationValidateapptokenPost (string deviceInfo = null, string pushToken = null, string token = null, string deviceId = null)
+> void ApiApplicationValidateapptokenPost (ValidateAppTokenRequest validateAppTokenRequest = null)
 
 
 
@@ -413,14 +472,11 @@ namespace Example
             // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ApplicationApi(config);
-            var deviceInfo = deviceInfo_example;  // string |  (optional) 
-            var pushToken = pushToken_example;  // string |  (optional) 
-            var token = token_example;  // string |  (optional) 
-            var deviceId = deviceId_example;  // string |  (optional) 
+            var validateAppTokenRequest = new ValidateAppTokenRequest(); // ValidateAppTokenRequest |  (optional) 
 
             try
             {
-                apiInstance.ApiApplicationValidateapptokenPost(deviceInfo, pushToken, token, deviceId);
+                apiInstance.ApiApplicationValidateapptokenPost(validateAppTokenRequest);
             }
             catch (ApiException  e)
             {
@@ -437,10 +493,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **deviceInfo** | **string**|  | [optional] 
- **pushToken** | **string**|  | [optional] 
- **token** | **string**|  | [optional] 
- **deviceId** | **string**|  | [optional] 
+ **validateAppTokenRequest** | [**ValidateAppTokenRequest**](ValidateAppTokenRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -452,7 +505,7 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
  - **Accept**: Not defined
 
 ### HTTP response details
@@ -464,7 +517,7 @@ void (empty response body)
 
 <a name="apiapplicationverifyfacespost"></a>
 # **ApiApplicationVerifyfacesPost**
-> VerifyResult ApiApplicationVerifyfacesPost (string faceId1 = null, string faceId2 = null)
+> VerifyResult ApiApplicationVerifyfacesPost (VerifyFaceData verifyFaceData = null)
 
 
 
@@ -490,12 +543,11 @@ namespace Example
             // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ApplicationApi(config);
-            var faceId1 = faceId1_example;  // string |  (optional) 
-            var faceId2 = faceId2_example;  // string |  (optional) 
+            var verifyFaceData = new VerifyFaceData(); // VerifyFaceData |  (optional) 
 
             try
             {
-                VerifyResult result = apiInstance.ApiApplicationVerifyfacesPost(faceId1, faceId2);
+                VerifyResult result = apiInstance.ApiApplicationVerifyfacesPost(verifyFaceData);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -513,8 +565,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **faceId1** | **string**|  | [optional] 
- **faceId2** | **string**|  | [optional] 
+ **verifyFaceData** | [**VerifyFaceData**](VerifyFaceData.md)|  | [optional] 
 
 ### Return type
 
@@ -526,7 +577,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
  - **Accept**: text/plain, application/json, text/json
 
 ### HTTP response details

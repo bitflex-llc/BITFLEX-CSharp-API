@@ -59,6 +59,7 @@ namespace Org.OpenAPITools.Model
         /// <param name="lockoutEnd">lockoutEnd.</param>
         /// <param name="lockoutEnabled">lockoutEnabled.</param>
         /// <param name="accessFailedCount">accessFailedCount.</param>
+        /// <param name="fullname">fullname.</param>
         /// <param name="pinCode">pinCode.</param>
         /// <param name="lastIPAccess">lastIPAccess.</param>
         /// <param name="lastDateAccess">lastDateAccess.</param>
@@ -70,9 +71,12 @@ namespace Org.OpenAPITools.Model
         /// <param name="isFacebookSignInAllowed">isFacebookSignInAllowed.</param>
         /// <param name="affiliateUserId">affiliateUserId.</param>
         /// <param name="registrationDateTime">registrationDateTime.</param>
+        /// <param name="verificationLevel">verificationLevel.</param>
         /// <param name="twoStepVerificationType">twoStepVerificationType.</param>
         /// <param name="twoStepBackupCode">twoStepBackupCode.</param>
-        public ApplicationUser(string id = default(string), string userName = default(string), string normalizedUserName = default(string), string email = default(string), string normalizedEmail = default(string), bool emailConfirmed = default(bool), string passwordHash = default(string), string securityStamp = default(string), string concurrencyStamp = default(string), string phoneNumber = default(string), bool phoneNumberConfirmed = default(bool), bool twoFactorEnabled = default(bool), DateTime? lockoutEnd = default(DateTime?), bool lockoutEnabled = default(bool), int accessFailedCount = default(int), string pinCode = default(string), string lastIPAccess = default(string), long? lastDateAccess = default(long?), bool isChatDisabled = default(bool), double? makerFee = default(double?), double? takerFee = default(double?), UserCategory? category = default(UserCategory?), bool isGoogleSignInAllowed = default(bool), bool isFacebookSignInAllowed = default(bool), string affiliateUserId = default(string), long registrationDateTime = default(long), TwoStepVerificationTypes? twoStepVerificationType = default(TwoStepVerificationTypes?), string twoStepBackupCode = default(string))
+        /// <param name="kycSefileBlobGuid">kycSefileBlobGuid.</param>
+        /// <param name="kycPassportBlobGuid">kycPassportBlobGuid.</param>
+        public ApplicationUser(string id = default(string), string userName = default(string), string normalizedUserName = default(string), string email = default(string), string normalizedEmail = default(string), bool emailConfirmed = default(bool), string passwordHash = default(string), string securityStamp = default(string), string concurrencyStamp = default(string), string phoneNumber = default(string), bool phoneNumberConfirmed = default(bool), bool twoFactorEnabled = default(bool), DateTime? lockoutEnd = default(DateTime?), bool lockoutEnabled = default(bool), int accessFailedCount = default(int), string fullname = default(string), string pinCode = default(string), string lastIPAccess = default(string), long? lastDateAccess = default(long?), bool isChatDisabled = default(bool), double? makerFee = default(double?), double? takerFee = default(double?), UserCategory? category = default(UserCategory?), bool isGoogleSignInAllowed = default(bool), bool isFacebookSignInAllowed = default(bool), string affiliateUserId = default(string), long registrationDateTime = default(long), int? verificationLevel = default(int?), TwoStepVerificationTypes? twoStepVerificationType = default(TwoStepVerificationTypes?), string twoStepBackupCode = default(string), string kycSefileBlobGuid = default(string), string kycPassportBlobGuid = default(string))
         {
             this.Id = id;
             this.UserName = userName;
@@ -89,6 +93,7 @@ namespace Org.OpenAPITools.Model
             this.LockoutEnd = lockoutEnd;
             this.LockoutEnabled = lockoutEnabled;
             this.AccessFailedCount = accessFailedCount;
+            this.Fullname = fullname;
             this.PinCode = pinCode;
             this.LastIPAccess = lastIPAccess;
             this.LastDateAccess = lastDateAccess;
@@ -100,8 +105,11 @@ namespace Org.OpenAPITools.Model
             this.IsFacebookSignInAllowed = isFacebookSignInAllowed;
             this.AffiliateUserId = affiliateUserId;
             this.RegistrationDateTime = registrationDateTime;
+            this.VerificationLevel = verificationLevel;
             this.TwoStepVerificationType = twoStepVerificationType;
             this.TwoStepBackupCode = twoStepBackupCode;
+            this.KycSefileBlobGuid = kycSefileBlobGuid;
+            this.KycPassportBlobGuid = kycPassportBlobGuid;
         }
 
         /// <summary>
@@ -195,6 +203,12 @@ namespace Org.OpenAPITools.Model
         public int AccessFailedCount { get; set; }
 
         /// <summary>
+        /// Gets or Sets Fullname
+        /// </summary>
+        [DataMember(Name = "fullname", EmitDefaultValue = true)]
+        public string Fullname { get; set; }
+
+        /// <summary>
         /// Gets or Sets PinCode
         /// </summary>
         [DataMember(Name = "pinCode", EmitDefaultValue = true)]
@@ -255,10 +269,28 @@ namespace Org.OpenAPITools.Model
         public long RegistrationDateTime { get; set; }
 
         /// <summary>
+        /// Gets or Sets VerificationLevel
+        /// </summary>
+        [DataMember(Name = "verificationLevel", EmitDefaultValue = true)]
+        public int? VerificationLevel { get; set; }
+
+        /// <summary>
         /// Gets or Sets TwoStepBackupCode
         /// </summary>
         [DataMember(Name = "twoStepBackupCode", EmitDefaultValue = true)]
         public string TwoStepBackupCode { get; set; }
+
+        /// <summary>
+        /// Gets or Sets KycSefileBlobGuid
+        /// </summary>
+        [DataMember(Name = "kycSefileBlobGuid", EmitDefaultValue = true)]
+        public string KycSefileBlobGuid { get; set; }
+
+        /// <summary>
+        /// Gets or Sets KycPassportBlobGuid
+        /// </summary>
+        [DataMember(Name = "kycPassportBlobGuid", EmitDefaultValue = true)]
+        public string KycPassportBlobGuid { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -283,6 +315,7 @@ namespace Org.OpenAPITools.Model
             sb.Append("  LockoutEnd: ").Append(LockoutEnd).Append("\n");
             sb.Append("  LockoutEnabled: ").Append(LockoutEnabled).Append("\n");
             sb.Append("  AccessFailedCount: ").Append(AccessFailedCount).Append("\n");
+            sb.Append("  Fullname: ").Append(Fullname).Append("\n");
             sb.Append("  PinCode: ").Append(PinCode).Append("\n");
             sb.Append("  LastIPAccess: ").Append(LastIPAccess).Append("\n");
             sb.Append("  LastDateAccess: ").Append(LastDateAccess).Append("\n");
@@ -294,8 +327,11 @@ namespace Org.OpenAPITools.Model
             sb.Append("  IsFacebookSignInAllowed: ").Append(IsFacebookSignInAllowed).Append("\n");
             sb.Append("  AffiliateUserId: ").Append(AffiliateUserId).Append("\n");
             sb.Append("  RegistrationDateTime: ").Append(RegistrationDateTime).Append("\n");
+            sb.Append("  VerificationLevel: ").Append(VerificationLevel).Append("\n");
             sb.Append("  TwoStepVerificationType: ").Append(TwoStepVerificationType).Append("\n");
             sb.Append("  TwoStepBackupCode: ").Append(TwoStepBackupCode).Append("\n");
+            sb.Append("  KycSefileBlobGuid: ").Append(KycSefileBlobGuid).Append("\n");
+            sb.Append("  KycPassportBlobGuid: ").Append(KycPassportBlobGuid).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -401,6 +437,11 @@ namespace Org.OpenAPITools.Model
                     this.AccessFailedCount.Equals(input.AccessFailedCount)
                 ) && 
                 (
+                    this.Fullname == input.Fullname ||
+                    (this.Fullname != null &&
+                    this.Fullname.Equals(input.Fullname))
+                ) && 
+                (
                     this.PinCode == input.PinCode ||
                     (this.PinCode != null &&
                     this.PinCode.Equals(input.PinCode))
@@ -451,6 +492,11 @@ namespace Org.OpenAPITools.Model
                     this.RegistrationDateTime.Equals(input.RegistrationDateTime)
                 ) && 
                 (
+                    this.VerificationLevel == input.VerificationLevel ||
+                    (this.VerificationLevel != null &&
+                    this.VerificationLevel.Equals(input.VerificationLevel))
+                ) && 
+                (
                     this.TwoStepVerificationType == input.TwoStepVerificationType ||
                     this.TwoStepVerificationType.Equals(input.TwoStepVerificationType)
                 ) && 
@@ -458,6 +504,16 @@ namespace Org.OpenAPITools.Model
                     this.TwoStepBackupCode == input.TwoStepBackupCode ||
                     (this.TwoStepBackupCode != null &&
                     this.TwoStepBackupCode.Equals(input.TwoStepBackupCode))
+                ) && 
+                (
+                    this.KycSefileBlobGuid == input.KycSefileBlobGuid ||
+                    (this.KycSefileBlobGuid != null &&
+                    this.KycSefileBlobGuid.Equals(input.KycSefileBlobGuid))
+                ) && 
+                (
+                    this.KycPassportBlobGuid == input.KycPassportBlobGuid ||
+                    (this.KycPassportBlobGuid != null &&
+                    this.KycPassportBlobGuid.Equals(input.KycPassportBlobGuid))
                 );
         }
 
@@ -495,6 +551,8 @@ namespace Org.OpenAPITools.Model
                     hashCode = hashCode * 59 + this.LockoutEnd.GetHashCode();
                 hashCode = hashCode * 59 + this.LockoutEnabled.GetHashCode();
                 hashCode = hashCode * 59 + this.AccessFailedCount.GetHashCode();
+                if (this.Fullname != null)
+                    hashCode = hashCode * 59 + this.Fullname.GetHashCode();
                 if (this.PinCode != null)
                     hashCode = hashCode * 59 + this.PinCode.GetHashCode();
                 if (this.LastIPAccess != null)
@@ -512,9 +570,15 @@ namespace Org.OpenAPITools.Model
                 if (this.AffiliateUserId != null)
                     hashCode = hashCode * 59 + this.AffiliateUserId.GetHashCode();
                 hashCode = hashCode * 59 + this.RegistrationDateTime.GetHashCode();
+                if (this.VerificationLevel != null)
+                    hashCode = hashCode * 59 + this.VerificationLevel.GetHashCode();
                 hashCode = hashCode * 59 + this.TwoStepVerificationType.GetHashCode();
                 if (this.TwoStepBackupCode != null)
                     hashCode = hashCode * 59 + this.TwoStepBackupCode.GetHashCode();
+                if (this.KycSefileBlobGuid != null)
+                    hashCode = hashCode * 59 + this.KycSefileBlobGuid.GetHashCode();
+                if (this.KycPassportBlobGuid != null)
+                    hashCode = hashCode * 59 + this.KycPassportBlobGuid.GetHashCode();
                 return hashCode;
             }
         }

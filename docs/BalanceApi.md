@@ -4,17 +4,17 @@ All URIs are relative to *http://172.16.1.20:5001*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**BalanceCurrencyGet**](BalanceApi.md#balancecurrencyget) | **GET** /Balance/{currency} | 
-[**BalanceDepositCurrencyAddressGet**](BalanceApi.md#balancedepositcurrencyaddressget) | **GET** /Balance/deposit/{currency}/address | 
-[**BalanceDepositCurrencyAddressPost**](BalanceApi.md#balancedepositcurrencyaddresspost) | **POST** /Balance/deposit/{currency}/address | 
-[**BalanceRoute**](BalanceApi.md#balanceroute) | **GET** /Balance | 
-[**BalanceWithdrawCurrencyPageGet**](BalanceApi.md#balancewithdrawcurrencypageget) | **GET** /Balance/withdraw/{currency}/page | 
-[**BalanceWithdrawCurrencyPost**](BalanceApi.md#balancewithdrawcurrencypost) | **POST** /Balance/withdraw/{currency} | 
+[**ApiBalanceCurrencyGet**](BalanceApi.md#apibalancecurrencyget) | **GET** /api/Balance/{currency} | 
+[**ApiBalanceDepositCurrencyAddressGet**](BalanceApi.md#apibalancedepositcurrencyaddressget) | **GET** /api/Balance/deposit/{currency}/address | 
+[**ApiBalanceDepositCurrencyAddressPost**](BalanceApi.md#apibalancedepositcurrencyaddresspost) | **POST** /api/Balance/deposit/{currency}/address | 
+[**ApiBalanceGet**](BalanceApi.md#apibalanceget) | **GET** /api/Balance | 
+[**ApiBalanceWithdrawCurrencyPageGet**](BalanceApi.md#apibalancewithdrawcurrencypageget) | **GET** /api/Balance/withdraw/{currency}/page | 
+[**ApiBalanceWithdrawCurrencyPost**](BalanceApi.md#apibalancewithdrawcurrencypost) | **POST** /api/Balance/withdraw/{currency} | 
 
 
-<a name="balancecurrencyget"></a>
-# **BalanceCurrencyGet**
-> GetBalanceRequestModel BalanceCurrencyGet (string currency)
+<a name="apibalancecurrencyget"></a>
+# **ApiBalanceCurrencyGet**
+> GetBalanceRequestModel ApiBalanceCurrencyGet (string currency)
 
 
 
@@ -28,7 +28,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class BalanceCurrencyGetExample
+    public class ApiBalanceCurrencyGetExample
     {
         public static void Main()
         {
@@ -44,12 +44,12 @@ namespace Example
 
             try
             {
-                GetBalanceRequestModel result = apiInstance.BalanceCurrencyGet(currency);
+                GetBalanceRequestModel result = apiInstance.ApiBalanceCurrencyGet(currency);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling BalanceApi.BalanceCurrencyGet: " + e.Message );
+                Debug.Print("Exception when calling BalanceApi.ApiBalanceCurrencyGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -84,9 +84,9 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="balancedepositcurrencyaddressget"></a>
-# **BalanceDepositCurrencyAddressGet**
-> GetAddressResponse BalanceDepositCurrencyAddressGet (string currency)
+<a name="apibalancedepositcurrencyaddressget"></a>
+# **ApiBalanceDepositCurrencyAddressGet**
+> GetAddressResponse ApiBalanceDepositCurrencyAddressGet (string currency)
 
 
 
@@ -100,7 +100,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class BalanceDepositCurrencyAddressGetExample
+    public class ApiBalanceDepositCurrencyAddressGetExample
     {
         public static void Main()
         {
@@ -116,12 +116,12 @@ namespace Example
 
             try
             {
-                GetAddressResponse result = apiInstance.BalanceDepositCurrencyAddressGet(currency);
+                GetAddressResponse result = apiInstance.ApiBalanceDepositCurrencyAddressGet(currency);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling BalanceApi.BalanceDepositCurrencyAddressGet: " + e.Message );
+                Debug.Print("Exception when calling BalanceApi.ApiBalanceDepositCurrencyAddressGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -156,9 +156,9 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="balancedepositcurrencyaddresspost"></a>
-# **BalanceDepositCurrencyAddressPost**
-> GenerateAddressResult BalanceDepositCurrencyAddressPost (string currency)
+<a name="apibalancedepositcurrencyaddresspost"></a>
+# **ApiBalanceDepositCurrencyAddressPost**
+> GenerateAddressResult ApiBalanceDepositCurrencyAddressPost (string currency)
 
 
 
@@ -172,7 +172,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class BalanceDepositCurrencyAddressPostExample
+    public class ApiBalanceDepositCurrencyAddressPostExample
     {
         public static void Main()
         {
@@ -188,12 +188,12 @@ namespace Example
 
             try
             {
-                GenerateAddressResult result = apiInstance.BalanceDepositCurrencyAddressPost(currency);
+                GenerateAddressResult result = apiInstance.ApiBalanceDepositCurrencyAddressPost(currency);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling BalanceApi.BalanceDepositCurrencyAddressPost: " + e.Message );
+                Debug.Print("Exception when calling BalanceApi.ApiBalanceDepositCurrencyAddressPost: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -228,9 +228,9 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="balanceroute"></a>
-# **BalanceRoute**
-> GetBalancesListResponse BalanceRoute ()
+<a name="apibalanceget"></a>
+# **ApiBalanceGet**
+> GetBalancesListResponse ApiBalanceGet ()
 
 
 
@@ -244,7 +244,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class BalanceRouteExample
+    public class ApiBalanceGetExample
     {
         public static void Main()
         {
@@ -259,12 +259,12 @@ namespace Example
 
             try
             {
-                GetBalancesListResponse result = apiInstance.BalanceRoute();
+                GetBalancesListResponse result = apiInstance.ApiBalanceGet();
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling BalanceApi.BalanceRoute: " + e.Message );
+                Debug.Print("Exception when calling BalanceApi.ApiBalanceGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -296,9 +296,9 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="balancewithdrawcurrencypageget"></a>
-# **BalanceWithdrawCurrencyPageGet**
-> GetWithdrawResponse BalanceWithdrawCurrencyPageGet (string currency)
+<a name="apibalancewithdrawcurrencypageget"></a>
+# **ApiBalanceWithdrawCurrencyPageGet**
+> GetWithdrawResponse ApiBalanceWithdrawCurrencyPageGet (string currency)
 
 
 
@@ -312,7 +312,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class BalanceWithdrawCurrencyPageGetExample
+    public class ApiBalanceWithdrawCurrencyPageGetExample
     {
         public static void Main()
         {
@@ -328,12 +328,12 @@ namespace Example
 
             try
             {
-                GetWithdrawResponse result = apiInstance.BalanceWithdrawCurrencyPageGet(currency);
+                GetWithdrawResponse result = apiInstance.ApiBalanceWithdrawCurrencyPageGet(currency);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling BalanceApi.BalanceWithdrawCurrencyPageGet: " + e.Message );
+                Debug.Print("Exception when calling BalanceApi.ApiBalanceWithdrawCurrencyPageGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -368,9 +368,9 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="balancewithdrawcurrencypost"></a>
-# **BalanceWithdrawCurrencyPost**
-> PostWithdrawRequestResult BalanceWithdrawCurrencyPost (string currency, PostWithdrawRequest postWithdrawRequest = null)
+<a name="apibalancewithdrawcurrencypost"></a>
+# **ApiBalanceWithdrawCurrencyPost**
+> PostWithdrawRequestResult ApiBalanceWithdrawCurrencyPost (string currency, PostWithdrawRequest postWithdrawRequest = null)
 
 
 
@@ -384,7 +384,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class BalanceWithdrawCurrencyPostExample
+    public class ApiBalanceWithdrawCurrencyPostExample
     {
         public static void Main()
         {
@@ -401,12 +401,12 @@ namespace Example
 
             try
             {
-                PostWithdrawRequestResult result = apiInstance.BalanceWithdrawCurrencyPost(currency, postWithdrawRequest);
+                PostWithdrawRequestResult result = apiInstance.ApiBalanceWithdrawCurrencyPost(currency, postWithdrawRequest);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling BalanceApi.BalanceWithdrawCurrencyPost: " + e.Message );
+                Debug.Print("Exception when calling BalanceApi.ApiBalanceWithdrawCurrencyPost: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }

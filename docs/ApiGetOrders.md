@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **Id** | **string** |  | [optional] 
 **PairName** | **string** |  | [optional] 
 **Created** | **long** |  | [optional] 
+**DateCreated** | **long** |  | [optional] 
 **Price** | **double** |  | [optional] 
 **Amount** | **double** |  | [optional] 
 **AmountLeft** | **double** |  | [optional] 

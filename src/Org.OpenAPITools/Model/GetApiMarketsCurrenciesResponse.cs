@@ -32,16 +32,23 @@ namespace Org.OpenAPITools.Model
     public partial class GetApiMarketsCurrenciesResponse : IEquatable<GetApiMarketsCurrenciesResponse>, IValidatableObject
     {
         /// <summary>
+        /// Gets or Sets Type
+        /// </summary>
+        [DataMember(Name = "type", EmitDefaultValue = false)]
+        public Type? Type { get; set; }
+        /// <summary>
         /// Initializes a new instance of the <see cref="GetApiMarketsCurrenciesResponse" /> class.
         /// </summary>
         /// <param name="name">name.</param>
         /// <param name="symbol">symbol.</param>
         /// <param name="imageBase64">imageBase64.</param>
-        public GetApiMarketsCurrenciesResponse(string name = default(string), string symbol = default(string), string imageBase64 = default(string))
+        /// <param name="type">type.</param>
+        public GetApiMarketsCurrenciesResponse(string name = default(string), string symbol = default(string), string imageBase64 = default(string), Type? type = default(Type?))
         {
             this.Name = name;
             this.Symbol = symbol;
             this.ImageBase64 = imageBase64;
+            this.Type = type;
         }
 
         /// <summary>
@@ -73,6 +80,7 @@ namespace Org.OpenAPITools.Model
             sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("  Symbol: ").Append(Symbol).Append("\n");
             sb.Append("  ImageBase64: ").Append(ImageBase64).Append("\n");
+            sb.Append("  Type: ").Append(Type).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -121,6 +129,10 @@ namespace Org.OpenAPITools.Model
                     this.ImageBase64 == input.ImageBase64 ||
                     (this.ImageBase64 != null &&
                     this.ImageBase64.Equals(input.ImageBase64))
+                ) && 
+                (
+                    this.Type == input.Type ||
+                    this.Type.Equals(input.Type)
                 );
         }
 
@@ -139,6 +151,7 @@ namespace Org.OpenAPITools.Model
                     hashCode = hashCode * 59 + this.Symbol.GetHashCode();
                 if (this.ImageBase64 != null)
                     hashCode = hashCode * 59 + this.ImageBase64.GetHashCode();
+                hashCode = hashCode * 59 + this.Type.GetHashCode();
                 return hashCode;
             }
         }

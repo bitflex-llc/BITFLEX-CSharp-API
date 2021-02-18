@@ -4,13 +4,13 @@ All URIs are relative to *http://172.16.1.20:5001*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**StaticPagesAffiliateGet**](StaticPagesApi.md#staticpagesaffiliateget) | **GET** /StaticPages/affiliate | 
-[**StaticPagesStatusGet**](StaticPagesApi.md#staticpagesstatusget) | **GET** /StaticPages/status | 
+[**ApiStaticPagesAffiliateGet**](StaticPagesApi.md#apistaticpagesaffiliateget) | **GET** /api/StaticPages/affiliate | 
+[**ApiStaticPagesStatusGet**](StaticPagesApi.md#apistaticpagesstatusget) | **GET** /api/StaticPages/status | 
 
 
-<a name="staticpagesaffiliateget"></a>
-# **StaticPagesAffiliateGet**
-> void StaticPagesAffiliateGet ()
+<a name="apistaticpagesaffiliateget"></a>
+# **ApiStaticPagesAffiliateGet**
+> void ApiStaticPagesAffiliateGet ()
 
 
 
@@ -24,7 +24,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class StaticPagesAffiliateGetExample
+    public class ApiStaticPagesAffiliateGetExample
     {
         public static void Main()
         {
@@ -39,11 +39,11 @@ namespace Example
 
             try
             {
-                apiInstance.StaticPagesAffiliateGet();
+                apiInstance.ApiStaticPagesAffiliateGet();
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling StaticPagesApi.StaticPagesAffiliateGet: " + e.Message );
+                Debug.Print("Exception when calling StaticPagesApi.ApiStaticPagesAffiliateGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -75,9 +75,9 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="staticpagesstatusget"></a>
-# **StaticPagesStatusGet**
-> void StaticPagesStatusGet ()
+<a name="apistaticpagesstatusget"></a>
+# **ApiStaticPagesStatusGet**
+> void ApiStaticPagesStatusGet ()
 
 
 
@@ -91,7 +91,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class StaticPagesStatusGetExample
+    public class ApiStaticPagesStatusGetExample
     {
         public static void Main()
         {
@@ -106,11 +106,11 @@ namespace Example
 
             try
             {
-                apiInstance.StaticPagesStatusGet();
+                apiInstance.ApiStaticPagesStatusGet();
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling StaticPagesApi.StaticPagesStatusGet: " + e.Message );
+                Debug.Print("Exception when calling StaticPagesApi.ApiStaticPagesStatusGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }

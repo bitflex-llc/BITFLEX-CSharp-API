@@ -49,14 +49,19 @@ namespace Org.OpenAPITools.Model
         /// <param name="coinMarketCapId">coinMarketCapId.</param>
         /// <param name="coinMarketCapUsdPrice">coinMarketCapUsdPrice.</param>
         /// <param name="coinMarketCapLastUpdate">coinMarketCapLastUpdate.</param>
+        /// <param name="coinMarketCapMaxSupply">coinMarketCapMaxSupply.</param>
+        /// <param name="coinMarketCapTotalSupply">coinMarketCapTotalSupply.</param>
+        /// <param name="coinMarketCapCurculatingSupply">coinMarketCapCurculatingSupply.</param>
+        /// <param name="coinMarketCapDescription">coinMarketCapDescription.</param>
+        /// <param name="coinMarketCapIssueDate">coinMarketCapIssueDate.</param>
+        /// <param name="coinMarketCapExplolerUrl">coinMarketCapExplolerUrl.</param>
         /// <param name="image">image.</param>
         /// <param name="isMarketCurrency">isMarketCurrency.</param>
         /// <param name="blockExplolerTxIdUrl">blockExplolerTxIdUrl.</param>
         /// <param name="withdrawCurrencyFee">withdrawCurrencyFee.</param>
-        /// <param name="withdrawPercentFee">withdrawPercentFee.</param>
         /// <param name="confirmationCount">confirmationCount.</param>
         /// <param name="minimumTradeAmount">minimumTradeAmount.</param>
-        public CryptoCurrency(string id = default(string), string name = default(string), string shortName = default(string), Type? currencyType = default(Type?), bool active = default(bool), bool depositDisabled = default(bool), bool withdrawDisabled = default(bool), int coinMarketCapId = default(int), double coinMarketCapUsdPrice = default(double), long coinMarketCapLastUpdate = default(long), string image = default(string), bool isMarketCurrency = default(bool), string blockExplolerTxIdUrl = default(string), double withdrawCurrencyFee = default(double), double withdrawPercentFee = default(double), int confirmationCount = default(int), double minimumTradeAmount = default(double))
+        public CryptoCurrency(string id = default(string), string name = default(string), string shortName = default(string), Type? currencyType = default(Type?), bool active = default(bool), bool depositDisabled = default(bool), bool withdrawDisabled = default(bool), int coinMarketCapId = default(int), double coinMarketCapUsdPrice = default(double), long coinMarketCapLastUpdate = default(long), long coinMarketCapMaxSupply = default(long), long coinMarketCapTotalSupply = default(long), long coinMarketCapCurculatingSupply = default(long), string coinMarketCapDescription = default(string), DateTime? coinMarketCapIssueDate = default(DateTime?), string coinMarketCapExplolerUrl = default(string), string image = default(string), bool isMarketCurrency = default(bool), string blockExplolerTxIdUrl = default(string), double withdrawCurrencyFee = default(double), int confirmationCount = default(int), double minimumTradeAmount = default(double))
         {
             this.Id = id;
             this.Name = name;
@@ -68,11 +73,16 @@ namespace Org.OpenAPITools.Model
             this.CoinMarketCapId = coinMarketCapId;
             this.CoinMarketCapUsdPrice = coinMarketCapUsdPrice;
             this.CoinMarketCapLastUpdate = coinMarketCapLastUpdate;
+            this.CoinMarketCapMaxSupply = coinMarketCapMaxSupply;
+            this.CoinMarketCapTotalSupply = coinMarketCapTotalSupply;
+            this.CoinMarketCapCurculatingSupply = coinMarketCapCurculatingSupply;
+            this.CoinMarketCapDescription = coinMarketCapDescription;
+            this.CoinMarketCapIssueDate = coinMarketCapIssueDate;
+            this.CoinMarketCapExplolerUrl = coinMarketCapExplolerUrl;
             this.Image = image;
             this.IsMarketCurrency = isMarketCurrency;
             this.BlockExplolerTxIdUrl = blockExplolerTxIdUrl;
             this.WithdrawCurrencyFee = withdrawCurrencyFee;
-            this.WithdrawPercentFee = withdrawPercentFee;
             this.ConfirmationCount = confirmationCount;
             this.MinimumTradeAmount = minimumTradeAmount;
         }
@@ -132,6 +142,42 @@ namespace Org.OpenAPITools.Model
         public long CoinMarketCapLastUpdate { get; set; }
 
         /// <summary>
+        /// Gets or Sets CoinMarketCapMaxSupply
+        /// </summary>
+        [DataMember(Name = "coinMarketCapMaxSupply", EmitDefaultValue = false)]
+        public long CoinMarketCapMaxSupply { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CoinMarketCapTotalSupply
+        /// </summary>
+        [DataMember(Name = "coinMarketCapTotalSupply", EmitDefaultValue = false)]
+        public long CoinMarketCapTotalSupply { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CoinMarketCapCurculatingSupply
+        /// </summary>
+        [DataMember(Name = "coinMarketCapCurculatingSupply", EmitDefaultValue = false)]
+        public long CoinMarketCapCurculatingSupply { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CoinMarketCapDescription
+        /// </summary>
+        [DataMember(Name = "coinMarketCapDescription", EmitDefaultValue = true)]
+        public string CoinMarketCapDescription { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CoinMarketCapIssueDate
+        /// </summary>
+        [DataMember(Name = "coinMarketCapIssueDate", EmitDefaultValue = true)]
+        public DateTime? CoinMarketCapIssueDate { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CoinMarketCapExplolerUrl
+        /// </summary>
+        [DataMember(Name = "coinMarketCapExplolerUrl", EmitDefaultValue = true)]
+        public string CoinMarketCapExplolerUrl { get; set; }
+
+        /// <summary>
         /// Gets or Sets Image
         /// </summary>
         [DataMember(Name = "image", EmitDefaultValue = true)]
@@ -154,12 +200,6 @@ namespace Org.OpenAPITools.Model
         /// </summary>
         [DataMember(Name = "withdrawCurrencyFee", EmitDefaultValue = false)]
         public double WithdrawCurrencyFee { get; set; }
-
-        /// <summary>
-        /// Gets or Sets WithdrawPercentFee
-        /// </summary>
-        [DataMember(Name = "withdrawPercentFee", EmitDefaultValue = false)]
-        public double WithdrawPercentFee { get; set; }
 
         /// <summary>
         /// Gets or Sets ConfirmationCount
@@ -191,11 +231,16 @@ namespace Org.OpenAPITools.Model
             sb.Append("  CoinMarketCapId: ").Append(CoinMarketCapId).Append("\n");
             sb.Append("  CoinMarketCapUsdPrice: ").Append(CoinMarketCapUsdPrice).Append("\n");
             sb.Append("  CoinMarketCapLastUpdate: ").Append(CoinMarketCapLastUpdate).Append("\n");
+            sb.Append("  CoinMarketCapMaxSupply: ").Append(CoinMarketCapMaxSupply).Append("\n");
+            sb.Append("  CoinMarketCapTotalSupply: ").Append(CoinMarketCapTotalSupply).Append("\n");
+            sb.Append("  CoinMarketCapCurculatingSupply: ").Append(CoinMarketCapCurculatingSupply).Append("\n");
+            sb.Append("  CoinMarketCapDescription: ").Append(CoinMarketCapDescription).Append("\n");
+            sb.Append("  CoinMarketCapIssueDate: ").Append(CoinMarketCapIssueDate).Append("\n");
+            sb.Append("  CoinMarketCapExplolerUrl: ").Append(CoinMarketCapExplolerUrl).Append("\n");
             sb.Append("  Image: ").Append(Image).Append("\n");
             sb.Append("  IsMarketCurrency: ").Append(IsMarketCurrency).Append("\n");
             sb.Append("  BlockExplolerTxIdUrl: ").Append(BlockExplolerTxIdUrl).Append("\n");
             sb.Append("  WithdrawCurrencyFee: ").Append(WithdrawCurrencyFee).Append("\n");
-            sb.Append("  WithdrawPercentFee: ").Append(WithdrawPercentFee).Append("\n");
             sb.Append("  ConfirmationCount: ").Append(ConfirmationCount).Append("\n");
             sb.Append("  MinimumTradeAmount: ").Append(MinimumTradeAmount).Append("\n");
             sb.Append("}\n");
@@ -276,6 +321,33 @@ namespace Org.OpenAPITools.Model
                     this.CoinMarketCapLastUpdate.Equals(input.CoinMarketCapLastUpdate)
                 ) && 
                 (
+                    this.CoinMarketCapMaxSupply == input.CoinMarketCapMaxSupply ||
+                    this.CoinMarketCapMaxSupply.Equals(input.CoinMarketCapMaxSupply)
+                ) && 
+                (
+                    this.CoinMarketCapTotalSupply == input.CoinMarketCapTotalSupply ||
+                    this.CoinMarketCapTotalSupply.Equals(input.CoinMarketCapTotalSupply)
+                ) && 
+                (
+                    this.CoinMarketCapCurculatingSupply == input.CoinMarketCapCurculatingSupply ||
+                    this.CoinMarketCapCurculatingSupply.Equals(input.CoinMarketCapCurculatingSupply)
+                ) && 
+                (
+                    this.CoinMarketCapDescription == input.CoinMarketCapDescription ||
+                    (this.CoinMarketCapDescription != null &&
+                    this.CoinMarketCapDescription.Equals(input.CoinMarketCapDescription))
+                ) && 
+                (
+                    this.CoinMarketCapIssueDate == input.CoinMarketCapIssueDate ||
+                    (this.CoinMarketCapIssueDate != null &&
+                    this.CoinMarketCapIssueDate.Equals(input.CoinMarketCapIssueDate))
+                ) && 
+                (
+                    this.CoinMarketCapExplolerUrl == input.CoinMarketCapExplolerUrl ||
+                    (this.CoinMarketCapExplolerUrl != null &&
+                    this.CoinMarketCapExplolerUrl.Equals(input.CoinMarketCapExplolerUrl))
+                ) && 
+                (
                     this.Image == input.Image ||
                     (this.Image != null &&
                     this.Image.Equals(input.Image))
@@ -292,10 +364,6 @@ namespace Org.OpenAPITools.Model
                 (
                     this.WithdrawCurrencyFee == input.WithdrawCurrencyFee ||
                     this.WithdrawCurrencyFee.Equals(input.WithdrawCurrencyFee)
-                ) && 
-                (
-                    this.WithdrawPercentFee == input.WithdrawPercentFee ||
-                    this.WithdrawPercentFee.Equals(input.WithdrawPercentFee)
                 ) && 
                 (
                     this.ConfirmationCount == input.ConfirmationCount ||
@@ -329,13 +397,21 @@ namespace Org.OpenAPITools.Model
                 hashCode = hashCode * 59 + this.CoinMarketCapId.GetHashCode();
                 hashCode = hashCode * 59 + this.CoinMarketCapUsdPrice.GetHashCode();
                 hashCode = hashCode * 59 + this.CoinMarketCapLastUpdate.GetHashCode();
+                hashCode = hashCode * 59 + this.CoinMarketCapMaxSupply.GetHashCode();
+                hashCode = hashCode * 59 + this.CoinMarketCapTotalSupply.GetHashCode();
+                hashCode = hashCode * 59 + this.CoinMarketCapCurculatingSupply.GetHashCode();
+                if (this.CoinMarketCapDescription != null)
+                    hashCode = hashCode * 59 + this.CoinMarketCapDescription.GetHashCode();
+                if (this.CoinMarketCapIssueDate != null)
+                    hashCode = hashCode * 59 + this.CoinMarketCapIssueDate.GetHashCode();
+                if (this.CoinMarketCapExplolerUrl != null)
+                    hashCode = hashCode * 59 + this.CoinMarketCapExplolerUrl.GetHashCode();
                 if (this.Image != null)
                     hashCode = hashCode * 59 + this.Image.GetHashCode();
                 hashCode = hashCode * 59 + this.IsMarketCurrency.GetHashCode();
                 if (this.BlockExplolerTxIdUrl != null)
                     hashCode = hashCode * 59 + this.BlockExplolerTxIdUrl.GetHashCode();
                 hashCode = hashCode * 59 + this.WithdrawCurrencyFee.GetHashCode();
-                hashCode = hashCode * 59 + this.WithdrawPercentFee.GetHashCode();
                 hashCode = hashCode * 59 + this.ConfirmationCount.GetHashCode();
                 hashCode = hashCode * 59 + this.MinimumTradeAmount.GetHashCode();
                 return hashCode;

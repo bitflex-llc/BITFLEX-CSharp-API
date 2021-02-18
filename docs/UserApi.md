@@ -4,88 +4,19 @@ All URIs are relative to *http://172.16.1.20:5001*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiUser2faPost**](UserApi.md#apiuser2fapost) | **POST** /api/User/2fa | 
 [**ApiUserBalanceactionsGet**](UserApi.md#apiuserbalanceactionsget) | **GET** /api/User/balanceactions | 
 [**ApiUserBalancesGet**](UserApi.md#apiuserbalancesget) | **GET** /api/User/balances | 
 [**ApiUserBalanceslistGet**](UserApi.md#apiuserbalanceslistget) | **GET** /api/User/balanceslist | 
 [**ApiUserDepositsGet**](UserApi.md#apiuserdepositsget) | **GET** /api/User/deposits | 
+[**ApiUserFinishTier1VerificationPost**](UserApi.md#apiuserfinishtier1verificationpost) | **POST** /api/User/FinishTier1Verification | 
+[**ApiUserGetVerificationLevelGet**](UserApi.md#apiusergetverificationlevelget) | **GET** /api/User/GetVerificationLevel | 
 [**ApiUserOrdersGet**](UserApi.md#apiuserordersget) | **GET** /api/User/orders | 
+[**ApiUserSetPhoneNumberPost**](UserApi.md#apiusersetphonenumberpost) | **POST** /api/User/SetPhoneNumber | 
 [**ApiUserTradehistoryGet**](UserApi.md#apiusertradehistoryget) | **GET** /api/User/tradehistory | 
 [**ApiUserVerificationsGet**](UserApi.md#apiuserverificationsget) | **GET** /api/User/verifications | 
+[**ApiUserVerifyPhoneNumberPost**](UserApi.md#apiuserverifyphonenumberpost) | **POST** /api/User/VerifyPhoneNumber | 
 [**ApiUserWithdrawalsGet**](UserApi.md#apiuserwithdrawalsget) | **GET** /api/User/withdrawals | 
 
-
-<a name="apiuser2fapost"></a>
-# **ApiUser2faPost**
-> Post2faResponse ApiUser2faPost (string payload = null)
-
-
-
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using Org.OpenAPITools.Api;
-using Org.OpenAPITools.Client;
-using Org.OpenAPITools.Model;
-
-namespace Example
-{
-    public class ApiUser2faPostExample
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration();
-            config.BasePath = "http://172.16.1.20:5001";
-            // Configure API key authorization: Bearer
-            config.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.AddApiKeyPrefix("Authorization", "Bearer");
-
-            var apiInstance = new UserApi(config);
-            var payload = payload_example;  // string |  (optional) 
-
-            try
-            {
-                Post2faResponse result = apiInstance.ApiUser2faPost(payload);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling UserApi.ApiUser2faPost: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **payload** | **string**|  | [optional] 
-
-### Return type
-
-[**Post2faResponse**](Post2faResponse.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | Success |  -  |
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="apiuserbalanceactionsget"></a>
 # **ApiUserBalanceactionsGet**
@@ -299,7 +230,7 @@ This endpoint does not need any parameter.
 
 <a name="apiuserdepositsget"></a>
 # **ApiUserDepositsGet**
-> GetDepositsResponse ApiUserDepositsGet (string currency = null)
+> List&lt;ApiGetDepositsWitdrawals&gt; ApiUserDepositsGet (string currency = null)
 
 
 
@@ -329,7 +260,7 @@ namespace Example
 
             try
             {
-                GetDepositsResponse result = apiInstance.ApiUserDepositsGet(currency);
+                List<ApiGetDepositsWitdrawals> result = apiInstance.ApiUserDepositsGet(currency);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -351,7 +282,147 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetDepositsResponse**](GetDepositsResponse.md)
+[**List&lt;ApiGetDepositsWitdrawals&gt;**](ApiGetDepositsWitdrawals.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Success |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="apiuserfinishtier1verificationpost"></a>
+# **ApiUserFinishTier1VerificationPost**
+> bool ApiUserFinishTier1VerificationPost (FinishTier1VerificationModel finishTier1VerificationModel = null)
+
+
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
+
+namespace Example
+{
+    public class ApiUserFinishTier1VerificationPostExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "http://172.16.1.20:5001";
+            // Configure API key authorization: Bearer
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new UserApi(config);
+            var finishTier1VerificationModel = new FinishTier1VerificationModel(); // FinishTier1VerificationModel |  (optional) 
+
+            try
+            {
+                bool result = apiInstance.ApiUserFinishTier1VerificationPost(finishTier1VerificationModel);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling UserApi.ApiUserFinishTier1VerificationPost: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **finishTier1VerificationModel** | [**FinishTier1VerificationModel**](FinishTier1VerificationModel.md)|  | [optional] 
+
+### Return type
+
+**bool**
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Success |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="apiusergetverificationlevelget"></a>
+# **ApiUserGetVerificationLevelGet**
+> GetVerificationLevelResponse ApiUserGetVerificationLevelGet ()
+
+
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
+
+namespace Example
+{
+    public class ApiUserGetVerificationLevelGetExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "http://172.16.1.20:5001";
+            // Configure API key authorization: Bearer
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new UserApi(config);
+
+            try
+            {
+                GetVerificationLevelResponse result = apiInstance.ApiUserGetVerificationLevelGet();
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling UserApi.ApiUserGetVerificationLevelGet: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**GetVerificationLevelResponse**](GetVerificationLevelResponse.md)
 
 ### Authorization
 
@@ -424,6 +495,78 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**GetOrdersResponse**](GetOrdersResponse.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Success |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="apiusersetphonenumberpost"></a>
+# **ApiUserSetPhoneNumberPost**
+> VerificationResource ApiUserSetPhoneNumberPost (string phoneNumber = null)
+
+
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
+
+namespace Example
+{
+    public class ApiUserSetPhoneNumberPostExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "http://172.16.1.20:5001";
+            // Configure API key authorization: Bearer
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new UserApi(config);
+            var phoneNumber = phoneNumber_example;  // string |  (optional) 
+
+            try
+            {
+                VerificationResource result = apiInstance.ApiUserSetPhoneNumberPost(phoneNumber);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling UserApi.ApiUserSetPhoneNumberPost: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **phoneNumber** | **string**|  | [optional] 
+
+### Return type
+
+[**VerificationResource**](VerificationResource.md)
 
 ### Authorization
 
@@ -582,9 +725,81 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="apiuserverifyphonenumberpost"></a>
+# **ApiUserVerifyPhoneNumberPost**
+> SmsVefiryResult ApiUserVerifyPhoneNumberPost (PostVefirySms postVefirySms = null)
+
+
+
+### Example
+```csharp
+using System.Collections.Generic;
+using System.Diagnostics;
+using Org.OpenAPITools.Api;
+using Org.OpenAPITools.Client;
+using Org.OpenAPITools.Model;
+
+namespace Example
+{
+    public class ApiUserVerifyPhoneNumberPostExample
+    {
+        public static void Main()
+        {
+            Configuration config = new Configuration();
+            config.BasePath = "http://172.16.1.20:5001";
+            // Configure API key authorization: Bearer
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
+
+            var apiInstance = new UserApi(config);
+            var postVefirySms = new PostVefirySms(); // PostVefirySms |  (optional) 
+
+            try
+            {
+                SmsVefiryResult result = apiInstance.ApiUserVerifyPhoneNumberPost(postVefirySms);
+                Debug.WriteLine(result);
+            }
+            catch (ApiException  e)
+            {
+                Debug.Print("Exception when calling UserApi.ApiUserVerifyPhoneNumberPost: " + e.Message );
+                Debug.Print("Status Code: "+ e.ErrorCode);
+                Debug.Print(e.StackTrace);
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **postVefirySms** | [**PostVefirySms**](PostVefirySms.md)|  | [optional] 
+
+### Return type
+
+[**SmsVefiryResult**](SmsVefiryResult.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
+ - **Accept**: text/plain, application/json, text/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | Success |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="apiuserwithdrawalsget"></a>
 # **ApiUserWithdrawalsGet**
-> GetWithdrawalsResponse ApiUserWithdrawalsGet (string currency = null)
+> List&lt;ApiGetDepositsWitdrawals&gt; ApiUserWithdrawalsGet (string currency = null)
 
 
 
@@ -614,7 +829,7 @@ namespace Example
 
             try
             {
-                GetWithdrawalsResponse result = apiInstance.ApiUserWithdrawalsGet(currency);
+                List<ApiGetDepositsWitdrawals> result = apiInstance.ApiUserWithdrawalsGet(currency);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -636,7 +851,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetWithdrawalsResponse**](GetWithdrawalsResponse.md)
+[**List&lt;ApiGetDepositsWitdrawals&gt;**](ApiGetDepositsWitdrawals.md)
 
 ### Authorization
 

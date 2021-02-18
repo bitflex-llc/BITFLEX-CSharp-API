@@ -43,12 +43,14 @@ namespace Org.OpenAPITools.Model
         /// <param name="authToken">authToken.</param>
         /// <param name="expiryTimestamp">expiryTimestamp.</param>
         /// <param name="twoFactorToken">twoFactorToken.</param>
-        public PostSignInResponse(SignInResponseResult? result = default(SignInResponseResult?), string authToken = default(string), long expiryTimestamp = default(long), string twoFactorToken = default(string))
+        /// <param name="userId">userId.</param>
+        public PostSignInResponse(SignInResponseResult? result = default(SignInResponseResult?), string authToken = default(string), long expiryTimestamp = default(long), string twoFactorToken = default(string), string userId = default(string))
         {
             this.Result = result;
             this.AuthToken = authToken;
             this.ExpiryTimestamp = expiryTimestamp;
             this.TwoFactorToken = twoFactorToken;
+            this.UserId = userId;
         }
 
         /// <summary>
@@ -70,6 +72,12 @@ namespace Org.OpenAPITools.Model
         public string TwoFactorToken { get; set; }
 
         /// <summary>
+        /// Gets or Sets UserId
+        /// </summary>
+        [DataMember(Name = "userId", EmitDefaultValue = true)]
+        public string UserId { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -81,6 +89,7 @@ namespace Org.OpenAPITools.Model
             sb.Append("  AuthToken: ").Append(AuthToken).Append("\n");
             sb.Append("  ExpiryTimestamp: ").Append(ExpiryTimestamp).Append("\n");
             sb.Append("  TwoFactorToken: ").Append(TwoFactorToken).Append("\n");
+            sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -132,6 +141,11 @@ namespace Org.OpenAPITools.Model
                     this.TwoFactorToken == input.TwoFactorToken ||
                     (this.TwoFactorToken != null &&
                     this.TwoFactorToken.Equals(input.TwoFactorToken))
+                ) && 
+                (
+                    this.UserId == input.UserId ||
+                    (this.UserId != null &&
+                    this.UserId.Equals(input.UserId))
                 );
         }
 
@@ -150,6 +164,8 @@ namespace Org.OpenAPITools.Model
                 hashCode = hashCode * 59 + this.ExpiryTimestamp.GetHashCode();
                 if (this.TwoFactorToken != null)
                     hashCode = hashCode * 59 + this.TwoFactorToken.GetHashCode();
+                if (this.UserId != null)
+                    hashCode = hashCode * 59 + this.UserId.GetHashCode();
                 return hashCode;
             }
         }

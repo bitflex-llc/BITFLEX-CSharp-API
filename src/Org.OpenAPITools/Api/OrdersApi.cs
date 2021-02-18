@@ -31,8 +31,8 @@ namespace Org.OpenAPITools.Api
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="orderId"> (optional)</param>
-        /// <returns>bool</returns>
-        bool OrdersCancelPost(string orderId = default(string));
+        /// <returns>OrderCancelResult</returns>
+        OrderCancelResult ApiOrdersCancelPost(string orderId = default(string));
 
         /// <summary>
         /// 
@@ -42,15 +42,15 @@ namespace Org.OpenAPITools.Api
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="orderId"> (optional)</param>
-        /// <returns>ApiResponse of bool</returns>
-        ApiResponse<bool> OrdersCancelPostWithHttpInfo(string orderId = default(string));
+        /// <returns>ApiResponse of OrderCancelResult</returns>
+        ApiResponse<OrderCancelResult> ApiOrdersCancelPostWithHttpInfo(string orderId = default(string));
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="pairName"></param>
         /// <returns></returns>
-        void OrdersPairNameGet(string pairName);
+        void ApiOrdersPairNameGet(string pairName);
 
         /// <summary>
         /// 
@@ -61,24 +61,14 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="pairName"></param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> OrdersPairNameGetWithHttpInfo(string pairName);
+        ApiResponse<Object> ApiOrdersPairNameGetWithHttpInfo(string pairName);
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="amount"> (optional)</param>
-        /// <param name="price"> (optional)</param>
-        /// <param name="tradeType"> (optional)</param>
-        /// <param name="pairId"> (optional)</param>
-        /// <param name="orderType"> (optional)</param>
-        /// <param name="isMargin"> (optional)</param>
-        /// <param name="leverage"> (optional)</param>
-        /// <param name="initialAmount"> (optional)</param>
-        /// <param name="initialPrice"> (optional)</param>
-        /// <param name="stopLossPrice"> (optional)</param>
-        /// <param name="takeProfitPrice"> (optional)</param>
+        /// <param name="postOrdersRequest"> (optional)</param>
         /// <returns>OrderCreateResult</returns>
-        OrderCreateResult OrdersPost(double? amount = default(double?), double? price = default(double?), TradeType? tradeType = default(TradeType?), string pairId = default(string), OrderTypes? orderType = default(OrderTypes?), bool? isMargin = default(bool?), int? leverage = default(int?), double? initialAmount = default(double?), double? initialPrice = default(double?), double? stopLossPrice = default(double?), double? takeProfitPrice = default(double?));
+        OrderCreateResult ApiOrdersPost(PostOrdersRequest postOrdersRequest = default(PostOrdersRequest));
 
         /// <summary>
         /// 
@@ -87,19 +77,9 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="amount"> (optional)</param>
-        /// <param name="price"> (optional)</param>
-        /// <param name="tradeType"> (optional)</param>
-        /// <param name="pairId"> (optional)</param>
-        /// <param name="orderType"> (optional)</param>
-        /// <param name="isMargin"> (optional)</param>
-        /// <param name="leverage"> (optional)</param>
-        /// <param name="initialAmount"> (optional)</param>
-        /// <param name="initialPrice"> (optional)</param>
-        /// <param name="stopLossPrice"> (optional)</param>
-        /// <param name="takeProfitPrice"> (optional)</param>
+        /// <param name="postOrdersRequest"> (optional)</param>
         /// <returns>ApiResponse of OrderCreateResult</returns>
-        ApiResponse<OrderCreateResult> OrdersPostWithHttpInfo(double? amount = default(double?), double? price = default(double?), TradeType? tradeType = default(TradeType?), string pairId = default(string), OrderTypes? orderType = default(OrderTypes?), bool? isMargin = default(bool?), int? leverage = default(int?), double? initialAmount = default(double?), double? initialPrice = default(double?), double? stopLossPrice = default(double?), double? takeProfitPrice = default(double?));
+        ApiResponse<OrderCreateResult> ApiOrdersPostWithHttpInfo(PostOrdersRequest postOrdersRequest = default(PostOrdersRequest));
         #endregion Synchronous Operations
     }
 
@@ -118,8 +98,8 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="orderId"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of bool</returns>
-        System.Threading.Tasks.Task<bool> OrdersCancelPostAsync(string orderId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of OrderCancelResult</returns>
+        System.Threading.Tasks.Task<OrderCancelResult> ApiOrdersCancelPostAsync(string orderId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -130,8 +110,8 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="orderId"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (bool)</returns>
-        System.Threading.Tasks.Task<ApiResponse<bool>> OrdersCancelPostWithHttpInfoAsync(string orderId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (OrderCancelResult)</returns>
+        System.Threading.Tasks.Task<ApiResponse<OrderCancelResult>> ApiOrdersCancelPostWithHttpInfoAsync(string orderId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -142,7 +122,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="pairName"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task OrdersPairNameGetAsync(string pairName, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task ApiOrdersPairNameGetAsync(string pairName, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -154,7 +134,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="pairName"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> OrdersPairNameGetWithHttpInfoAsync(string pairName, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> ApiOrdersPairNameGetWithHttpInfoAsync(string pairName, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -162,20 +142,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="amount"> (optional)</param>
-        /// <param name="price"> (optional)</param>
-        /// <param name="tradeType"> (optional)</param>
-        /// <param name="pairId"> (optional)</param>
-        /// <param name="orderType"> (optional)</param>
-        /// <param name="isMargin"> (optional)</param>
-        /// <param name="leverage"> (optional)</param>
-        /// <param name="initialAmount"> (optional)</param>
-        /// <param name="initialPrice"> (optional)</param>
-        /// <param name="stopLossPrice"> (optional)</param>
-        /// <param name="takeProfitPrice"> (optional)</param>
+        /// <param name="postOrdersRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of OrderCreateResult</returns>
-        System.Threading.Tasks.Task<OrderCreateResult> OrdersPostAsync(double? amount = default(double?), double? price = default(double?), TradeType? tradeType = default(TradeType?), string pairId = default(string), OrderTypes? orderType = default(OrderTypes?), bool? isMargin = default(bool?), int? leverage = default(int?), double? initialAmount = default(double?), double? initialPrice = default(double?), double? stopLossPrice = default(double?), double? takeProfitPrice = default(double?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<OrderCreateResult> ApiOrdersPostAsync(PostOrdersRequest postOrdersRequest = default(PostOrdersRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -184,20 +154,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="amount"> (optional)</param>
-        /// <param name="price"> (optional)</param>
-        /// <param name="tradeType"> (optional)</param>
-        /// <param name="pairId"> (optional)</param>
-        /// <param name="orderType"> (optional)</param>
-        /// <param name="isMargin"> (optional)</param>
-        /// <param name="leverage"> (optional)</param>
-        /// <param name="initialAmount"> (optional)</param>
-        /// <param name="initialPrice"> (optional)</param>
-        /// <param name="stopLossPrice"> (optional)</param>
-        /// <param name="takeProfitPrice"> (optional)</param>
+        /// <param name="postOrdersRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (OrderCreateResult)</returns>
-        System.Threading.Tasks.Task<ApiResponse<OrderCreateResult>> OrdersPostWithHttpInfoAsync(double? amount = default(double?), double? price = default(double?), TradeType? tradeType = default(TradeType?), string pairId = default(string), OrderTypes? orderType = default(OrderTypes?), bool? isMargin = default(bool?), int? leverage = default(int?), double? initialAmount = default(double?), double? initialPrice = default(double?), double? stopLossPrice = default(double?), double? takeProfitPrice = default(double?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<OrderCreateResult>> ApiOrdersPostWithHttpInfoAsync(PostOrdersRequest postOrdersRequest = default(PostOrdersRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -323,10 +283,10 @@ namespace Org.OpenAPITools.Api
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="orderId"> (optional)</param>
-        /// <returns>bool</returns>
-        public bool OrdersCancelPost(string orderId = default(string))
+        /// <returns>OrderCancelResult</returns>
+        public OrderCancelResult ApiOrdersCancelPost(string orderId = default(string))
         {
-            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = OrdersCancelPostWithHttpInfo(orderId);
+            Org.OpenAPITools.Client.ApiResponse<OrderCancelResult> localVarResponse = ApiOrdersCancelPostWithHttpInfo(orderId);
             return localVarResponse.Data;
         }
 
@@ -335,8 +295,8 @@ namespace Org.OpenAPITools.Api
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="orderId"> (optional)</param>
-        /// <returns>ApiResponse of bool</returns>
-        public Org.OpenAPITools.Client.ApiResponse<bool> OrdersCancelPostWithHttpInfo(string orderId = default(string))
+        /// <returns>ApiResponse of OrderCancelResult</returns>
+        public Org.OpenAPITools.Client.ApiResponse<OrderCancelResult> ApiOrdersCancelPostWithHttpInfo(string orderId = default(string))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -368,11 +328,11 @@ namespace Org.OpenAPITools.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<bool>("/Orders/cancel", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<OrderCancelResult>("/api/Orders/cancel", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("OrdersCancelPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiOrdersCancelPost", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -385,10 +345,10 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="orderId"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of bool</returns>
-        public async System.Threading.Tasks.Task<bool> OrdersCancelPostAsync(string orderId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of OrderCancelResult</returns>
+        public async System.Threading.Tasks.Task<OrderCancelResult> ApiOrdersCancelPostAsync(string orderId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = await OrdersCancelPostWithHttpInfoAsync(orderId, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<OrderCancelResult> localVarResponse = await ApiOrdersCancelPostWithHttpInfoAsync(orderId, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -398,8 +358,8 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="orderId"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (bool)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<bool>> OrdersCancelPostWithHttpInfoAsync(string orderId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (OrderCancelResult)</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<OrderCancelResult>> ApiOrdersCancelPostWithHttpInfoAsync(string orderId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -434,11 +394,11 @@ namespace Org.OpenAPITools.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PostAsync<bool>("/Orders/cancel", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<OrderCancelResult>("/api/Orders/cancel", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("OrdersCancelPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiOrdersCancelPost", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -451,9 +411,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="pairName"></param>
         /// <returns></returns>
-        public void OrdersPairNameGet(string pairName)
+        public void ApiOrdersPairNameGet(string pairName)
         {
-            OrdersPairNameGetWithHttpInfo(pairName);
+            ApiOrdersPairNameGetWithHttpInfo(pairName);
         }
 
         /// <summary>
@@ -462,11 +422,11 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="pairName"></param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Object> OrdersPairNameGetWithHttpInfo(string pairName)
+        public Org.OpenAPITools.Client.ApiResponse<Object> ApiOrdersPairNameGetWithHttpInfo(string pairName)
         {
             // verify the required parameter 'pairName' is set
             if (pairName == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'pairName' when calling OrdersApi->OrdersPairNameGet");
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'pairName' when calling OrdersApi->ApiOrdersPairNameGet");
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -492,11 +452,11 @@ namespace Org.OpenAPITools.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<Object>("/Orders/{pairName}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<Object>("/api/Orders/{pairName}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("OrdersPairNameGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiOrdersPairNameGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -510,9 +470,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="pairName"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task OrdersPairNameGetAsync(string pairName, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task ApiOrdersPairNameGetAsync(string pairName, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            await OrdersPairNameGetWithHttpInfoAsync(pairName, cancellationToken).ConfigureAwait(false);
+            await ApiOrdersPairNameGetWithHttpInfoAsync(pairName, cancellationToken).ConfigureAwait(false);
         }
 
         /// <summary>
@@ -522,11 +482,11 @@ namespace Org.OpenAPITools.Api
         /// <param name="pairName"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> OrdersPairNameGetWithHttpInfoAsync(string pairName, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ApiOrdersPairNameGetWithHttpInfoAsync(string pairName, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'pairName' is set
             if (pairName == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'pairName' when calling OrdersApi->OrdersPairNameGet");
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'pairName' when calling OrdersApi->ApiOrdersPairNameGet");
 
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -555,11 +515,11 @@ namespace Org.OpenAPITools.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/Orders/{pairName}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<Object>("/api/Orders/{pairName}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("OrdersPairNameGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiOrdersPairNameGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -570,21 +530,11 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="amount"> (optional)</param>
-        /// <param name="price"> (optional)</param>
-        /// <param name="tradeType"> (optional)</param>
-        /// <param name="pairId"> (optional)</param>
-        /// <param name="orderType"> (optional)</param>
-        /// <param name="isMargin"> (optional)</param>
-        /// <param name="leverage"> (optional)</param>
-        /// <param name="initialAmount"> (optional)</param>
-        /// <param name="initialPrice"> (optional)</param>
-        /// <param name="stopLossPrice"> (optional)</param>
-        /// <param name="takeProfitPrice"> (optional)</param>
+        /// <param name="postOrdersRequest"> (optional)</param>
         /// <returns>OrderCreateResult</returns>
-        public OrderCreateResult OrdersPost(double? amount = default(double?), double? price = default(double?), TradeType? tradeType = default(TradeType?), string pairId = default(string), OrderTypes? orderType = default(OrderTypes?), bool? isMargin = default(bool?), int? leverage = default(int?), double? initialAmount = default(double?), double? initialPrice = default(double?), double? stopLossPrice = default(double?), double? takeProfitPrice = default(double?))
+        public OrderCreateResult ApiOrdersPost(PostOrdersRequest postOrdersRequest = default(PostOrdersRequest))
         {
-            Org.OpenAPITools.Client.ApiResponse<OrderCreateResult> localVarResponse = OrdersPostWithHttpInfo(amount, price, tradeType, pairId, orderType, isMargin, leverage, initialAmount, initialPrice, stopLossPrice, takeProfitPrice);
+            Org.OpenAPITools.Client.ApiResponse<OrderCreateResult> localVarResponse = ApiOrdersPostWithHttpInfo(postOrdersRequest);
             return localVarResponse.Data;
         }
 
@@ -592,23 +542,17 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="amount"> (optional)</param>
-        /// <param name="price"> (optional)</param>
-        /// <param name="tradeType"> (optional)</param>
-        /// <param name="pairId"> (optional)</param>
-        /// <param name="orderType"> (optional)</param>
-        /// <param name="isMargin"> (optional)</param>
-        /// <param name="leverage"> (optional)</param>
-        /// <param name="initialAmount"> (optional)</param>
-        /// <param name="initialPrice"> (optional)</param>
-        /// <param name="stopLossPrice"> (optional)</param>
-        /// <param name="takeProfitPrice"> (optional)</param>
+        /// <param name="postOrdersRequest"> (optional)</param>
         /// <returns>ApiResponse of OrderCreateResult</returns>
-        public Org.OpenAPITools.Client.ApiResponse<OrderCreateResult> OrdersPostWithHttpInfo(double? amount = default(double?), double? price = default(double?), TradeType? tradeType = default(TradeType?), string pairId = default(string), OrderTypes? orderType = default(OrderTypes?), bool? isMargin = default(bool?), int? leverage = default(int?), double? initialAmount = default(double?), double? initialPrice = default(double?), double? stopLossPrice = default(double?), double? takeProfitPrice = default(double?))
+        public Org.OpenAPITools.Client.ApiResponse<OrderCreateResult> ApiOrdersPostWithHttpInfo(PostOrdersRequest postOrdersRequest = default(PostOrdersRequest))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json-patch+json",
+                "application/json",
+                "text/json",
+                "application/_*+json"
             };
 
             // to determine the Accept header
@@ -624,50 +568,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (amount != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Amount", amount));
-            }
-            if (price != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Price", price));
-            }
-            if (tradeType != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "TradeType", tradeType));
-            }
-            if (pairId != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "PairId", pairId));
-            }
-            if (orderType != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "OrderType", orderType));
-            }
-            if (isMargin != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "IsMargin", isMargin));
-            }
-            if (leverage != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Leverage", leverage));
-            }
-            if (initialAmount != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "InitialAmount", initialAmount));
-            }
-            if (initialPrice != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "InitialPrice", initialPrice));
-            }
-            if (stopLossPrice != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "StopLossPrice", stopLossPrice));
-            }
-            if (takeProfitPrice != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "TakeProfitPrice", takeProfitPrice));
-            }
+            localVarRequestOptions.Data = postOrdersRequest;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -676,11 +577,11 @@ namespace Org.OpenAPITools.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<OrderCreateResult>("/Orders", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<OrderCreateResult>("/api/Orders", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("OrdersPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiOrdersPost", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -691,22 +592,12 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="amount"> (optional)</param>
-        /// <param name="price"> (optional)</param>
-        /// <param name="tradeType"> (optional)</param>
-        /// <param name="pairId"> (optional)</param>
-        /// <param name="orderType"> (optional)</param>
-        /// <param name="isMargin"> (optional)</param>
-        /// <param name="leverage"> (optional)</param>
-        /// <param name="initialAmount"> (optional)</param>
-        /// <param name="initialPrice"> (optional)</param>
-        /// <param name="stopLossPrice"> (optional)</param>
-        /// <param name="takeProfitPrice"> (optional)</param>
+        /// <param name="postOrdersRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of OrderCreateResult</returns>
-        public async System.Threading.Tasks.Task<OrderCreateResult> OrdersPostAsync(double? amount = default(double?), double? price = default(double?), TradeType? tradeType = default(TradeType?), string pairId = default(string), OrderTypes? orderType = default(OrderTypes?), bool? isMargin = default(bool?), int? leverage = default(int?), double? initialAmount = default(double?), double? initialPrice = default(double?), double? stopLossPrice = default(double?), double? takeProfitPrice = default(double?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<OrderCreateResult> ApiOrdersPostAsync(PostOrdersRequest postOrdersRequest = default(PostOrdersRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<OrderCreateResult> localVarResponse = await OrdersPostWithHttpInfoAsync(amount, price, tradeType, pairId, orderType, isMargin, leverage, initialAmount, initialPrice, stopLossPrice, takeProfitPrice, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<OrderCreateResult> localVarResponse = await ApiOrdersPostWithHttpInfoAsync(postOrdersRequest, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -714,25 +605,19 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="amount"> (optional)</param>
-        /// <param name="price"> (optional)</param>
-        /// <param name="tradeType"> (optional)</param>
-        /// <param name="pairId"> (optional)</param>
-        /// <param name="orderType"> (optional)</param>
-        /// <param name="isMargin"> (optional)</param>
-        /// <param name="leverage"> (optional)</param>
-        /// <param name="initialAmount"> (optional)</param>
-        /// <param name="initialPrice"> (optional)</param>
-        /// <param name="stopLossPrice"> (optional)</param>
-        /// <param name="takeProfitPrice"> (optional)</param>
+        /// <param name="postOrdersRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (OrderCreateResult)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<OrderCreateResult>> OrdersPostWithHttpInfoAsync(double? amount = default(double?), double? price = default(double?), TradeType? tradeType = default(TradeType?), string pairId = default(string), OrderTypes? orderType = default(OrderTypes?), bool? isMargin = default(bool?), int? leverage = default(int?), double? initialAmount = default(double?), double? initialPrice = default(double?), double? stopLossPrice = default(double?), double? takeProfitPrice = default(double?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<OrderCreateResult>> ApiOrdersPostWithHttpInfoAsync(PostOrdersRequest postOrdersRequest = default(PostOrdersRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json-patch+json", 
+                "application/json", 
+                "text/json", 
+                "application/_*+json"
             };
 
             // to determine the Accept header
@@ -749,50 +634,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (amount != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Amount", amount));
-            }
-            if (price != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Price", price));
-            }
-            if (tradeType != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "TradeType", tradeType));
-            }
-            if (pairId != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "PairId", pairId));
-            }
-            if (orderType != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "OrderType", orderType));
-            }
-            if (isMargin != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "IsMargin", isMargin));
-            }
-            if (leverage != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Leverage", leverage));
-            }
-            if (initialAmount != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "InitialAmount", initialAmount));
-            }
-            if (initialPrice != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "InitialPrice", initialPrice));
-            }
-            if (stopLossPrice != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "StopLossPrice", stopLossPrice));
-            }
-            if (takeProfitPrice != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "TakeProfitPrice", takeProfitPrice));
-            }
+            localVarRequestOptions.Data = postOrdersRequest;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -802,11 +644,11 @@ namespace Org.OpenAPITools.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PostAsync<OrderCreateResult>("/Orders", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<OrderCreateResult>("/api/Orders", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("OrdersPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiOrdersPost", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 

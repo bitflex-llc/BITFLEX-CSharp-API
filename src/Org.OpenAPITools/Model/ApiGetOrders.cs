@@ -47,6 +47,7 @@ namespace Org.OpenAPITools.Model
         /// <param name="id">id.</param>
         /// <param name="pairName">pairName.</param>
         /// <param name="created">created.</param>
+        /// <param name="dateCreated">dateCreated.</param>
         /// <param name="price">price.</param>
         /// <param name="amount">amount.</param>
         /// <param name="amountLeft">amountLeft.</param>
@@ -59,11 +60,12 @@ namespace Org.OpenAPITools.Model
         /// <param name="initialAmount">initialAmount.</param>
         /// <param name="stopLossPrice">stopLossPrice.</param>
         /// <param name="takeProfitPrice">takeProfitPrice.</param>
-        public ApiGetOrders(string id = default(string), string pairName = default(string), long created = default(long), double price = default(double), double amount = default(double), double amountLeft = default(double), TradeType? tradeType = default(TradeType?), OrderTypes? orderType = default(OrderTypes?), bool isMargin = default(bool), double? liquidationPrice = default(double?), double? initialPrice = default(double?), int? leverage = default(int?), double? initialAmount = default(double?), double? stopLossPrice = default(double?), double? takeProfitPrice = default(double?))
+        public ApiGetOrders(string id = default(string), string pairName = default(string), long created = default(long), long dateCreated = default(long), double price = default(double), double amount = default(double), double amountLeft = default(double), TradeType? tradeType = default(TradeType?), OrderTypes? orderType = default(OrderTypes?), bool isMargin = default(bool), double? liquidationPrice = default(double?), double? initialPrice = default(double?), int? leverage = default(int?), double? initialAmount = default(double?), double? stopLossPrice = default(double?), double? takeProfitPrice = default(double?))
         {
             this.Id = id;
             this.PairName = pairName;
             this.Created = created;
+            this.DateCreated = dateCreated;
             this.Price = price;
             this.Amount = amount;
             this.AmountLeft = amountLeft;
@@ -95,6 +97,12 @@ namespace Org.OpenAPITools.Model
         /// </summary>
         [DataMember(Name = "created", EmitDefaultValue = false)]
         public long Created { get; set; }
+
+        /// <summary>
+        /// Gets or Sets DateCreated
+        /// </summary>
+        [DataMember(Name = "dateCreated", EmitDefaultValue = false)]
+        public long DateCreated { get; set; }
 
         /// <summary>
         /// Gets or Sets Price
@@ -167,6 +175,7 @@ namespace Org.OpenAPITools.Model
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  PairName: ").Append(PairName).Append("\n");
             sb.Append("  Created: ").Append(Created).Append("\n");
+            sb.Append("  DateCreated: ").Append(DateCreated).Append("\n");
             sb.Append("  Price: ").Append(Price).Append("\n");
             sb.Append("  Amount: ").Append(Amount).Append("\n");
             sb.Append("  AmountLeft: ").Append(AmountLeft).Append("\n");
@@ -226,6 +235,10 @@ namespace Org.OpenAPITools.Model
                 (
                     this.Created == input.Created ||
                     this.Created.Equals(input.Created)
+                ) && 
+                (
+                    this.DateCreated == input.DateCreated ||
+                    this.DateCreated.Equals(input.DateCreated)
                 ) && 
                 (
                     this.Price == input.Price ||
@@ -297,6 +310,7 @@ namespace Org.OpenAPITools.Model
                 if (this.PairName != null)
                     hashCode = hashCode * 59 + this.PairName.GetHashCode();
                 hashCode = hashCode * 59 + this.Created.GetHashCode();
+                hashCode = hashCode * 59 + this.DateCreated.GetHashCode();
                 hashCode = hashCode * 59 + this.Price.GetHashCode();
                 hashCode = hashCode * 59 + this.Amount.GetHashCode();
                 hashCode = hashCode * 59 + this.AmountLeft.GetHashCode();

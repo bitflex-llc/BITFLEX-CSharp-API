@@ -112,48 +112,55 @@ Class | Method | HTTP request | Description
 *ApplicationApi* | [**ApiApplicationDisableGoogle2stepPost**](docs/ApplicationApi.md#apiapplicationdisablegoogle2steppost) | **POST** /api/Application/DisableGoogle2step | 
 *ApplicationApi* | [**ApiApplicationEnableGoogle2stepPost**](docs/ApplicationApi.md#apiapplicationenablegoogle2steppost) | **POST** /api/Application/EnableGoogle2step | 
 *ApplicationApi* | [**ApiApplicationProcessFaceImagePost**](docs/ApplicationApi.md#apiapplicationprocessfaceimagepost) | **POST** /api/Application/ProcessFaceImage | 
+*ApplicationApi* | [**ApiApplicationProcessPassportImagePost**](docs/ApplicationApi.md#apiapplicationprocesspassportimagepost) | **POST** /api/Application/ProcessPassportImage | 
 *ApplicationApi* | [**ApiApplicationSetpushtokenPost**](docs/ApplicationApi.md#apiapplicationsetpushtokenpost) | **POST** /api/Application/setpushtoken | 
 *ApplicationApi* | [**ApiApplicationValidatePinPost**](docs/ApplicationApi.md#apiapplicationvalidatepinpost) | **POST** /api/Application/validatePin | 
 *ApplicationApi* | [**ApiApplicationValidateapptokenPost**](docs/ApplicationApi.md#apiapplicationvalidateapptokenpost) | **POST** /api/Application/validateapptoken | 
 *ApplicationApi* | [**ApiApplicationVerifyfacesPost**](docs/ApplicationApi.md#apiapplicationverifyfacespost) | **POST** /api/Application/verifyfaces | 
-*BalanceApi* | [**BalanceCurrencyGet**](docs/BalanceApi.md#balancecurrencyget) | **GET** /Balance/{currency} | 
-*BalanceApi* | [**BalanceDepositCurrencyAddressGet**](docs/BalanceApi.md#balancedepositcurrencyaddressget) | **GET** /Balance/deposit/{currency}/address | 
-*BalanceApi* | [**BalanceDepositCurrencyAddressPost**](docs/BalanceApi.md#balancedepositcurrencyaddresspost) | **POST** /Balance/deposit/{currency}/address | 
-*BalanceApi* | [**BalanceRoute**](docs/BalanceApi.md#balanceroute) | **GET** /Balance | 
-*BalanceApi* | [**BalanceWithdrawCurrencyPageGet**](docs/BalanceApi.md#balancewithdrawcurrencypageget) | **GET** /Balance/withdraw/{currency}/page | 
-*BalanceApi* | [**BalanceWithdrawCurrencyPost**](docs/BalanceApi.md#balancewithdrawcurrencypost) | **POST** /Balance/withdraw/{currency} | 
+*BalanceApi* | [**ApiBalanceCurrencyGet**](docs/BalanceApi.md#apibalancecurrencyget) | **GET** /api/Balance/{currency} | 
+*BalanceApi* | [**ApiBalanceDepositCurrencyAddressGet**](docs/BalanceApi.md#apibalancedepositcurrencyaddressget) | **GET** /api/Balance/deposit/{currency}/address | 
+*BalanceApi* | [**ApiBalanceDepositCurrencyAddressPost**](docs/BalanceApi.md#apibalancedepositcurrencyaddresspost) | **POST** /api/Balance/deposit/{currency}/address | 
+*BalanceApi* | [**ApiBalanceGet**](docs/BalanceApi.md#apibalanceget) | **GET** /api/Balance | 
+*BalanceApi* | [**ApiBalanceWithdrawCurrencyPageGet**](docs/BalanceApi.md#apibalancewithdrawcurrencypageget) | **GET** /api/Balance/withdraw/{currency}/page | 
+*BalanceApi* | [**ApiBalanceWithdrawCurrencyPost**](docs/BalanceApi.md#apibalancewithdrawcurrencypost) | **POST** /api/Balance/withdraw/{currency} | 
 *HealthApi* | [**ApiHealthTickGet**](docs/HealthApi.md#apihealthtickget) | **GET** /api/Health/tick | 
 *HealthApi* | [**ApiHealthTockGet**](docs/HealthApi.md#apihealthtockget) | **GET** /api/Health/tock | 
 *MarketsApi* | [**ApiMarketsCurrenciesGet**](docs/MarketsApi.md#apimarketscurrenciesget) | **GET** /api/Markets/currencies | 
+*MarketsApi* | [**ApiMarketsCurrencyInfoGet**](docs/MarketsApi.md#apimarketscurrencyinfoget) | **GET** /api/Markets/currencyInfo | 
 *MarketsApi* | [**ApiMarketsGet**](docs/MarketsApi.md#apimarketsget) | **GET** /api/Markets | 
 *MarketsApi* | [**ApiMarketsHistoryGet**](docs/MarketsApi.md#apimarketshistoryget) | **GET** /api/Markets/history | 
 *MarketsApi* | [**ApiMarketsOrderbookGet**](docs/MarketsApi.md#apimarketsorderbookget) | **GET** /api/Markets/orderbook | 
 *MarketsApi* | [**ApiMarketsTickersGet**](docs/MarketsApi.md#apimarketstickersget) | **GET** /api/Markets/tickers | 
-*OrdersApi* | [**OrdersCancelPost**](docs/OrdersApi.md#orderscancelpost) | **POST** /Orders/cancel | 
-*OrdersApi* | [**OrdersPairNameGet**](docs/OrdersApi.md#orderspairnameget) | **GET** /Orders/{pairName} | 
-*OrdersApi* | [**OrdersPost**](docs/OrdersApi.md#orderspost) | **POST** /Orders | 
-*SignApi* | [**ApiSignAffiliatedataPost**](docs/SignApi.md#apisignaffiliatedatapost) | **POST** /api/Sign/affiliatedata | 
-*SignApi* | [**ApiSignCheckIsMobileOnlinePost**](docs/SignApi.md#apisigncheckismobileonlinepost) | **POST** /api/Sign/CheckIsMobileOnline | 
+*OrdersApi* | [**ApiOrdersCancelPost**](docs/OrdersApi.md#apiorderscancelpost) | **POST** /api/Orders/cancel | 
+*OrdersApi* | [**ApiOrdersPairNameGet**](docs/OrdersApi.md#apiorderspairnameget) | **GET** /api/Orders/{pairName} | 
+*OrdersApi* | [**ApiOrdersPost**](docs/OrdersApi.md#apiorderspost) | **POST** /api/Orders | 
+*SignApi* | [**ApiSignAskForPermissionPost**](docs/SignApi.md#apisignaskforpermissionpost) | **POST** /api/Sign/AskForPermission | 
+*SignApi* | [**ApiSignAskPermissionSignInPost**](docs/SignApi.md#apisignaskpermissionsigninpost) | **POST** /api/Sign/AskPermissionSignIn | 
+*SignApi* | [**ApiSignCheck2StepVerificationStatusGet**](docs/SignApi.md#apisigncheck2stepverificationstatusget) | **GET** /api/Sign/Check2StepVerificationStatus | 
+*SignApi* | [**ApiSignConfirmPermissionSignInPost**](docs/SignApi.md#apisignconfirmpermissionsigninpost) | **POST** /api/Sign/ConfirmPermissionSignIn | 
 *SignApi* | [**ApiSignConfirmemailPost**](docs/SignApi.md#apisignconfirmemailpost) | **POST** /api/Sign/confirmemail | 
-*SignApi* | [**ApiSignEnable2faPost**](docs/SignApi.md#apisignenable2fapost) | **POST** /api/Sign/enable2fa | 
-*SignApi* | [**ApiSignGetRequestsGet**](docs/SignApi.md#apisigngetrequestsget) | **GET** /api/Sign/getRequests | 
+*SignApi* | [**ApiSignGetPermissionDetailsGet**](docs/SignApi.md#apisigngetpermissiondetailsget) | **GET** /api/Sign/GetPermissionDetails | 
 *SignApi* | [**ApiSignGetreferreremailPost**](docs/SignApi.md#apisigngetreferreremailpost) | **POST** /api/Sign/getreferreremail | 
+*SignApi* | [**ApiSignIsAnyDeviceOnlinePost**](docs/SignApi.md#apisignisanydeviceonlinepost) | **POST** /api/Sign/IsAnyDeviceOnline | 
 *SignApi* | [**ApiSignMobileConfirmationRequestPost**](docs/SignApi.md#apisignmobileconfirmationrequestpost) | **POST** /api/Sign/MobileConfirmationRequest | 
 *SignApi* | [**ApiSignResetpasswordPost**](docs/SignApi.md#apisignresetpasswordpost) | **POST** /api/Sign/resetpassword | 
 *SignApi* | [**ApiSignRestorepasswordPost**](docs/SignApi.md#apisignrestorepasswordpost) | **POST** /api/Sign/restorepassword | 
 *SignApi* | [**ApiSignSetAffiliatePost**](docs/SignApi.md#apisignsetaffiliatepost) | **POST** /api/Sign/setAffiliate | 
 *SignApi* | [**ApiSignSigninPost**](docs/SignApi.md#apisignsigninpost) | **POST** /api/Sign/signin | 
 *SignApi* | [**ApiSignSignupPost**](docs/SignApi.md#apisignsignuppost) | **POST** /api/Sign/signup | 
-*StaticPagesApi* | [**StaticPagesAffiliateGet**](docs/StaticPagesApi.md#staticpagesaffiliateget) | **GET** /StaticPages/affiliate | 
-*StaticPagesApi* | [**StaticPagesStatusGet**](docs/StaticPagesApi.md#staticpagesstatusget) | **GET** /StaticPages/status | 
-*UserApi* | [**ApiUser2faPost**](docs/UserApi.md#apiuser2fapost) | **POST** /api/User/2fa | 
+*StaticPagesApi* | [**ApiStaticPagesAffiliateGet**](docs/StaticPagesApi.md#apistaticpagesaffiliateget) | **GET** /api/StaticPages/affiliate | 
+*StaticPagesApi* | [**ApiStaticPagesStatusGet**](docs/StaticPagesApi.md#apistaticpagesstatusget) | **GET** /api/StaticPages/status | 
 *UserApi* | [**ApiUserBalanceactionsGet**](docs/UserApi.md#apiuserbalanceactionsget) | **GET** /api/User/balanceactions | 
 *UserApi* | [**ApiUserBalancesGet**](docs/UserApi.md#apiuserbalancesget) | **GET** /api/User/balances | 
 *UserApi* | [**ApiUserBalanceslistGet**](docs/UserApi.md#apiuserbalanceslistget) | **GET** /api/User/balanceslist | 
 *UserApi* | [**ApiUserDepositsGet**](docs/UserApi.md#apiuserdepositsget) | **GET** /api/User/deposits | 
+*UserApi* | [**ApiUserFinishTier1VerificationPost**](docs/UserApi.md#apiuserfinishtier1verificationpost) | **POST** /api/User/FinishTier1Verification | 
+*UserApi* | [**ApiUserGetVerificationLevelGet**](docs/UserApi.md#apiusergetverificationlevelget) | **GET** /api/User/GetVerificationLevel | 
 *UserApi* | [**ApiUserOrdersGet**](docs/UserApi.md#apiuserordersget) | **GET** /api/User/orders | 
+*UserApi* | [**ApiUserSetPhoneNumberPost**](docs/UserApi.md#apiusersetphonenumberpost) | **POST** /api/User/SetPhoneNumber | 
 *UserApi* | [**ApiUserTradehistoryGet**](docs/UserApi.md#apiusertradehistoryget) | **GET** /api/User/tradehistory | 
 *UserApi* | [**ApiUserVerificationsGet**](docs/UserApi.md#apiuserverificationsget) | **GET** /api/User/verifications | 
+*UserApi* | [**ApiUserVerifyPhoneNumberPost**](docs/UserApi.md#apiuserverifyphonenumberpost) | **POST** /api/User/VerifyPhoneNumber | 
 *UserApi* | [**ApiUserWithdrawalsGet**](docs/UserApi.md#apiuserwithdrawalsget) | **GET** /api/User/withdrawals | 
 
 
@@ -168,28 +175,26 @@ Class | Method | HTTP request | Description
  - [Model.ApiPair](docs/ApiPair.md)
  - [Model.ApiTickers](docs/ApiTickers.md)
  - [Model.ApplicationUser](docs/ApplicationUser.md)
+ - [Model.AskForPermissionRequestModel](docs/AskForPermissionRequestModel.md)
  - [Model.Balance](docs/Balance.md)
  - [Model.BalanceAction](docs/BalanceAction.md)
+ - [Model.BalanceActionModel](docs/BalanceActionModel.md)
  - [Model.BalanceActionType](docs/BalanceActionType.md)
  - [Model.BalanceErrorCode](docs/BalanceErrorCode.md)
- - [Model.BitcoinBasedCurrency](docs/BitcoinBasedCurrency.md)
- - [Model.CascadeTiming](docs/CascadeTiming.md)
- - [Model.ChangeTracker](docs/ChangeTracker.md)
+ - [Model.Check2StepVerificationStatusResponse](docs/Check2StepVerificationStatusResponse.md)
  - [Model.ClientInfo](docs/ClientInfo.md)
  - [Model.Code](docs/Code.md)
  - [Model.CoinTokenAddRequest](docs/CoinTokenAddRequest.md)
+ - [Model.ConfirmPermissionSignInRequest](docs/ConfirmPermissionSignInRequest.md)
  - [Model.CryptoCurrency](docs/CryptoCurrency.md)
- - [Model.DatabaseFacade](docs/DatabaseFacade.md)
- - [Model.DbContext](docs/DbContext.md)
- - [Model.DbContextId](docs/DbContextId.md)
- - [Model.DebugView](docs/DebugView.md)
- - [Model.DepositAddress](docs/DepositAddress.md)
  - [Model.Device](docs/Device.md)
+ - [Model.DevicePermissionRequestType](docs/DevicePermissionRequestType.md)
  - [Model.DeviceType](docs/DeviceType.md)
- - [Model.ERC20Token](docs/ERC20Token.md)
  - [Model.EmailConfirmationErrorCode](docs/EmailConfirmationErrorCode.md)
  - [Model.EmailConfirmationResult](docs/EmailConfirmationResult.md)
+ - [Model.EnableDisable2Fa](docs/EnableDisable2Fa.md)
  - [Model.ErrorModel](docs/ErrorModel.md)
+ - [Model.FinishTier1VerificationModel](docs/FinishTier1VerificationModel.md)
  - [Model.GenerateAddressResult](docs/GenerateAddressResult.md)
  - [Model.GetAddressResponse](docs/GetAddressResponse.md)
  - [Model.GetApiMarketsCurrenciesResponse](docs/GetApiMarketsCurrenciesResponse.md)
@@ -197,66 +202,49 @@ Class | Method | HTTP request | Description
  - [Model.GetBalanceHoldAndLimits](docs/GetBalanceHoldAndLimits.md)
  - [Model.GetBalanceRequestModel](docs/GetBalanceRequestModel.md)
  - [Model.GetBalancesListResponse](docs/GetBalancesListResponse.md)
- - [Model.GetDepositsResponse](docs/GetDepositsResponse.md)
  - [Model.GetMarketsResponse](docs/GetMarketsResponse.md)
  - [Model.GetOrdersResponse](docs/GetOrdersResponse.md)
  - [Model.GetTickeAsyncResponse](docs/GetTickeAsyncResponse.md)
  - [Model.GetTickersResponse](docs/GetTickersResponse.md)
  - [Model.GetTradeHistoryResponse](docs/GetTradeHistoryResponse.md)
  - [Model.GetUserTradeHistoryResponse](docs/GetUserTradeHistoryResponse.md)
+ - [Model.GetVerificationLevelResponse](docs/GetVerificationLevelResponse.md)
  - [Model.GetWithdrawResponse](docs/GetWithdrawResponse.md)
- - [Model.GetWithdrawalsResponse](docs/GetWithdrawalsResponse.md)
- - [Model.HealthCheck](docs/HealthCheck.md)
- - [Model.IApplicationQrCommand](docs/IApplicationQrCommand.md)
- - [Model.IApplicationTokenAccess](docs/IApplicationTokenAccess.md)
- - [Model.IDbContextTransaction](docs/IDbContextTransaction.md)
- - [Model.IdentityRole](docs/IdentityRole.md)
- - [Model.KeyValue](docs/KeyValue.md)
- - [Model.ManualWithdrawRequest](docs/ManualWithdrawRequest.md)
- - [Model.Market](docs/Market.md)
- - [Model.MobileConfirmationRequest](docs/MobileConfirmationRequest.md)
  - [Model.OS](docs/OS.md)
  - [Model.Order](docs/Order.md)
+ - [Model.OrderCancelResult](docs/OrderCancelResult.md)
  - [Model.OrderCreateResult](docs/OrderCreateResult.md)
  - [Model.OrderState](docs/OrderState.md)
  - [Model.OrderTypes](docs/OrderTypes.md)
  - [Model.OrderViewModel](docs/OrderViewModel.md)
  - [Model.OrdersGetViewModel](docs/OrdersGetViewModel.md)
- - [Model.Post2faResponse](docs/Post2faResponse.md)
  - [Model.PostConfirmRequest](docs/PostConfirmRequest.md)
  - [Model.PostForgotPasswordRequest](docs/PostForgotPasswordRequest.md)
  - [Model.PostGetReferrerEmailRequest](docs/PostGetReferrerEmailRequest.md)
  - [Model.PostGetReferrerEmailResponse](docs/PostGetReferrerEmailResponse.md)
+ - [Model.PostMobileConfirmationRequestModel](docs/PostMobileConfirmationRequestModel.md)
+ - [Model.PostOrdersRequest](docs/PostOrdersRequest.md)
  - [Model.PostResetPasswordRequest](docs/PostResetPasswordRequest.md)
  - [Model.PostSetAffiliateRequest](docs/PostSetAffiliateRequest.md)
  - [Model.PostSignInRequest](docs/PostSignInRequest.md)
  - [Model.PostSignInResponse](docs/PostSignInResponse.md)
  - [Model.PostSignUpRequest](docs/PostSignUpRequest.md)
  - [Model.PostSignUpResponse](docs/PostSignUpResponse.md)
+ - [Model.PostVefirySms](docs/PostVefirySms.md)
  - [Model.PostWithdrawRequest](docs/PostWithdrawRequest.md)
  - [Model.PostWithdrawRequestResult](docs/PostWithdrawRequestResult.md)
- - [Model.PushToken](docs/PushToken.md)
- - [Model.QrCommand](docs/QrCommand.md)
- - [Model.QueryTrackingBehavior](docs/QueryTrackingBehavior.md)
- - [Model.Quote](docs/Quote.md)
+ - [Model.ProcessFaceImageRequest](docs/ProcessFaceImageRequest.md)
  - [Model.RequestType](docs/RequestType.md)
- - [Model.RippleDestinationTag](docs/RippleDestinationTag.md)
  - [Model.ServerLocation](docs/ServerLocation.md)
+ - [Model.SetPushTokenRequest](docs/SetPushTokenRequest.md)
+ - [Model.SignInPermissionModel](docs/SignInPermissionModel.md)
  - [Model.SignInResponseResult](docs/SignInResponseResult.md)
  - [Model.SignUpResponseResult](docs/SignUpResponseResult.md)
- - [Model.SmsVerificationMessage](docs/SmsVerificationMessage.md)
+ - [Model.SmsVefiryResult](docs/SmsVefiryResult.md)
  - [Model.StatusCodeEnum](docs/StatusCodeEnum.md)
- - [Model.StringIdentityRoleClaim](docs/StringIdentityRoleClaim.md)
- - [Model.StringIdentityUserClaim](docs/StringIdentityUserClaim.md)
- - [Model.StringIdentityUserLogin](docs/StringIdentityUserLogin.md)
- - [Model.StringIdentityUserRole](docs/StringIdentityUserRole.md)
- - [Model.StringIdentityUserToken](docs/StringIdentityUserToken.md)
- - [Model.Trade](docs/Trade.md)
  - [Model.TradeData](docs/TradeData.md)
  - [Model.TradeType](docs/TradeType.md)
  - [Model.TradesGetViewModel](docs/TradesGetViewModel.md)
- - [Model.TradingAmount](docs/TradingAmount.md)
- - [Model.TradingPair](docs/TradingPair.md)
  - [Model.Transaction](docs/Transaction.md)
  - [Model.TransactionDirection](docs/TransactionDirection.md)
  - [Model.TwoStepVerificationTypes](docs/TwoStepVerificationTypes.md)
@@ -264,6 +252,10 @@ Class | Method | HTTP request | Description
  - [Model.UserAdminCommand](docs/UserAdminCommand.md)
  - [Model.UserAgent](docs/UserAgent.md)
  - [Model.UserCategory](docs/UserCategory.md)
+ - [Model.ValidateAppTokenRequest](docs/ValidateAppTokenRequest.md)
+ - [Model.ValidatePinPostRequest](docs/ValidatePinPostRequest.md)
+ - [Model.VerificationResource](docs/VerificationResource.md)
+ - [Model.VerifyFaceData](docs/VerifyFaceData.md)
  - [Model.VerifyResult](docs/VerifyResult.md)
  - [Model.WithdrawRequest](docs/WithdrawRequest.md)
 

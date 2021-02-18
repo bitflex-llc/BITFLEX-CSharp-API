@@ -4,14 +4,14 @@ All URIs are relative to *http://172.16.1.20:5001*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**OrdersCancelPost**](OrdersApi.md#orderscancelpost) | **POST** /Orders/cancel | 
-[**OrdersPairNameGet**](OrdersApi.md#orderspairnameget) | **GET** /Orders/{pairName} | 
-[**OrdersPost**](OrdersApi.md#orderspost) | **POST** /Orders | 
+[**ApiOrdersCancelPost**](OrdersApi.md#apiorderscancelpost) | **POST** /api/Orders/cancel | 
+[**ApiOrdersPairNameGet**](OrdersApi.md#apiorderspairnameget) | **GET** /api/Orders/{pairName} | 
+[**ApiOrdersPost**](OrdersApi.md#apiorderspost) | **POST** /api/Orders | 
 
 
-<a name="orderscancelpost"></a>
-# **OrdersCancelPost**
-> bool OrdersCancelPost (string orderId = null)
+<a name="apiorderscancelpost"></a>
+# **ApiOrdersCancelPost**
+> OrderCancelResult ApiOrdersCancelPost (string orderId = null)
 
 
 
@@ -25,7 +25,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class OrdersCancelPostExample
+    public class ApiOrdersCancelPostExample
     {
         public static void Main()
         {
@@ -41,12 +41,12 @@ namespace Example
 
             try
             {
-                bool result = apiInstance.OrdersCancelPost(orderId);
+                OrderCancelResult result = apiInstance.ApiOrdersCancelPost(orderId);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling OrdersApi.OrdersCancelPost: " + e.Message );
+                Debug.Print("Exception when calling OrdersApi.ApiOrdersCancelPost: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**bool**
+[**OrderCancelResult**](OrderCancelResult.md)
 
 ### Authorization
 
@@ -81,9 +81,9 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="orderspairnameget"></a>
-# **OrdersPairNameGet**
-> void OrdersPairNameGet (string pairName)
+<a name="apiorderspairnameget"></a>
+# **ApiOrdersPairNameGet**
+> void ApiOrdersPairNameGet (string pairName)
 
 
 
@@ -97,7 +97,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class OrdersPairNameGetExample
+    public class ApiOrdersPairNameGetExample
     {
         public static void Main()
         {
@@ -113,11 +113,11 @@ namespace Example
 
             try
             {
-                apiInstance.OrdersPairNameGet(pairName);
+                apiInstance.ApiOrdersPairNameGet(pairName);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling OrdersApi.OrdersPairNameGet: " + e.Message );
+                Debug.Print("Exception when calling OrdersApi.ApiOrdersPairNameGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -152,9 +152,9 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="orderspost"></a>
-# **OrdersPost**
-> OrderCreateResult OrdersPost (double? amount = null, double? price = null, TradeType? tradeType = null, string pairId = null, OrderTypes? orderType = null, bool? isMargin = null, int? leverage = null, double? initialAmount = null, double? initialPrice = null, double? stopLossPrice = null, double? takeProfitPrice = null)
+<a name="apiorderspost"></a>
+# **ApiOrdersPost**
+> OrderCreateResult ApiOrdersPost (PostOrdersRequest postOrdersRequest = null)
 
 
 
@@ -168,7 +168,7 @@ using Org.OpenAPITools.Model;
 
 namespace Example
 {
-    public class OrdersPostExample
+    public class ApiOrdersPostExample
     {
         public static void Main()
         {
@@ -180,26 +180,16 @@ namespace Example
             // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new OrdersApi(config);
-            var amount = 1.2D;  // double? |  (optional) 
-            var price = 1.2D;  // double? |  (optional) 
-            var tradeType = ;  // TradeType? |  (optional) 
-            var pairId = pairId_example;  // string |  (optional) 
-            var orderType = ;  // OrderTypes? |  (optional) 
-            var isMargin = true;  // bool? |  (optional) 
-            var leverage = 56;  // int? |  (optional) 
-            var initialAmount = 1.2D;  // double? |  (optional) 
-            var initialPrice = 1.2D;  // double? |  (optional) 
-            var stopLossPrice = 1.2D;  // double? |  (optional) 
-            var takeProfitPrice = 1.2D;  // double? |  (optional) 
+            var postOrdersRequest = new PostOrdersRequest(); // PostOrdersRequest |  (optional) 
 
             try
             {
-                OrderCreateResult result = apiInstance.OrdersPost(amount, price, tradeType, pairId, orderType, isMargin, leverage, initialAmount, initialPrice, stopLossPrice, takeProfitPrice);
+                OrderCreateResult result = apiInstance.ApiOrdersPost(postOrdersRequest);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling OrdersApi.OrdersPost: " + e.Message );
+                Debug.Print("Exception when calling OrdersApi.ApiOrdersPost: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -212,17 +202,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **amount** | **double?**|  | [optional] 
- **price** | **double?**|  | [optional] 
- **tradeType** | **TradeType?**|  | [optional] 
- **pairId** | **string**|  | [optional] 
- **orderType** | **OrderTypes?**|  | [optional] 
- **isMargin** | **bool?**|  | [optional] 
- **leverage** | **int?**|  | [optional] 
- **initialAmount** | **double?**|  | [optional] 
- **initialPrice** | **double?**|  | [optional] 
- **stopLossPrice** | **double?**|  | [optional] 
- **takeProfitPrice** | **double?**|  | [optional] 
+ **postOrdersRequest** | [**PostOrdersRequest**](PostOrdersRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -234,7 +214,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
  - **Accept**: text/plain, application/json, text/json
 
 ### HTTP response details

@@ -32,7 +32,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"></param>
         /// <returns>GetBalanceRequestModel</returns>
-        GetBalanceRequestModel BalanceCurrencyGet(string currency);
+        GetBalanceRequestModel ApiBalanceCurrencyGet(string currency);
 
         /// <summary>
         /// 
@@ -43,14 +43,14 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"></param>
         /// <returns>ApiResponse of GetBalanceRequestModel</returns>
-        ApiResponse<GetBalanceRequestModel> BalanceCurrencyGetWithHttpInfo(string currency);
+        ApiResponse<GetBalanceRequestModel> ApiBalanceCurrencyGetWithHttpInfo(string currency);
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"></param>
         /// <returns>GetAddressResponse</returns>
-        GetAddressResponse BalanceDepositCurrencyAddressGet(string currency);
+        GetAddressResponse ApiBalanceDepositCurrencyAddressGet(string currency);
 
         /// <summary>
         /// 
@@ -61,14 +61,14 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"></param>
         /// <returns>ApiResponse of GetAddressResponse</returns>
-        ApiResponse<GetAddressResponse> BalanceDepositCurrencyAddressGetWithHttpInfo(string currency);
+        ApiResponse<GetAddressResponse> ApiBalanceDepositCurrencyAddressGetWithHttpInfo(string currency);
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"></param>
         /// <returns>GenerateAddressResult</returns>
-        GenerateAddressResult BalanceDepositCurrencyAddressPost(string currency);
+        GenerateAddressResult ApiBalanceDepositCurrencyAddressPost(string currency);
 
         /// <summary>
         /// 
@@ -79,13 +79,13 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"></param>
         /// <returns>ApiResponse of GenerateAddressResult</returns>
-        ApiResponse<GenerateAddressResult> BalanceDepositCurrencyAddressPostWithHttpInfo(string currency);
+        ApiResponse<GenerateAddressResult> ApiBalanceDepositCurrencyAddressPostWithHttpInfo(string currency);
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>GetBalancesListResponse</returns>
-        GetBalancesListResponse BalanceRoute();
+        GetBalancesListResponse ApiBalanceGet();
 
         /// <summary>
         /// 
@@ -95,14 +95,14 @@ namespace Org.OpenAPITools.Api
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of GetBalancesListResponse</returns>
-        ApiResponse<GetBalancesListResponse> BalanceRouteWithHttpInfo();
+        ApiResponse<GetBalancesListResponse> ApiBalanceGetWithHttpInfo();
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"></param>
         /// <returns>GetWithdrawResponse</returns>
-        GetWithdrawResponse BalanceWithdrawCurrencyPageGet(string currency);
+        GetWithdrawResponse ApiBalanceWithdrawCurrencyPageGet(string currency);
 
         /// <summary>
         /// 
@@ -113,7 +113,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"></param>
         /// <returns>ApiResponse of GetWithdrawResponse</returns>
-        ApiResponse<GetWithdrawResponse> BalanceWithdrawCurrencyPageGetWithHttpInfo(string currency);
+        ApiResponse<GetWithdrawResponse> ApiBalanceWithdrawCurrencyPageGetWithHttpInfo(string currency);
         /// <summary>
         /// 
         /// </summary>
@@ -121,7 +121,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="postWithdrawRequest"> (optional)</param>
         /// <returns>PostWithdrawRequestResult</returns>
-        PostWithdrawRequestResult BalanceWithdrawCurrencyPost(string currency, PostWithdrawRequest postWithdrawRequest = default(PostWithdrawRequest));
+        PostWithdrawRequestResult ApiBalanceWithdrawCurrencyPost(string currency, PostWithdrawRequest postWithdrawRequest = default(PostWithdrawRequest));
 
         /// <summary>
         /// 
@@ -133,7 +133,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="postWithdrawRequest"> (optional)</param>
         /// <returns>ApiResponse of PostWithdrawRequestResult</returns>
-        ApiResponse<PostWithdrawRequestResult> BalanceWithdrawCurrencyPostWithHttpInfo(string currency, PostWithdrawRequest postWithdrawRequest = default(PostWithdrawRequest));
+        ApiResponse<PostWithdrawRequestResult> ApiBalanceWithdrawCurrencyPostWithHttpInfo(string currency, PostWithdrawRequest postWithdrawRequest = default(PostWithdrawRequest));
         #endregion Synchronous Operations
     }
 
@@ -153,7 +153,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of GetBalanceRequestModel</returns>
-        System.Threading.Tasks.Task<GetBalanceRequestModel> BalanceCurrencyGetAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<GetBalanceRequestModel> ApiBalanceCurrencyGetAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -165,7 +165,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (GetBalanceRequestModel)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetBalanceRequestModel>> BalanceCurrencyGetWithHttpInfoAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GetBalanceRequestModel>> ApiBalanceCurrencyGetWithHttpInfoAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -176,7 +176,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of GetAddressResponse</returns>
-        System.Threading.Tasks.Task<GetAddressResponse> BalanceDepositCurrencyAddressGetAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<GetAddressResponse> ApiBalanceDepositCurrencyAddressGetAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -188,7 +188,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (GetAddressResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetAddressResponse>> BalanceDepositCurrencyAddressGetWithHttpInfoAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GetAddressResponse>> ApiBalanceDepositCurrencyAddressGetWithHttpInfoAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -199,7 +199,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of GenerateAddressResult</returns>
-        System.Threading.Tasks.Task<GenerateAddressResult> BalanceDepositCurrencyAddressPostAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<GenerateAddressResult> ApiBalanceDepositCurrencyAddressPostAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -211,7 +211,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (GenerateAddressResult)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GenerateAddressResult>> BalanceDepositCurrencyAddressPostWithHttpInfoAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GenerateAddressResult>> ApiBalanceDepositCurrencyAddressPostWithHttpInfoAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -221,7 +221,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of GetBalancesListResponse</returns>
-        System.Threading.Tasks.Task<GetBalancesListResponse> BalanceRouteAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<GetBalancesListResponse> ApiBalanceGetAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -232,7 +232,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (GetBalancesListResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetBalancesListResponse>> BalanceRouteWithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GetBalancesListResponse>> ApiBalanceGetWithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -243,7 +243,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of GetWithdrawResponse</returns>
-        System.Threading.Tasks.Task<GetWithdrawResponse> BalanceWithdrawCurrencyPageGetAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<GetWithdrawResponse> ApiBalanceWithdrawCurrencyPageGetAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -255,7 +255,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (GetWithdrawResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GetWithdrawResponse>> BalanceWithdrawCurrencyPageGetWithHttpInfoAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<GetWithdrawResponse>> ApiBalanceWithdrawCurrencyPageGetWithHttpInfoAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -267,7 +267,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="postWithdrawRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PostWithdrawRequestResult</returns>
-        System.Threading.Tasks.Task<PostWithdrawRequestResult> BalanceWithdrawCurrencyPostAsync(string currency, PostWithdrawRequest postWithdrawRequest = default(PostWithdrawRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<PostWithdrawRequestResult> ApiBalanceWithdrawCurrencyPostAsync(string currency, PostWithdrawRequest postWithdrawRequest = default(PostWithdrawRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -280,7 +280,7 @@ namespace Org.OpenAPITools.Api
         /// <param name="postWithdrawRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PostWithdrawRequestResult)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PostWithdrawRequestResult>> BalanceWithdrawCurrencyPostWithHttpInfoAsync(string currency, PostWithdrawRequest postWithdrawRequest = default(PostWithdrawRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<PostWithdrawRequestResult>> ApiBalanceWithdrawCurrencyPostWithHttpInfoAsync(string currency, PostWithdrawRequest postWithdrawRequest = default(PostWithdrawRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -407,9 +407,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"></param>
         /// <returns>GetBalanceRequestModel</returns>
-        public GetBalanceRequestModel BalanceCurrencyGet(string currency)
+        public GetBalanceRequestModel ApiBalanceCurrencyGet(string currency)
         {
-            Org.OpenAPITools.Client.ApiResponse<GetBalanceRequestModel> localVarResponse = BalanceCurrencyGetWithHttpInfo(currency);
+            Org.OpenAPITools.Client.ApiResponse<GetBalanceRequestModel> localVarResponse = ApiBalanceCurrencyGetWithHttpInfo(currency);
             return localVarResponse.Data;
         }
 
@@ -419,11 +419,11 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"></param>
         /// <returns>ApiResponse of GetBalanceRequestModel</returns>
-        public Org.OpenAPITools.Client.ApiResponse<GetBalanceRequestModel> BalanceCurrencyGetWithHttpInfo(string currency)
+        public Org.OpenAPITools.Client.ApiResponse<GetBalanceRequestModel> ApiBalanceCurrencyGetWithHttpInfo(string currency)
         {
             // verify the required parameter 'currency' is set
             if (currency == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->BalanceCurrencyGet");
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->ApiBalanceCurrencyGet");
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -452,11 +452,11 @@ namespace Org.OpenAPITools.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<GetBalanceRequestModel>("/Balance/{currency}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<GetBalanceRequestModel>("/api/Balance/{currency}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("BalanceCurrencyGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiBalanceCurrencyGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -470,9 +470,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of GetBalanceRequestModel</returns>
-        public async System.Threading.Tasks.Task<GetBalanceRequestModel> BalanceCurrencyGetAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<GetBalanceRequestModel> ApiBalanceCurrencyGetAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<GetBalanceRequestModel> localVarResponse = await BalanceCurrencyGetWithHttpInfoAsync(currency, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<GetBalanceRequestModel> localVarResponse = await ApiBalanceCurrencyGetWithHttpInfoAsync(currency, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -483,11 +483,11 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (GetBalanceRequestModel)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<GetBalanceRequestModel>> BalanceCurrencyGetWithHttpInfoAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<GetBalanceRequestModel>> ApiBalanceCurrencyGetWithHttpInfoAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'currency' is set
             if (currency == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->BalanceCurrencyGet");
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->ApiBalanceCurrencyGet");
 
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -519,11 +519,11 @@ namespace Org.OpenAPITools.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<GetBalanceRequestModel>("/Balance/{currency}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<GetBalanceRequestModel>("/api/Balance/{currency}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("BalanceCurrencyGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiBalanceCurrencyGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -536,9 +536,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"></param>
         /// <returns>GetAddressResponse</returns>
-        public GetAddressResponse BalanceDepositCurrencyAddressGet(string currency)
+        public GetAddressResponse ApiBalanceDepositCurrencyAddressGet(string currency)
         {
-            Org.OpenAPITools.Client.ApiResponse<GetAddressResponse> localVarResponse = BalanceDepositCurrencyAddressGetWithHttpInfo(currency);
+            Org.OpenAPITools.Client.ApiResponse<GetAddressResponse> localVarResponse = ApiBalanceDepositCurrencyAddressGetWithHttpInfo(currency);
             return localVarResponse.Data;
         }
 
@@ -548,11 +548,11 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"></param>
         /// <returns>ApiResponse of GetAddressResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<GetAddressResponse> BalanceDepositCurrencyAddressGetWithHttpInfo(string currency)
+        public Org.OpenAPITools.Client.ApiResponse<GetAddressResponse> ApiBalanceDepositCurrencyAddressGetWithHttpInfo(string currency)
         {
             // verify the required parameter 'currency' is set
             if (currency == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->BalanceDepositCurrencyAddressGet");
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->ApiBalanceDepositCurrencyAddressGet");
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -581,11 +581,11 @@ namespace Org.OpenAPITools.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<GetAddressResponse>("/Balance/deposit/{currency}/address", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<GetAddressResponse>("/api/Balance/deposit/{currency}/address", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("BalanceDepositCurrencyAddressGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiBalanceDepositCurrencyAddressGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -599,9 +599,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of GetAddressResponse</returns>
-        public async System.Threading.Tasks.Task<GetAddressResponse> BalanceDepositCurrencyAddressGetAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<GetAddressResponse> ApiBalanceDepositCurrencyAddressGetAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<GetAddressResponse> localVarResponse = await BalanceDepositCurrencyAddressGetWithHttpInfoAsync(currency, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<GetAddressResponse> localVarResponse = await ApiBalanceDepositCurrencyAddressGetWithHttpInfoAsync(currency, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -612,11 +612,11 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (GetAddressResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<GetAddressResponse>> BalanceDepositCurrencyAddressGetWithHttpInfoAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<GetAddressResponse>> ApiBalanceDepositCurrencyAddressGetWithHttpInfoAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'currency' is set
             if (currency == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->BalanceDepositCurrencyAddressGet");
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->ApiBalanceDepositCurrencyAddressGet");
 
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -648,11 +648,11 @@ namespace Org.OpenAPITools.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<GetAddressResponse>("/Balance/deposit/{currency}/address", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<GetAddressResponse>("/api/Balance/deposit/{currency}/address", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("BalanceDepositCurrencyAddressGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiBalanceDepositCurrencyAddressGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -665,9 +665,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"></param>
         /// <returns>GenerateAddressResult</returns>
-        public GenerateAddressResult BalanceDepositCurrencyAddressPost(string currency)
+        public GenerateAddressResult ApiBalanceDepositCurrencyAddressPost(string currency)
         {
-            Org.OpenAPITools.Client.ApiResponse<GenerateAddressResult> localVarResponse = BalanceDepositCurrencyAddressPostWithHttpInfo(currency);
+            Org.OpenAPITools.Client.ApiResponse<GenerateAddressResult> localVarResponse = ApiBalanceDepositCurrencyAddressPostWithHttpInfo(currency);
             return localVarResponse.Data;
         }
 
@@ -677,11 +677,11 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"></param>
         /// <returns>ApiResponse of GenerateAddressResult</returns>
-        public Org.OpenAPITools.Client.ApiResponse<GenerateAddressResult> BalanceDepositCurrencyAddressPostWithHttpInfo(string currency)
+        public Org.OpenAPITools.Client.ApiResponse<GenerateAddressResult> ApiBalanceDepositCurrencyAddressPostWithHttpInfo(string currency)
         {
             // verify the required parameter 'currency' is set
             if (currency == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->BalanceDepositCurrencyAddressPost");
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->ApiBalanceDepositCurrencyAddressPost");
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -710,11 +710,11 @@ namespace Org.OpenAPITools.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<GenerateAddressResult>("/Balance/deposit/{currency}/address", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<GenerateAddressResult>("/api/Balance/deposit/{currency}/address", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("BalanceDepositCurrencyAddressPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiBalanceDepositCurrencyAddressPost", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -728,9 +728,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of GenerateAddressResult</returns>
-        public async System.Threading.Tasks.Task<GenerateAddressResult> BalanceDepositCurrencyAddressPostAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<GenerateAddressResult> ApiBalanceDepositCurrencyAddressPostAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<GenerateAddressResult> localVarResponse = await BalanceDepositCurrencyAddressPostWithHttpInfoAsync(currency, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<GenerateAddressResult> localVarResponse = await ApiBalanceDepositCurrencyAddressPostWithHttpInfoAsync(currency, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -741,11 +741,11 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (GenerateAddressResult)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<GenerateAddressResult>> BalanceDepositCurrencyAddressPostWithHttpInfoAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<GenerateAddressResult>> ApiBalanceDepositCurrencyAddressPostWithHttpInfoAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'currency' is set
             if (currency == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->BalanceDepositCurrencyAddressPost");
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->ApiBalanceDepositCurrencyAddressPost");
 
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -777,11 +777,11 @@ namespace Org.OpenAPITools.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PostAsync<GenerateAddressResult>("/Balance/deposit/{currency}/address", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<GenerateAddressResult>("/api/Balance/deposit/{currency}/address", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("BalanceDepositCurrencyAddressPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiBalanceDepositCurrencyAddressPost", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -793,9 +793,9 @@ namespace Org.OpenAPITools.Api
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>GetBalancesListResponse</returns>
-        public GetBalancesListResponse BalanceRoute()
+        public GetBalancesListResponse ApiBalanceGet()
         {
-            Org.OpenAPITools.Client.ApiResponse<GetBalancesListResponse> localVarResponse = BalanceRouteWithHttpInfo();
+            Org.OpenAPITools.Client.ApiResponse<GetBalancesListResponse> localVarResponse = ApiBalanceGetWithHttpInfo();
             return localVarResponse.Data;
         }
 
@@ -804,7 +804,7 @@ namespace Org.OpenAPITools.Api
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <returns>ApiResponse of GetBalancesListResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<GetBalancesListResponse> BalanceRouteWithHttpInfo()
+        public Org.OpenAPITools.Client.ApiResponse<GetBalancesListResponse> ApiBalanceGetWithHttpInfo()
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -832,11 +832,11 @@ namespace Org.OpenAPITools.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<GetBalancesListResponse>("/Balance", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<GetBalancesListResponse>("/api/Balance", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("BalanceRoute", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiBalanceGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -849,9 +849,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of GetBalancesListResponse</returns>
-        public async System.Threading.Tasks.Task<GetBalancesListResponse> BalanceRouteAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<GetBalancesListResponse> ApiBalanceGetAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<GetBalancesListResponse> localVarResponse = await BalanceRouteWithHttpInfoAsync(cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<GetBalancesListResponse> localVarResponse = await ApiBalanceGetWithHttpInfoAsync(cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -861,7 +861,7 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (GetBalancesListResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<GetBalancesListResponse>> BalanceRouteWithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<GetBalancesListResponse>> ApiBalanceGetWithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -892,11 +892,11 @@ namespace Org.OpenAPITools.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<GetBalancesListResponse>("/Balance", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<GetBalancesListResponse>("/api/Balance", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("BalanceRoute", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiBalanceGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -909,9 +909,9 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"></param>
         /// <returns>GetWithdrawResponse</returns>
-        public GetWithdrawResponse BalanceWithdrawCurrencyPageGet(string currency)
+        public GetWithdrawResponse ApiBalanceWithdrawCurrencyPageGet(string currency)
         {
-            Org.OpenAPITools.Client.ApiResponse<GetWithdrawResponse> localVarResponse = BalanceWithdrawCurrencyPageGetWithHttpInfo(currency);
+            Org.OpenAPITools.Client.ApiResponse<GetWithdrawResponse> localVarResponse = ApiBalanceWithdrawCurrencyPageGetWithHttpInfo(currency);
             return localVarResponse.Data;
         }
 
@@ -921,11 +921,11 @@ namespace Org.OpenAPITools.Api
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="currency"></param>
         /// <returns>ApiResponse of GetWithdrawResponse</returns>
-        public Org.OpenAPITools.Client.ApiResponse<GetWithdrawResponse> BalanceWithdrawCurrencyPageGetWithHttpInfo(string currency)
+        public Org.OpenAPITools.Client.ApiResponse<GetWithdrawResponse> ApiBalanceWithdrawCurrencyPageGetWithHttpInfo(string currency)
         {
             // verify the required parameter 'currency' is set
             if (currency == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->BalanceWithdrawCurrencyPageGet");
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->ApiBalanceWithdrawCurrencyPageGet");
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -954,11 +954,11 @@ namespace Org.OpenAPITools.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get<GetWithdrawResponse>("/Balance/withdraw/{currency}/page", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<GetWithdrawResponse>("/api/Balance/withdraw/{currency}/page", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("BalanceWithdrawCurrencyPageGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiBalanceWithdrawCurrencyPageGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -972,9 +972,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of GetWithdrawResponse</returns>
-        public async System.Threading.Tasks.Task<GetWithdrawResponse> BalanceWithdrawCurrencyPageGetAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<GetWithdrawResponse> ApiBalanceWithdrawCurrencyPageGetAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<GetWithdrawResponse> localVarResponse = await BalanceWithdrawCurrencyPageGetWithHttpInfoAsync(currency, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<GetWithdrawResponse> localVarResponse = await ApiBalanceWithdrawCurrencyPageGetWithHttpInfoAsync(currency, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -985,11 +985,11 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (GetWithdrawResponse)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<GetWithdrawResponse>> BalanceWithdrawCurrencyPageGetWithHttpInfoAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<GetWithdrawResponse>> ApiBalanceWithdrawCurrencyPageGetWithHttpInfoAsync(string currency, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'currency' is set
             if (currency == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->BalanceWithdrawCurrencyPageGet");
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->ApiBalanceWithdrawCurrencyPageGet");
 
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1021,11 +1021,11 @@ namespace Org.OpenAPITools.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<GetWithdrawResponse>("/Balance/withdraw/{currency}/page", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<GetWithdrawResponse>("/api/Balance/withdraw/{currency}/page", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("BalanceWithdrawCurrencyPageGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiBalanceWithdrawCurrencyPageGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -1039,9 +1039,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="postWithdrawRequest"> (optional)</param>
         /// <returns>PostWithdrawRequestResult</returns>
-        public PostWithdrawRequestResult BalanceWithdrawCurrencyPost(string currency, PostWithdrawRequest postWithdrawRequest = default(PostWithdrawRequest))
+        public PostWithdrawRequestResult ApiBalanceWithdrawCurrencyPost(string currency, PostWithdrawRequest postWithdrawRequest = default(PostWithdrawRequest))
         {
-            Org.OpenAPITools.Client.ApiResponse<PostWithdrawRequestResult> localVarResponse = BalanceWithdrawCurrencyPostWithHttpInfo(currency, postWithdrawRequest);
+            Org.OpenAPITools.Client.ApiResponse<PostWithdrawRequestResult> localVarResponse = ApiBalanceWithdrawCurrencyPostWithHttpInfo(currency, postWithdrawRequest);
             return localVarResponse.Data;
         }
 
@@ -1052,11 +1052,11 @@ namespace Org.OpenAPITools.Api
         /// <param name="currency"></param>
         /// <param name="postWithdrawRequest"> (optional)</param>
         /// <returns>ApiResponse of PostWithdrawRequestResult</returns>
-        public Org.OpenAPITools.Client.ApiResponse<PostWithdrawRequestResult> BalanceWithdrawCurrencyPostWithHttpInfo(string currency, PostWithdrawRequest postWithdrawRequest = default(PostWithdrawRequest))
+        public Org.OpenAPITools.Client.ApiResponse<PostWithdrawRequestResult> ApiBalanceWithdrawCurrencyPostWithHttpInfo(string currency, PostWithdrawRequest postWithdrawRequest = default(PostWithdrawRequest))
         {
             // verify the required parameter 'currency' is set
             if (currency == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->BalanceWithdrawCurrencyPost");
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->ApiBalanceWithdrawCurrencyPost");
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1090,11 +1090,11 @@ namespace Org.OpenAPITools.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<PostWithdrawRequestResult>("/Balance/withdraw/{currency}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<PostWithdrawRequestResult>("/api/Balance/withdraw/{currency}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("BalanceWithdrawCurrencyPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiBalanceWithdrawCurrencyPost", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -1109,9 +1109,9 @@ namespace Org.OpenAPITools.Api
         /// <param name="postWithdrawRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of PostWithdrawRequestResult</returns>
-        public async System.Threading.Tasks.Task<PostWithdrawRequestResult> BalanceWithdrawCurrencyPostAsync(string currency, PostWithdrawRequest postWithdrawRequest = default(PostWithdrawRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<PostWithdrawRequestResult> ApiBalanceWithdrawCurrencyPostAsync(string currency, PostWithdrawRequest postWithdrawRequest = default(PostWithdrawRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<PostWithdrawRequestResult> localVarResponse = await BalanceWithdrawCurrencyPostWithHttpInfoAsync(currency, postWithdrawRequest, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<PostWithdrawRequestResult> localVarResponse = await ApiBalanceWithdrawCurrencyPostWithHttpInfoAsync(currency, postWithdrawRequest, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1123,11 +1123,11 @@ namespace Org.OpenAPITools.Api
         /// <param name="postWithdrawRequest"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (PostWithdrawRequestResult)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PostWithdrawRequestResult>> BalanceWithdrawCurrencyPostWithHttpInfoAsync(string currency, PostWithdrawRequest postWithdrawRequest = default(PostWithdrawRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<PostWithdrawRequestResult>> ApiBalanceWithdrawCurrencyPostWithHttpInfoAsync(string currency, PostWithdrawRequest postWithdrawRequest = default(PostWithdrawRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
             // verify the required parameter 'currency' is set
             if (currency == null)
-                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->BalanceWithdrawCurrencyPost");
+                throw new Org.OpenAPITools.Client.ApiException(400, "Missing required parameter 'currency' when calling BalanceApi->ApiBalanceWithdrawCurrencyPost");
 
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -1164,11 +1164,11 @@ namespace Org.OpenAPITools.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PostAsync<PostWithdrawRequestResult>("/Balance/withdraw/{currency}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<PostWithdrawRequestResult>("/api/Balance/withdraw/{currency}", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("BalanceWithdrawCurrencyPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiBalanceWithdrawCurrencyPost", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 

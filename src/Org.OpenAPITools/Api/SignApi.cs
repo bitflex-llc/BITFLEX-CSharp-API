@@ -30,66 +30,9 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cryptoCurrencies"> (optional)</param>
-        /// <param name="orders"> (optional)</param>
-        /// <param name="depositAddresses"> (optional)</param>
-        /// <param name="userBalances"> (optional)</param>
-        /// <param name="markets"> (optional)</param>
-        /// <param name="tradingPairs"> (optional)</param>
-        /// <param name="transactions"> (optional)</param>
-        /// <param name="withdrawRequests"> (optional)</param>
-        /// <param name="manualWithdrawRequests"> (optional)</param>
-        /// <param name="trades"> (optional)</param>
-        /// <param name="quotes"> (optional)</param>
-        /// <param name="smsVerificationMessages"> (optional)</param>
-        /// <param name="tradingAmounts"> (optional)</param>
-        /// <param name="rippleDestinationTags"> (optional)</param>
-        /// <param name="bitcoinBasedCurrencies"> (optional)</param>
-        /// <param name="eRC20Tokens"> (optional)</param>
-        /// <param name="balanceActions"> (optional)</param>
-        /// <param name="keysValues"> (optional)</param>
-        /// <param name="applicationTokenAccesses"> (optional)</param>
-        /// <param name="applicationQrCommands"> (optional)</param>
-        /// <param name="pushTokens"> (optional)</param>
-        /// <param name="healthChecks"> (optional)</param>
-        /// <param name="userRoles"> (optional)</param>
-        /// <param name="roles"> (optional)</param>
-        /// <param name="roleClaims"> (optional)</param>
-        /// <param name="users"> (optional)</param>
-        /// <param name="userClaims"> (optional)</param>
-        /// <param name="userLogins"> (optional)</param>
-        /// <param name="userTokens"> (optional)</param>
-        /// <param name="databaseCurrentTransactionTransactionId"> (optional)</param>
-        /// <param name="databaseCurrentTransactionSupportsSavepoints"> (optional)</param>
-        /// <param name="databaseAutoTransactionsEnabled"> (optional)</param>
-        /// <param name="databaseProviderName"> (optional)</param>
-        /// <param name="changeTrackerAutoDetectChangesEnabled"> (optional)</param>
-        /// <param name="changeTrackerLazyLoadingEnabled"> (optional)</param>
-        /// <param name="changeTrackerQueryTrackingBehavior"> (optional)</param>
-        /// <param name="changeTrackerDeleteOrphansTiming"> (optional)</param>
-        /// <param name="changeTrackerCascadeDeleteTiming"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseCurrentTransactionTransactionId"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseAutoTransactionsEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseProviderName"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerAutoDetectChangesEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerLazyLoadingEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerQueryTrackingBehavior"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDeleteOrphansTiming"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerCascadeDeleteTiming"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerContext"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDebugViewLongView"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDebugViewShortView"> (optional)</param>
-        /// <param name="changeTrackerContextModel"> (optional)</param>
-        /// <param name="changeTrackerContextContextIdInstanceId"> (optional)</param>
-        /// <param name="changeTrackerContextContextIdLease"> (optional)</param>
-        /// <param name="changeTrackerDebugViewLongView"> (optional)</param>
-        /// <param name="changeTrackerDebugViewShortView"> (optional)</param>
-        /// <param name="model"> (optional)</param>
-        /// <param name="contextIdInstanceId"> (optional)</param>
-        /// <param name="contextIdLease"> (optional)</param>
-        /// <returns></returns>
-        void ApiSignAffiliatedataPost(List<CryptoCurrency> cryptoCurrencies = default(List<CryptoCurrency>), List<Order> orders = default(List<Order>), List<DepositAddress> depositAddresses = default(List<DepositAddress>), List<Balance> userBalances = default(List<Balance>), List<Market> markets = default(List<Market>), List<TradingPair> tradingPairs = default(List<TradingPair>), List<Transaction> transactions = default(List<Transaction>), List<WithdrawRequest> withdrawRequests = default(List<WithdrawRequest>), List<ManualWithdrawRequest> manualWithdrawRequests = default(List<ManualWithdrawRequest>), List<Trade> trades = default(List<Trade>), List<Quote> quotes = default(List<Quote>), List<SmsVerificationMessage> smsVerificationMessages = default(List<SmsVerificationMessage>), List<TradingAmount> tradingAmounts = default(List<TradingAmount>), List<RippleDestinationTag> rippleDestinationTags = default(List<RippleDestinationTag>), List<BitcoinBasedCurrency> bitcoinBasedCurrencies = default(List<BitcoinBasedCurrency>), List<ERC20Token> eRC20Tokens = default(List<ERC20Token>), List<BalanceAction> balanceActions = default(List<BalanceAction>), List<KeyValue> keysValues = default(List<KeyValue>), List<IApplicationTokenAccess> applicationTokenAccesses = default(List<IApplicationTokenAccess>), List<IApplicationQrCommand> applicationQrCommands = default(List<IApplicationQrCommand>), List<PushToken> pushTokens = default(List<PushToken>), List<HealthCheck> healthChecks = default(List<HealthCheck>), List<StringIdentityUserRole> userRoles = default(List<StringIdentityUserRole>), List<IdentityRole> roles = default(List<IdentityRole>), List<StringIdentityRoleClaim> roleClaims = default(List<StringIdentityRoleClaim>), List<ApplicationUser> users = default(List<ApplicationUser>), List<StringIdentityUserClaim> userClaims = default(List<StringIdentityUserClaim>), List<StringIdentityUserLogin> userLogins = default(List<StringIdentityUserLogin>), List<StringIdentityUserToken> userTokens = default(List<StringIdentityUserToken>), Guid? databaseCurrentTransactionTransactionId = default(Guid?), bool? databaseCurrentTransactionSupportsSavepoints = default(bool?), bool? databaseAutoTransactionsEnabled = default(bool?), string databaseProviderName = default(string), bool? changeTrackerAutoDetectChangesEnabled = default(bool?), bool? changeTrackerLazyLoadingEnabled = default(bool?), QueryTrackingBehavior? changeTrackerQueryTrackingBehavior = default(QueryTrackingBehavior?), CascadeTiming? changeTrackerDeleteOrphansTiming = default(CascadeTiming?), CascadeTiming? changeTrackerCascadeDeleteTiming = default(CascadeTiming?), Guid? changeTrackerContextDatabaseCurrentTransactionTransactionId = default(Guid?), bool? changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints = default(bool?), bool? changeTrackerContextDatabaseAutoTransactionsEnabled = default(bool?), string changeTrackerContextDatabaseProviderName = default(string), bool? changeTrackerContextChangeTrackerAutoDetectChangesEnabled = default(bool?), bool? changeTrackerContextChangeTrackerLazyLoadingEnabled = default(bool?), QueryTrackingBehavior? changeTrackerContextChangeTrackerQueryTrackingBehavior = default(QueryTrackingBehavior?), CascadeTiming? changeTrackerContextChangeTrackerDeleteOrphansTiming = default(CascadeTiming?), CascadeTiming? changeTrackerContextChangeTrackerCascadeDeleteTiming = default(CascadeTiming?), DbContext changeTrackerContextChangeTrackerContext = default(DbContext), string changeTrackerContextChangeTrackerDebugViewLongView = default(string), string changeTrackerContextChangeTrackerDebugViewShortView = default(string), Object changeTrackerContextModel = default(Object), Guid? changeTrackerContextContextIdInstanceId = default(Guid?), int? changeTrackerContextContextIdLease = default(int?), string changeTrackerDebugViewLongView = default(string), string changeTrackerDebugViewShortView = default(string), Object model = default(Object), Guid? contextIdInstanceId = default(Guid?), int? contextIdLease = default(int?));
+        /// <param name="askForPermissionRequestModel"> (optional)</param>
+        /// <returns>bool</returns>
+        bool ApiSignAskForPermissionPost(AskForPermissionRequestModel askForPermissionRequestModel = default(AskForPermissionRequestModel));
 
         /// <summary>
         /// 
@@ -98,72 +41,16 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cryptoCurrencies"> (optional)</param>
-        /// <param name="orders"> (optional)</param>
-        /// <param name="depositAddresses"> (optional)</param>
-        /// <param name="userBalances"> (optional)</param>
-        /// <param name="markets"> (optional)</param>
-        /// <param name="tradingPairs"> (optional)</param>
-        /// <param name="transactions"> (optional)</param>
-        /// <param name="withdrawRequests"> (optional)</param>
-        /// <param name="manualWithdrawRequests"> (optional)</param>
-        /// <param name="trades"> (optional)</param>
-        /// <param name="quotes"> (optional)</param>
-        /// <param name="smsVerificationMessages"> (optional)</param>
-        /// <param name="tradingAmounts"> (optional)</param>
-        /// <param name="rippleDestinationTags"> (optional)</param>
-        /// <param name="bitcoinBasedCurrencies"> (optional)</param>
-        /// <param name="eRC20Tokens"> (optional)</param>
-        /// <param name="balanceActions"> (optional)</param>
-        /// <param name="keysValues"> (optional)</param>
-        /// <param name="applicationTokenAccesses"> (optional)</param>
-        /// <param name="applicationQrCommands"> (optional)</param>
-        /// <param name="pushTokens"> (optional)</param>
-        /// <param name="healthChecks"> (optional)</param>
-        /// <param name="userRoles"> (optional)</param>
-        /// <param name="roles"> (optional)</param>
-        /// <param name="roleClaims"> (optional)</param>
-        /// <param name="users"> (optional)</param>
-        /// <param name="userClaims"> (optional)</param>
-        /// <param name="userLogins"> (optional)</param>
-        /// <param name="userTokens"> (optional)</param>
-        /// <param name="databaseCurrentTransactionTransactionId"> (optional)</param>
-        /// <param name="databaseCurrentTransactionSupportsSavepoints"> (optional)</param>
-        /// <param name="databaseAutoTransactionsEnabled"> (optional)</param>
-        /// <param name="databaseProviderName"> (optional)</param>
-        /// <param name="changeTrackerAutoDetectChangesEnabled"> (optional)</param>
-        /// <param name="changeTrackerLazyLoadingEnabled"> (optional)</param>
-        /// <param name="changeTrackerQueryTrackingBehavior"> (optional)</param>
-        /// <param name="changeTrackerDeleteOrphansTiming"> (optional)</param>
-        /// <param name="changeTrackerCascadeDeleteTiming"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseCurrentTransactionTransactionId"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseAutoTransactionsEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseProviderName"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerAutoDetectChangesEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerLazyLoadingEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerQueryTrackingBehavior"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDeleteOrphansTiming"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerCascadeDeleteTiming"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerContext"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDebugViewLongView"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDebugViewShortView"> (optional)</param>
-        /// <param name="changeTrackerContextModel"> (optional)</param>
-        /// <param name="changeTrackerContextContextIdInstanceId"> (optional)</param>
-        /// <param name="changeTrackerContextContextIdLease"> (optional)</param>
-        /// <param name="changeTrackerDebugViewLongView"> (optional)</param>
-        /// <param name="changeTrackerDebugViewShortView"> (optional)</param>
-        /// <param name="model"> (optional)</param>
-        /// <param name="contextIdInstanceId"> (optional)</param>
-        /// <param name="contextIdLease"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> ApiSignAffiliatedataPostWithHttpInfo(List<CryptoCurrency> cryptoCurrencies = default(List<CryptoCurrency>), List<Order> orders = default(List<Order>), List<DepositAddress> depositAddresses = default(List<DepositAddress>), List<Balance> userBalances = default(List<Balance>), List<Market> markets = default(List<Market>), List<TradingPair> tradingPairs = default(List<TradingPair>), List<Transaction> transactions = default(List<Transaction>), List<WithdrawRequest> withdrawRequests = default(List<WithdrawRequest>), List<ManualWithdrawRequest> manualWithdrawRequests = default(List<ManualWithdrawRequest>), List<Trade> trades = default(List<Trade>), List<Quote> quotes = default(List<Quote>), List<SmsVerificationMessage> smsVerificationMessages = default(List<SmsVerificationMessage>), List<TradingAmount> tradingAmounts = default(List<TradingAmount>), List<RippleDestinationTag> rippleDestinationTags = default(List<RippleDestinationTag>), List<BitcoinBasedCurrency> bitcoinBasedCurrencies = default(List<BitcoinBasedCurrency>), List<ERC20Token> eRC20Tokens = default(List<ERC20Token>), List<BalanceAction> balanceActions = default(List<BalanceAction>), List<KeyValue> keysValues = default(List<KeyValue>), List<IApplicationTokenAccess> applicationTokenAccesses = default(List<IApplicationTokenAccess>), List<IApplicationQrCommand> applicationQrCommands = default(List<IApplicationQrCommand>), List<PushToken> pushTokens = default(List<PushToken>), List<HealthCheck> healthChecks = default(List<HealthCheck>), List<StringIdentityUserRole> userRoles = default(List<StringIdentityUserRole>), List<IdentityRole> roles = default(List<IdentityRole>), List<StringIdentityRoleClaim> roleClaims = default(List<StringIdentityRoleClaim>), List<ApplicationUser> users = default(List<ApplicationUser>), List<StringIdentityUserClaim> userClaims = default(List<StringIdentityUserClaim>), List<StringIdentityUserLogin> userLogins = default(List<StringIdentityUserLogin>), List<StringIdentityUserToken> userTokens = default(List<StringIdentityUserToken>), Guid? databaseCurrentTransactionTransactionId = default(Guid?), bool? databaseCurrentTransactionSupportsSavepoints = default(bool?), bool? databaseAutoTransactionsEnabled = default(bool?), string databaseProviderName = default(string), bool? changeTrackerAutoDetectChangesEnabled = default(bool?), bool? changeTrackerLazyLoadingEnabled = default(bool?), QueryTrackingBehavior? changeTrackerQueryTrackingBehavior = default(QueryTrackingBehavior?), CascadeTiming? changeTrackerDeleteOrphansTiming = default(CascadeTiming?), CascadeTiming? changeTrackerCascadeDeleteTiming = default(CascadeTiming?), Guid? changeTrackerContextDatabaseCurrentTransactionTransactionId = default(Guid?), bool? changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints = default(bool?), bool? changeTrackerContextDatabaseAutoTransactionsEnabled = default(bool?), string changeTrackerContextDatabaseProviderName = default(string), bool? changeTrackerContextChangeTrackerAutoDetectChangesEnabled = default(bool?), bool? changeTrackerContextChangeTrackerLazyLoadingEnabled = default(bool?), QueryTrackingBehavior? changeTrackerContextChangeTrackerQueryTrackingBehavior = default(QueryTrackingBehavior?), CascadeTiming? changeTrackerContextChangeTrackerDeleteOrphansTiming = default(CascadeTiming?), CascadeTiming? changeTrackerContextChangeTrackerCascadeDeleteTiming = default(CascadeTiming?), DbContext changeTrackerContextChangeTrackerContext = default(DbContext), string changeTrackerContextChangeTrackerDebugViewLongView = default(string), string changeTrackerContextChangeTrackerDebugViewShortView = default(string), Object changeTrackerContextModel = default(Object), Guid? changeTrackerContextContextIdInstanceId = default(Guid?), int? changeTrackerContextContextIdLease = default(int?), string changeTrackerDebugViewLongView = default(string), string changeTrackerDebugViewShortView = default(string), Object model = default(Object), Guid? contextIdInstanceId = default(Guid?), int? contextIdLease = default(int?));
+        /// <param name="askForPermissionRequestModel"> (optional)</param>
+        /// <returns>ApiResponse of bool</returns>
+        ApiResponse<bool> ApiSignAskForPermissionPostWithHttpInfo(AskForPermissionRequestModel askForPermissionRequestModel = default(AskForPermissionRequestModel));
         /// <summary>
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns></returns>
-        void ApiSignCheckIsMobileOnlinePost();
+        /// <param name="askForPermissionRequestModel"> (optional)</param>
+        /// <returns>bool</returns>
+        bool ApiSignAskPermissionSignInPost(AskForPermissionRequestModel askForPermissionRequestModel = default(AskForPermissionRequestModel));
 
         /// <summary>
         /// 
@@ -172,8 +59,45 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> ApiSignCheckIsMobileOnlinePostWithHttpInfo();
+        /// <param name="askForPermissionRequestModel"> (optional)</param>
+        /// <returns>ApiResponse of bool</returns>
+        ApiResponse<bool> ApiSignAskPermissionSignInPostWithHttpInfo(AskForPermissionRequestModel askForPermissionRequestModel = default(AskForPermissionRequestModel));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="bitflexDeviceId"> (optional)</param>
+        /// <returns>Check2StepVerificationStatusResponse</returns>
+        Check2StepVerificationStatusResponse ApiSignCheck2StepVerificationStatusGet(string bitflexDeviceId = default(string));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="bitflexDeviceId"> (optional)</param>
+        /// <returns>ApiResponse of Check2StepVerificationStatusResponse</returns>
+        ApiResponse<Check2StepVerificationStatusResponse> ApiSignCheck2StepVerificationStatusGetWithHttpInfo(string bitflexDeviceId = default(string));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="confirmPermissionSignInRequest"> (optional)</param>
+        /// <returns>bool</returns>
+        bool ApiSignConfirmPermissionSignInPost(ConfirmPermissionSignInRequest confirmPermissionSignInRequest = default(ConfirmPermissionSignInRequest));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="confirmPermissionSignInRequest"> (optional)</param>
+        /// <returns>ApiResponse of bool</returns>
+        ApiResponse<bool> ApiSignConfirmPermissionSignInPostWithHttpInfo(ConfirmPermissionSignInRequest confirmPermissionSignInRequest = default(ConfirmPermissionSignInRequest));
         /// <summary>
         /// 
         /// </summary>
@@ -196,9 +120,9 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceName"> (optional)</param>
-        /// <returns>bool</returns>
-        bool ApiSignEnable2faPost(string deviceName = default(string));
+        /// <param name="id"> (optional)</param>
+        /// <returns>SignInPermissionModel</returns>
+        SignInPermissionModel ApiSignGetPermissionDetailsGet(string id = default(string));
 
         /// <summary>
         /// 
@@ -207,29 +131,9 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceName"> (optional)</param>
-        /// <returns>ApiResponse of bool</returns>
-        ApiResponse<bool> ApiSignEnable2faPostWithHttpInfo(string deviceName = default(string));
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceName"> (optional)</param>
-        /// <param name="ip"> (optional)</param>
-        /// <returns>List&lt;MobileConfirmationRequest&gt;</returns>
-        List<MobileConfirmationRequest> ApiSignGetRequestsGet(string deviceName = default(string), string ip = default(string));
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceName"> (optional)</param>
-        /// <param name="ip"> (optional)</param>
-        /// <returns>ApiResponse of List&lt;MobileConfirmationRequest&gt;</returns>
-        ApiResponse<List<MobileConfirmationRequest>> ApiSignGetRequestsGetWithHttpInfo(string deviceName = default(string), string ip = default(string));
+        /// <param name="id"> (optional)</param>
+        /// <returns>ApiResponse of SignInPermissionModel</returns>
+        ApiResponse<SignInPermissionModel> ApiSignGetPermissionDetailsGetWithHttpInfo(string id = default(string));
         /// <summary>
         /// 
         /// </summary>
@@ -252,9 +156,8 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="requestType"> (optional)</param>
         /// <returns></returns>
-        void ApiSignMobileConfirmationRequestPost(RequestType? requestType = default(RequestType?));
+        void ApiSignIsAnyDeviceOnlinePost();
 
         /// <summary>
         /// 
@@ -263,9 +166,26 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="requestType"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> ApiSignMobileConfirmationRequestPostWithHttpInfo(RequestType? requestType = default(RequestType?));
+        ApiResponse<Object> ApiSignIsAnyDeviceOnlinePostWithHttpInfo();
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="postMobileConfirmationRequestModel"> (optional)</param>
+        /// <returns></returns>
+        void ApiSignMobileConfirmationRequestPost(PostMobileConfirmationRequestModel postMobileConfirmationRequestModel = default(PostMobileConfirmationRequestModel));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="postMobileConfirmationRequestModel"> (optional)</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        ApiResponse<Object> ApiSignMobileConfirmationRequestPostWithHttpInfo(PostMobileConfirmationRequestModel postMobileConfirmationRequestModel = default(PostMobileConfirmationRequestModel));
         /// <summary>
         /// 
         /// </summary>
@@ -372,67 +292,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cryptoCurrencies"> (optional)</param>
-        /// <param name="orders"> (optional)</param>
-        /// <param name="depositAddresses"> (optional)</param>
-        /// <param name="userBalances"> (optional)</param>
-        /// <param name="markets"> (optional)</param>
-        /// <param name="tradingPairs"> (optional)</param>
-        /// <param name="transactions"> (optional)</param>
-        /// <param name="withdrawRequests"> (optional)</param>
-        /// <param name="manualWithdrawRequests"> (optional)</param>
-        /// <param name="trades"> (optional)</param>
-        /// <param name="quotes"> (optional)</param>
-        /// <param name="smsVerificationMessages"> (optional)</param>
-        /// <param name="tradingAmounts"> (optional)</param>
-        /// <param name="rippleDestinationTags"> (optional)</param>
-        /// <param name="bitcoinBasedCurrencies"> (optional)</param>
-        /// <param name="eRC20Tokens"> (optional)</param>
-        /// <param name="balanceActions"> (optional)</param>
-        /// <param name="keysValues"> (optional)</param>
-        /// <param name="applicationTokenAccesses"> (optional)</param>
-        /// <param name="applicationQrCommands"> (optional)</param>
-        /// <param name="pushTokens"> (optional)</param>
-        /// <param name="healthChecks"> (optional)</param>
-        /// <param name="userRoles"> (optional)</param>
-        /// <param name="roles"> (optional)</param>
-        /// <param name="roleClaims"> (optional)</param>
-        /// <param name="users"> (optional)</param>
-        /// <param name="userClaims"> (optional)</param>
-        /// <param name="userLogins"> (optional)</param>
-        /// <param name="userTokens"> (optional)</param>
-        /// <param name="databaseCurrentTransactionTransactionId"> (optional)</param>
-        /// <param name="databaseCurrentTransactionSupportsSavepoints"> (optional)</param>
-        /// <param name="databaseAutoTransactionsEnabled"> (optional)</param>
-        /// <param name="databaseProviderName"> (optional)</param>
-        /// <param name="changeTrackerAutoDetectChangesEnabled"> (optional)</param>
-        /// <param name="changeTrackerLazyLoadingEnabled"> (optional)</param>
-        /// <param name="changeTrackerQueryTrackingBehavior"> (optional)</param>
-        /// <param name="changeTrackerDeleteOrphansTiming"> (optional)</param>
-        /// <param name="changeTrackerCascadeDeleteTiming"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseCurrentTransactionTransactionId"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseAutoTransactionsEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseProviderName"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerAutoDetectChangesEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerLazyLoadingEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerQueryTrackingBehavior"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDeleteOrphansTiming"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerCascadeDeleteTiming"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerContext"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDebugViewLongView"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDebugViewShortView"> (optional)</param>
-        /// <param name="changeTrackerContextModel"> (optional)</param>
-        /// <param name="changeTrackerContextContextIdInstanceId"> (optional)</param>
-        /// <param name="changeTrackerContextContextIdLease"> (optional)</param>
-        /// <param name="changeTrackerDebugViewLongView"> (optional)</param>
-        /// <param name="changeTrackerDebugViewShortView"> (optional)</param>
-        /// <param name="model"> (optional)</param>
-        /// <param name="contextIdInstanceId"> (optional)</param>
-        /// <param name="contextIdLease"> (optional)</param>
+        /// <param name="askForPermissionRequestModel"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task ApiSignAffiliatedataPostAsync(List<CryptoCurrency> cryptoCurrencies = default(List<CryptoCurrency>), List<Order> orders = default(List<Order>), List<DepositAddress> depositAddresses = default(List<DepositAddress>), List<Balance> userBalances = default(List<Balance>), List<Market> markets = default(List<Market>), List<TradingPair> tradingPairs = default(List<TradingPair>), List<Transaction> transactions = default(List<Transaction>), List<WithdrawRequest> withdrawRequests = default(List<WithdrawRequest>), List<ManualWithdrawRequest> manualWithdrawRequests = default(List<ManualWithdrawRequest>), List<Trade> trades = default(List<Trade>), List<Quote> quotes = default(List<Quote>), List<SmsVerificationMessage> smsVerificationMessages = default(List<SmsVerificationMessage>), List<TradingAmount> tradingAmounts = default(List<TradingAmount>), List<RippleDestinationTag> rippleDestinationTags = default(List<RippleDestinationTag>), List<BitcoinBasedCurrency> bitcoinBasedCurrencies = default(List<BitcoinBasedCurrency>), List<ERC20Token> eRC20Tokens = default(List<ERC20Token>), List<BalanceAction> balanceActions = default(List<BalanceAction>), List<KeyValue> keysValues = default(List<KeyValue>), List<IApplicationTokenAccess> applicationTokenAccesses = default(List<IApplicationTokenAccess>), List<IApplicationQrCommand> applicationQrCommands = default(List<IApplicationQrCommand>), List<PushToken> pushTokens = default(List<PushToken>), List<HealthCheck> healthChecks = default(List<HealthCheck>), List<StringIdentityUserRole> userRoles = default(List<StringIdentityUserRole>), List<IdentityRole> roles = default(List<IdentityRole>), List<StringIdentityRoleClaim> roleClaims = default(List<StringIdentityRoleClaim>), List<ApplicationUser> users = default(List<ApplicationUser>), List<StringIdentityUserClaim> userClaims = default(List<StringIdentityUserClaim>), List<StringIdentityUserLogin> userLogins = default(List<StringIdentityUserLogin>), List<StringIdentityUserToken> userTokens = default(List<StringIdentityUserToken>), Guid? databaseCurrentTransactionTransactionId = default(Guid?), bool? databaseCurrentTransactionSupportsSavepoints = default(bool?), bool? databaseAutoTransactionsEnabled = default(bool?), string databaseProviderName = default(string), bool? changeTrackerAutoDetectChangesEnabled = default(bool?), bool? changeTrackerLazyLoadingEnabled = default(bool?), QueryTrackingBehavior? changeTrackerQueryTrackingBehavior = default(QueryTrackingBehavior?), CascadeTiming? changeTrackerDeleteOrphansTiming = default(CascadeTiming?), CascadeTiming? changeTrackerCascadeDeleteTiming = default(CascadeTiming?), Guid? changeTrackerContextDatabaseCurrentTransactionTransactionId = default(Guid?), bool? changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints = default(bool?), bool? changeTrackerContextDatabaseAutoTransactionsEnabled = default(bool?), string changeTrackerContextDatabaseProviderName = default(string), bool? changeTrackerContextChangeTrackerAutoDetectChangesEnabled = default(bool?), bool? changeTrackerContextChangeTrackerLazyLoadingEnabled = default(bool?), QueryTrackingBehavior? changeTrackerContextChangeTrackerQueryTrackingBehavior = default(QueryTrackingBehavior?), CascadeTiming? changeTrackerContextChangeTrackerDeleteOrphansTiming = default(CascadeTiming?), CascadeTiming? changeTrackerContextChangeTrackerCascadeDeleteTiming = default(CascadeTiming?), DbContext changeTrackerContextChangeTrackerContext = default(DbContext), string changeTrackerContextChangeTrackerDebugViewLongView = default(string), string changeTrackerContextChangeTrackerDebugViewShortView = default(string), Object changeTrackerContextModel = default(Object), Guid? changeTrackerContextContextIdInstanceId = default(Guid?), int? changeTrackerContextContextIdLease = default(int?), string changeTrackerDebugViewLongView = default(string), string changeTrackerDebugViewShortView = default(string), Object model = default(Object), Guid? contextIdInstanceId = default(Guid?), int? contextIdLease = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of bool</returns>
+        System.Threading.Tasks.Task<bool> ApiSignAskForPermissionPostAsync(AskForPermissionRequestModel askForPermissionRequestModel = default(AskForPermissionRequestModel), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -441,67 +304,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cryptoCurrencies"> (optional)</param>
-        /// <param name="orders"> (optional)</param>
-        /// <param name="depositAddresses"> (optional)</param>
-        /// <param name="userBalances"> (optional)</param>
-        /// <param name="markets"> (optional)</param>
-        /// <param name="tradingPairs"> (optional)</param>
-        /// <param name="transactions"> (optional)</param>
-        /// <param name="withdrawRequests"> (optional)</param>
-        /// <param name="manualWithdrawRequests"> (optional)</param>
-        /// <param name="trades"> (optional)</param>
-        /// <param name="quotes"> (optional)</param>
-        /// <param name="smsVerificationMessages"> (optional)</param>
-        /// <param name="tradingAmounts"> (optional)</param>
-        /// <param name="rippleDestinationTags"> (optional)</param>
-        /// <param name="bitcoinBasedCurrencies"> (optional)</param>
-        /// <param name="eRC20Tokens"> (optional)</param>
-        /// <param name="balanceActions"> (optional)</param>
-        /// <param name="keysValues"> (optional)</param>
-        /// <param name="applicationTokenAccesses"> (optional)</param>
-        /// <param name="applicationQrCommands"> (optional)</param>
-        /// <param name="pushTokens"> (optional)</param>
-        /// <param name="healthChecks"> (optional)</param>
-        /// <param name="userRoles"> (optional)</param>
-        /// <param name="roles"> (optional)</param>
-        /// <param name="roleClaims"> (optional)</param>
-        /// <param name="users"> (optional)</param>
-        /// <param name="userClaims"> (optional)</param>
-        /// <param name="userLogins"> (optional)</param>
-        /// <param name="userTokens"> (optional)</param>
-        /// <param name="databaseCurrentTransactionTransactionId"> (optional)</param>
-        /// <param name="databaseCurrentTransactionSupportsSavepoints"> (optional)</param>
-        /// <param name="databaseAutoTransactionsEnabled"> (optional)</param>
-        /// <param name="databaseProviderName"> (optional)</param>
-        /// <param name="changeTrackerAutoDetectChangesEnabled"> (optional)</param>
-        /// <param name="changeTrackerLazyLoadingEnabled"> (optional)</param>
-        /// <param name="changeTrackerQueryTrackingBehavior"> (optional)</param>
-        /// <param name="changeTrackerDeleteOrphansTiming"> (optional)</param>
-        /// <param name="changeTrackerCascadeDeleteTiming"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseCurrentTransactionTransactionId"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseAutoTransactionsEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseProviderName"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerAutoDetectChangesEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerLazyLoadingEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerQueryTrackingBehavior"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDeleteOrphansTiming"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerCascadeDeleteTiming"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerContext"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDebugViewLongView"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDebugViewShortView"> (optional)</param>
-        /// <param name="changeTrackerContextModel"> (optional)</param>
-        /// <param name="changeTrackerContextContextIdInstanceId"> (optional)</param>
-        /// <param name="changeTrackerContextContextIdLease"> (optional)</param>
-        /// <param name="changeTrackerDebugViewLongView"> (optional)</param>
-        /// <param name="changeTrackerDebugViewShortView"> (optional)</param>
-        /// <param name="model"> (optional)</param>
-        /// <param name="contextIdInstanceId"> (optional)</param>
-        /// <param name="contextIdLease"> (optional)</param>
+        /// <param name="askForPermissionRequestModel"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> ApiSignAffiliatedataPostWithHttpInfoAsync(List<CryptoCurrency> cryptoCurrencies = default(List<CryptoCurrency>), List<Order> orders = default(List<Order>), List<DepositAddress> depositAddresses = default(List<DepositAddress>), List<Balance> userBalances = default(List<Balance>), List<Market> markets = default(List<Market>), List<TradingPair> tradingPairs = default(List<TradingPair>), List<Transaction> transactions = default(List<Transaction>), List<WithdrawRequest> withdrawRequests = default(List<WithdrawRequest>), List<ManualWithdrawRequest> manualWithdrawRequests = default(List<ManualWithdrawRequest>), List<Trade> trades = default(List<Trade>), List<Quote> quotes = default(List<Quote>), List<SmsVerificationMessage> smsVerificationMessages = default(List<SmsVerificationMessage>), List<TradingAmount> tradingAmounts = default(List<TradingAmount>), List<RippleDestinationTag> rippleDestinationTags = default(List<RippleDestinationTag>), List<BitcoinBasedCurrency> bitcoinBasedCurrencies = default(List<BitcoinBasedCurrency>), List<ERC20Token> eRC20Tokens = default(List<ERC20Token>), List<BalanceAction> balanceActions = default(List<BalanceAction>), List<KeyValue> keysValues = default(List<KeyValue>), List<IApplicationTokenAccess> applicationTokenAccesses = default(List<IApplicationTokenAccess>), List<IApplicationQrCommand> applicationQrCommands = default(List<IApplicationQrCommand>), List<PushToken> pushTokens = default(List<PushToken>), List<HealthCheck> healthChecks = default(List<HealthCheck>), List<StringIdentityUserRole> userRoles = default(List<StringIdentityUserRole>), List<IdentityRole> roles = default(List<IdentityRole>), List<StringIdentityRoleClaim> roleClaims = default(List<StringIdentityRoleClaim>), List<ApplicationUser> users = default(List<ApplicationUser>), List<StringIdentityUserClaim> userClaims = default(List<StringIdentityUserClaim>), List<StringIdentityUserLogin> userLogins = default(List<StringIdentityUserLogin>), List<StringIdentityUserToken> userTokens = default(List<StringIdentityUserToken>), Guid? databaseCurrentTransactionTransactionId = default(Guid?), bool? databaseCurrentTransactionSupportsSavepoints = default(bool?), bool? databaseAutoTransactionsEnabled = default(bool?), string databaseProviderName = default(string), bool? changeTrackerAutoDetectChangesEnabled = default(bool?), bool? changeTrackerLazyLoadingEnabled = default(bool?), QueryTrackingBehavior? changeTrackerQueryTrackingBehavior = default(QueryTrackingBehavior?), CascadeTiming? changeTrackerDeleteOrphansTiming = default(CascadeTiming?), CascadeTiming? changeTrackerCascadeDeleteTiming = default(CascadeTiming?), Guid? changeTrackerContextDatabaseCurrentTransactionTransactionId = default(Guid?), bool? changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints = default(bool?), bool? changeTrackerContextDatabaseAutoTransactionsEnabled = default(bool?), string changeTrackerContextDatabaseProviderName = default(string), bool? changeTrackerContextChangeTrackerAutoDetectChangesEnabled = default(bool?), bool? changeTrackerContextChangeTrackerLazyLoadingEnabled = default(bool?), QueryTrackingBehavior? changeTrackerContextChangeTrackerQueryTrackingBehavior = default(QueryTrackingBehavior?), CascadeTiming? changeTrackerContextChangeTrackerDeleteOrphansTiming = default(CascadeTiming?), CascadeTiming? changeTrackerContextChangeTrackerCascadeDeleteTiming = default(CascadeTiming?), DbContext changeTrackerContextChangeTrackerContext = default(DbContext), string changeTrackerContextChangeTrackerDebugViewLongView = default(string), string changeTrackerContextChangeTrackerDebugViewShortView = default(string), Object changeTrackerContextModel = default(Object), Guid? changeTrackerContextContextIdInstanceId = default(Guid?), int? changeTrackerContextContextIdLease = default(int?), string changeTrackerDebugViewLongView = default(string), string changeTrackerDebugViewShortView = default(string), Object model = default(Object), Guid? contextIdInstanceId = default(Guid?), int? contextIdLease = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (bool)</returns>
+        System.Threading.Tasks.Task<ApiResponse<bool>> ApiSignAskForPermissionPostWithHttpInfoAsync(AskForPermissionRequestModel askForPermissionRequestModel = default(AskForPermissionRequestModel), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -509,9 +315,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="askForPermissionRequestModel"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task ApiSignCheckIsMobileOnlinePostAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of bool</returns>
+        System.Threading.Tasks.Task<bool> ApiSignAskPermissionSignInPostAsync(AskForPermissionRequestModel askForPermissionRequestModel = default(AskForPermissionRequestModel), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -520,9 +327,56 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="askForPermissionRequestModel"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> ApiSignCheckIsMobileOnlinePostWithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (bool)</returns>
+        System.Threading.Tasks.Task<ApiResponse<bool>> ApiSignAskPermissionSignInPostWithHttpInfoAsync(AskForPermissionRequestModel askForPermissionRequestModel = default(AskForPermissionRequestModel), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="bitflexDeviceId"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of Check2StepVerificationStatusResponse</returns>
+        System.Threading.Tasks.Task<Check2StepVerificationStatusResponse> ApiSignCheck2StepVerificationStatusGetAsync(string bitflexDeviceId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="bitflexDeviceId"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (Check2StepVerificationStatusResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Check2StepVerificationStatusResponse>> ApiSignCheck2StepVerificationStatusGetWithHttpInfoAsync(string bitflexDeviceId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="confirmPermissionSignInRequest"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of bool</returns>
+        System.Threading.Tasks.Task<bool> ApiSignConfirmPermissionSignInPostAsync(ConfirmPermissionSignInRequest confirmPermissionSignInRequest = default(ConfirmPermissionSignInRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="confirmPermissionSignInRequest"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (bool)</returns>
+        System.Threading.Tasks.Task<ApiResponse<bool>> ApiSignConfirmPermissionSignInPostWithHttpInfoAsync(ConfirmPermissionSignInRequest confirmPermissionSignInRequest = default(ConfirmPermissionSignInRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -553,10 +407,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceName"> (optional)</param>
+        /// <param name="id"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of bool</returns>
-        System.Threading.Tasks.Task<bool> ApiSignEnable2faPostAsync(string deviceName = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of SignInPermissionModel</returns>
+        System.Threading.Tasks.Task<SignInPermissionModel> ApiSignGetPermissionDetailsGetAsync(string id = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -565,35 +419,10 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceName"> (optional)</param>
+        /// <param name="id"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (bool)</returns>
-        System.Threading.Tasks.Task<ApiResponse<bool>> ApiSignEnable2faPostWithHttpInfoAsync(string deviceName = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceName"> (optional)</param>
-        /// <param name="ip"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of List&lt;MobileConfirmationRequest&gt;</returns>
-        System.Threading.Tasks.Task<List<MobileConfirmationRequest>> ApiSignGetRequestsGetAsync(string deviceName = default(string), string ip = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <remarks>
-        /// 
-        /// </remarks>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceName"> (optional)</param>
-        /// <param name="ip"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (List&lt;MobileConfirmationRequest&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<MobileConfirmationRequest>>> ApiSignGetRequestsGetWithHttpInfoAsync(string deviceName = default(string), string ip = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <returns>Task of ApiResponse (SignInPermissionModel)</returns>
+        System.Threading.Tasks.Task<ApiResponse<SignInPermissionModel>> ApiSignGetPermissionDetailsGetWithHttpInfoAsync(string id = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -624,10 +453,9 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="requestType"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task ApiSignMobileConfirmationRequestPostAsync(RequestType? requestType = default(RequestType?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task ApiSignIsAnyDeviceOnlinePostAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -636,10 +464,32 @@ namespace Org.OpenAPITools.Api
         /// 
         /// </remarks>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="requestType"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> ApiSignMobileConfirmationRequestPostWithHttpInfoAsync(RequestType? requestType = default(RequestType?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<Object>> ApiSignIsAnyDeviceOnlinePostWithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="postMobileConfirmationRequestModel"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of void</returns>
+        System.Threading.Tasks.Task ApiSignMobileConfirmationRequestPostAsync(PostMobileConfirmationRequestModel postMobileConfirmationRequestModel = default(PostMobileConfirmationRequestModel), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="postMobileConfirmationRequestModel"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse</returns>
+        System.Threading.Tasks.Task<ApiResponse<Object>> ApiSignMobileConfirmationRequestPostWithHttpInfoAsync(PostMobileConfirmationRequestModel postMobileConfirmationRequestModel = default(PostMobileConfirmationRequestModel), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -879,142 +729,36 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cryptoCurrencies"> (optional)</param>
-        /// <param name="orders"> (optional)</param>
-        /// <param name="depositAddresses"> (optional)</param>
-        /// <param name="userBalances"> (optional)</param>
-        /// <param name="markets"> (optional)</param>
-        /// <param name="tradingPairs"> (optional)</param>
-        /// <param name="transactions"> (optional)</param>
-        /// <param name="withdrawRequests"> (optional)</param>
-        /// <param name="manualWithdrawRequests"> (optional)</param>
-        /// <param name="trades"> (optional)</param>
-        /// <param name="quotes"> (optional)</param>
-        /// <param name="smsVerificationMessages"> (optional)</param>
-        /// <param name="tradingAmounts"> (optional)</param>
-        /// <param name="rippleDestinationTags"> (optional)</param>
-        /// <param name="bitcoinBasedCurrencies"> (optional)</param>
-        /// <param name="eRC20Tokens"> (optional)</param>
-        /// <param name="balanceActions"> (optional)</param>
-        /// <param name="keysValues"> (optional)</param>
-        /// <param name="applicationTokenAccesses"> (optional)</param>
-        /// <param name="applicationQrCommands"> (optional)</param>
-        /// <param name="pushTokens"> (optional)</param>
-        /// <param name="healthChecks"> (optional)</param>
-        /// <param name="userRoles"> (optional)</param>
-        /// <param name="roles"> (optional)</param>
-        /// <param name="roleClaims"> (optional)</param>
-        /// <param name="users"> (optional)</param>
-        /// <param name="userClaims"> (optional)</param>
-        /// <param name="userLogins"> (optional)</param>
-        /// <param name="userTokens"> (optional)</param>
-        /// <param name="databaseCurrentTransactionTransactionId"> (optional)</param>
-        /// <param name="databaseCurrentTransactionSupportsSavepoints"> (optional)</param>
-        /// <param name="databaseAutoTransactionsEnabled"> (optional)</param>
-        /// <param name="databaseProviderName"> (optional)</param>
-        /// <param name="changeTrackerAutoDetectChangesEnabled"> (optional)</param>
-        /// <param name="changeTrackerLazyLoadingEnabled"> (optional)</param>
-        /// <param name="changeTrackerQueryTrackingBehavior"> (optional)</param>
-        /// <param name="changeTrackerDeleteOrphansTiming"> (optional)</param>
-        /// <param name="changeTrackerCascadeDeleteTiming"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseCurrentTransactionTransactionId"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseAutoTransactionsEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseProviderName"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerAutoDetectChangesEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerLazyLoadingEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerQueryTrackingBehavior"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDeleteOrphansTiming"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerCascadeDeleteTiming"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerContext"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDebugViewLongView"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDebugViewShortView"> (optional)</param>
-        /// <param name="changeTrackerContextModel"> (optional)</param>
-        /// <param name="changeTrackerContextContextIdInstanceId"> (optional)</param>
-        /// <param name="changeTrackerContextContextIdLease"> (optional)</param>
-        /// <param name="changeTrackerDebugViewLongView"> (optional)</param>
-        /// <param name="changeTrackerDebugViewShortView"> (optional)</param>
-        /// <param name="model"> (optional)</param>
-        /// <param name="contextIdInstanceId"> (optional)</param>
-        /// <param name="contextIdLease"> (optional)</param>
-        /// <returns></returns>
-        public void ApiSignAffiliatedataPost(List<CryptoCurrency> cryptoCurrencies = default(List<CryptoCurrency>), List<Order> orders = default(List<Order>), List<DepositAddress> depositAddresses = default(List<DepositAddress>), List<Balance> userBalances = default(List<Balance>), List<Market> markets = default(List<Market>), List<TradingPair> tradingPairs = default(List<TradingPair>), List<Transaction> transactions = default(List<Transaction>), List<WithdrawRequest> withdrawRequests = default(List<WithdrawRequest>), List<ManualWithdrawRequest> manualWithdrawRequests = default(List<ManualWithdrawRequest>), List<Trade> trades = default(List<Trade>), List<Quote> quotes = default(List<Quote>), List<SmsVerificationMessage> smsVerificationMessages = default(List<SmsVerificationMessage>), List<TradingAmount> tradingAmounts = default(List<TradingAmount>), List<RippleDestinationTag> rippleDestinationTags = default(List<RippleDestinationTag>), List<BitcoinBasedCurrency> bitcoinBasedCurrencies = default(List<BitcoinBasedCurrency>), List<ERC20Token> eRC20Tokens = default(List<ERC20Token>), List<BalanceAction> balanceActions = default(List<BalanceAction>), List<KeyValue> keysValues = default(List<KeyValue>), List<IApplicationTokenAccess> applicationTokenAccesses = default(List<IApplicationTokenAccess>), List<IApplicationQrCommand> applicationQrCommands = default(List<IApplicationQrCommand>), List<PushToken> pushTokens = default(List<PushToken>), List<HealthCheck> healthChecks = default(List<HealthCheck>), List<StringIdentityUserRole> userRoles = default(List<StringIdentityUserRole>), List<IdentityRole> roles = default(List<IdentityRole>), List<StringIdentityRoleClaim> roleClaims = default(List<StringIdentityRoleClaim>), List<ApplicationUser> users = default(List<ApplicationUser>), List<StringIdentityUserClaim> userClaims = default(List<StringIdentityUserClaim>), List<StringIdentityUserLogin> userLogins = default(List<StringIdentityUserLogin>), List<StringIdentityUserToken> userTokens = default(List<StringIdentityUserToken>), Guid? databaseCurrentTransactionTransactionId = default(Guid?), bool? databaseCurrentTransactionSupportsSavepoints = default(bool?), bool? databaseAutoTransactionsEnabled = default(bool?), string databaseProviderName = default(string), bool? changeTrackerAutoDetectChangesEnabled = default(bool?), bool? changeTrackerLazyLoadingEnabled = default(bool?), QueryTrackingBehavior? changeTrackerQueryTrackingBehavior = default(QueryTrackingBehavior?), CascadeTiming? changeTrackerDeleteOrphansTiming = default(CascadeTiming?), CascadeTiming? changeTrackerCascadeDeleteTiming = default(CascadeTiming?), Guid? changeTrackerContextDatabaseCurrentTransactionTransactionId = default(Guid?), bool? changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints = default(bool?), bool? changeTrackerContextDatabaseAutoTransactionsEnabled = default(bool?), string changeTrackerContextDatabaseProviderName = default(string), bool? changeTrackerContextChangeTrackerAutoDetectChangesEnabled = default(bool?), bool? changeTrackerContextChangeTrackerLazyLoadingEnabled = default(bool?), QueryTrackingBehavior? changeTrackerContextChangeTrackerQueryTrackingBehavior = default(QueryTrackingBehavior?), CascadeTiming? changeTrackerContextChangeTrackerDeleteOrphansTiming = default(CascadeTiming?), CascadeTiming? changeTrackerContextChangeTrackerCascadeDeleteTiming = default(CascadeTiming?), DbContext changeTrackerContextChangeTrackerContext = default(DbContext), string changeTrackerContextChangeTrackerDebugViewLongView = default(string), string changeTrackerContextChangeTrackerDebugViewShortView = default(string), Object changeTrackerContextModel = default(Object), Guid? changeTrackerContextContextIdInstanceId = default(Guid?), int? changeTrackerContextContextIdLease = default(int?), string changeTrackerDebugViewLongView = default(string), string changeTrackerDebugViewShortView = default(string), Object model = default(Object), Guid? contextIdInstanceId = default(Guid?), int? contextIdLease = default(int?))
+        /// <param name="askForPermissionRequestModel"> (optional)</param>
+        /// <returns>bool</returns>
+        public bool ApiSignAskForPermissionPost(AskForPermissionRequestModel askForPermissionRequestModel = default(AskForPermissionRequestModel))
         {
-            ApiSignAffiliatedataPostWithHttpInfo(cryptoCurrencies, orders, depositAddresses, userBalances, markets, tradingPairs, transactions, withdrawRequests, manualWithdrawRequests, trades, quotes, smsVerificationMessages, tradingAmounts, rippleDestinationTags, bitcoinBasedCurrencies, eRC20Tokens, balanceActions, keysValues, applicationTokenAccesses, applicationQrCommands, pushTokens, healthChecks, userRoles, roles, roleClaims, users, userClaims, userLogins, userTokens, databaseCurrentTransactionTransactionId, databaseCurrentTransactionSupportsSavepoints, databaseAutoTransactionsEnabled, databaseProviderName, changeTrackerAutoDetectChangesEnabled, changeTrackerLazyLoadingEnabled, changeTrackerQueryTrackingBehavior, changeTrackerDeleteOrphansTiming, changeTrackerCascadeDeleteTiming, changeTrackerContextDatabaseCurrentTransactionTransactionId, changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints, changeTrackerContextDatabaseAutoTransactionsEnabled, changeTrackerContextDatabaseProviderName, changeTrackerContextChangeTrackerAutoDetectChangesEnabled, changeTrackerContextChangeTrackerLazyLoadingEnabled, changeTrackerContextChangeTrackerQueryTrackingBehavior, changeTrackerContextChangeTrackerDeleteOrphansTiming, changeTrackerContextChangeTrackerCascadeDeleteTiming, changeTrackerContextChangeTrackerContext, changeTrackerContextChangeTrackerDebugViewLongView, changeTrackerContextChangeTrackerDebugViewShortView, changeTrackerContextModel, changeTrackerContextContextIdInstanceId, changeTrackerContextContextIdLease, changeTrackerDebugViewLongView, changeTrackerDebugViewShortView, model, contextIdInstanceId, contextIdLease);
+            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = ApiSignAskForPermissionPostWithHttpInfo(askForPermissionRequestModel);
+            return localVarResponse.Data;
         }
 
         /// <summary>
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cryptoCurrencies"> (optional)</param>
-        /// <param name="orders"> (optional)</param>
-        /// <param name="depositAddresses"> (optional)</param>
-        /// <param name="userBalances"> (optional)</param>
-        /// <param name="markets"> (optional)</param>
-        /// <param name="tradingPairs"> (optional)</param>
-        /// <param name="transactions"> (optional)</param>
-        /// <param name="withdrawRequests"> (optional)</param>
-        /// <param name="manualWithdrawRequests"> (optional)</param>
-        /// <param name="trades"> (optional)</param>
-        /// <param name="quotes"> (optional)</param>
-        /// <param name="smsVerificationMessages"> (optional)</param>
-        /// <param name="tradingAmounts"> (optional)</param>
-        /// <param name="rippleDestinationTags"> (optional)</param>
-        /// <param name="bitcoinBasedCurrencies"> (optional)</param>
-        /// <param name="eRC20Tokens"> (optional)</param>
-        /// <param name="balanceActions"> (optional)</param>
-        /// <param name="keysValues"> (optional)</param>
-        /// <param name="applicationTokenAccesses"> (optional)</param>
-        /// <param name="applicationQrCommands"> (optional)</param>
-        /// <param name="pushTokens"> (optional)</param>
-        /// <param name="healthChecks"> (optional)</param>
-        /// <param name="userRoles"> (optional)</param>
-        /// <param name="roles"> (optional)</param>
-        /// <param name="roleClaims"> (optional)</param>
-        /// <param name="users"> (optional)</param>
-        /// <param name="userClaims"> (optional)</param>
-        /// <param name="userLogins"> (optional)</param>
-        /// <param name="userTokens"> (optional)</param>
-        /// <param name="databaseCurrentTransactionTransactionId"> (optional)</param>
-        /// <param name="databaseCurrentTransactionSupportsSavepoints"> (optional)</param>
-        /// <param name="databaseAutoTransactionsEnabled"> (optional)</param>
-        /// <param name="databaseProviderName"> (optional)</param>
-        /// <param name="changeTrackerAutoDetectChangesEnabled"> (optional)</param>
-        /// <param name="changeTrackerLazyLoadingEnabled"> (optional)</param>
-        /// <param name="changeTrackerQueryTrackingBehavior"> (optional)</param>
-        /// <param name="changeTrackerDeleteOrphansTiming"> (optional)</param>
-        /// <param name="changeTrackerCascadeDeleteTiming"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseCurrentTransactionTransactionId"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseAutoTransactionsEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseProviderName"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerAutoDetectChangesEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerLazyLoadingEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerQueryTrackingBehavior"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDeleteOrphansTiming"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerCascadeDeleteTiming"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerContext"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDebugViewLongView"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDebugViewShortView"> (optional)</param>
-        /// <param name="changeTrackerContextModel"> (optional)</param>
-        /// <param name="changeTrackerContextContextIdInstanceId"> (optional)</param>
-        /// <param name="changeTrackerContextContextIdLease"> (optional)</param>
-        /// <param name="changeTrackerDebugViewLongView"> (optional)</param>
-        /// <param name="changeTrackerDebugViewShortView"> (optional)</param>
-        /// <param name="model"> (optional)</param>
-        /// <param name="contextIdInstanceId"> (optional)</param>
-        /// <param name="contextIdLease"> (optional)</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Object> ApiSignAffiliatedataPostWithHttpInfo(List<CryptoCurrency> cryptoCurrencies = default(List<CryptoCurrency>), List<Order> orders = default(List<Order>), List<DepositAddress> depositAddresses = default(List<DepositAddress>), List<Balance> userBalances = default(List<Balance>), List<Market> markets = default(List<Market>), List<TradingPair> tradingPairs = default(List<TradingPair>), List<Transaction> transactions = default(List<Transaction>), List<WithdrawRequest> withdrawRequests = default(List<WithdrawRequest>), List<ManualWithdrawRequest> manualWithdrawRequests = default(List<ManualWithdrawRequest>), List<Trade> trades = default(List<Trade>), List<Quote> quotes = default(List<Quote>), List<SmsVerificationMessage> smsVerificationMessages = default(List<SmsVerificationMessage>), List<TradingAmount> tradingAmounts = default(List<TradingAmount>), List<RippleDestinationTag> rippleDestinationTags = default(List<RippleDestinationTag>), List<BitcoinBasedCurrency> bitcoinBasedCurrencies = default(List<BitcoinBasedCurrency>), List<ERC20Token> eRC20Tokens = default(List<ERC20Token>), List<BalanceAction> balanceActions = default(List<BalanceAction>), List<KeyValue> keysValues = default(List<KeyValue>), List<IApplicationTokenAccess> applicationTokenAccesses = default(List<IApplicationTokenAccess>), List<IApplicationQrCommand> applicationQrCommands = default(List<IApplicationQrCommand>), List<PushToken> pushTokens = default(List<PushToken>), List<HealthCheck> healthChecks = default(List<HealthCheck>), List<StringIdentityUserRole> userRoles = default(List<StringIdentityUserRole>), List<IdentityRole> roles = default(List<IdentityRole>), List<StringIdentityRoleClaim> roleClaims = default(List<StringIdentityRoleClaim>), List<ApplicationUser> users = default(List<ApplicationUser>), List<StringIdentityUserClaim> userClaims = default(List<StringIdentityUserClaim>), List<StringIdentityUserLogin> userLogins = default(List<StringIdentityUserLogin>), List<StringIdentityUserToken> userTokens = default(List<StringIdentityUserToken>), Guid? databaseCurrentTransactionTransactionId = default(Guid?), bool? databaseCurrentTransactionSupportsSavepoints = default(bool?), bool? databaseAutoTransactionsEnabled = default(bool?), string databaseProviderName = default(string), bool? changeTrackerAutoDetectChangesEnabled = default(bool?), bool? changeTrackerLazyLoadingEnabled = default(bool?), QueryTrackingBehavior? changeTrackerQueryTrackingBehavior = default(QueryTrackingBehavior?), CascadeTiming? changeTrackerDeleteOrphansTiming = default(CascadeTiming?), CascadeTiming? changeTrackerCascadeDeleteTiming = default(CascadeTiming?), Guid? changeTrackerContextDatabaseCurrentTransactionTransactionId = default(Guid?), bool? changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints = default(bool?), bool? changeTrackerContextDatabaseAutoTransactionsEnabled = default(bool?), string changeTrackerContextDatabaseProviderName = default(string), bool? changeTrackerContextChangeTrackerAutoDetectChangesEnabled = default(bool?), bool? changeTrackerContextChangeTrackerLazyLoadingEnabled = default(bool?), QueryTrackingBehavior? changeTrackerContextChangeTrackerQueryTrackingBehavior = default(QueryTrackingBehavior?), CascadeTiming? changeTrackerContextChangeTrackerDeleteOrphansTiming = default(CascadeTiming?), CascadeTiming? changeTrackerContextChangeTrackerCascadeDeleteTiming = default(CascadeTiming?), DbContext changeTrackerContextChangeTrackerContext = default(DbContext), string changeTrackerContextChangeTrackerDebugViewLongView = default(string), string changeTrackerContextChangeTrackerDebugViewShortView = default(string), Object changeTrackerContextModel = default(Object), Guid? changeTrackerContextContextIdInstanceId = default(Guid?), int? changeTrackerContextContextIdLease = default(int?), string changeTrackerDebugViewLongView = default(string), string changeTrackerDebugViewShortView = default(string), Object model = default(Object), Guid? contextIdInstanceId = default(Guid?), int? contextIdLease = default(int?))
+        /// <param name="askForPermissionRequestModel"> (optional)</param>
+        /// <returns>ApiResponse of bool</returns>
+        public Org.OpenAPITools.Client.ApiResponse<bool> ApiSignAskForPermissionPostWithHttpInfo(AskForPermissionRequestModel askForPermissionRequestModel = default(AskForPermissionRequestModel))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json-patch+json",
+                "application/json",
+                "text/json",
+                "application/_*+json"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
+                "text/plain",
+                "application/json",
+                "text/json"
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -1023,238 +767,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (cryptoCurrencies != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "CryptoCurrencies", cryptoCurrencies));
-            }
-            if (orders != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "Orders", orders));
-            }
-            if (depositAddresses != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "DepositAddresses", depositAddresses));
-            }
-            if (userBalances != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "UserBalances", userBalances));
-            }
-            if (markets != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "Markets", markets));
-            }
-            if (tradingPairs != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "TradingPairs", tradingPairs));
-            }
-            if (transactions != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "Transactions", transactions));
-            }
-            if (withdrawRequests != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "WithdrawRequests", withdrawRequests));
-            }
-            if (manualWithdrawRequests != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "ManualWithdrawRequests", manualWithdrawRequests));
-            }
-            if (trades != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "Trades", trades));
-            }
-            if (quotes != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "Quotes", quotes));
-            }
-            if (smsVerificationMessages != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "SmsVerificationMessages", smsVerificationMessages));
-            }
-            if (tradingAmounts != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "TradingAmounts", tradingAmounts));
-            }
-            if (rippleDestinationTags != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "RippleDestinationTags", rippleDestinationTags));
-            }
-            if (bitcoinBasedCurrencies != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "BitcoinBasedCurrencies", bitcoinBasedCurrencies));
-            }
-            if (eRC20Tokens != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "ERC20Tokens", eRC20Tokens));
-            }
-            if (balanceActions != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "BalanceActions", balanceActions));
-            }
-            if (keysValues != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "KeysValues", keysValues));
-            }
-            if (applicationTokenAccesses != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "ApplicationTokenAccesses", applicationTokenAccesses));
-            }
-            if (applicationQrCommands != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "ApplicationQrCommands", applicationQrCommands));
-            }
-            if (pushTokens != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "PushTokens", pushTokens));
-            }
-            if (healthChecks != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "HealthChecks", healthChecks));
-            }
-            if (userRoles != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "UserRoles", userRoles));
-            }
-            if (roles != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "Roles", roles));
-            }
-            if (roleClaims != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "RoleClaims", roleClaims));
-            }
-            if (users != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "Users", users));
-            }
-            if (userClaims != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "UserClaims", userClaims));
-            }
-            if (userLogins != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "UserLogins", userLogins));
-            }
-            if (userTokens != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "UserTokens", userTokens));
-            }
-            if (databaseCurrentTransactionTransactionId != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Database.CurrentTransaction.TransactionId", databaseCurrentTransactionTransactionId));
-            }
-            if (databaseCurrentTransactionSupportsSavepoints != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Database.CurrentTransaction.SupportsSavepoints", databaseCurrentTransactionSupportsSavepoints));
-            }
-            if (databaseAutoTransactionsEnabled != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Database.AutoTransactionsEnabled", databaseAutoTransactionsEnabled));
-            }
-            if (databaseProviderName != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Database.ProviderName", databaseProviderName));
-            }
-            if (changeTrackerAutoDetectChangesEnabled != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.AutoDetectChangesEnabled", changeTrackerAutoDetectChangesEnabled));
-            }
-            if (changeTrackerLazyLoadingEnabled != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.LazyLoadingEnabled", changeTrackerLazyLoadingEnabled));
-            }
-            if (changeTrackerQueryTrackingBehavior != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.QueryTrackingBehavior", changeTrackerQueryTrackingBehavior));
-            }
-            if (changeTrackerDeleteOrphansTiming != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.DeleteOrphansTiming", changeTrackerDeleteOrphansTiming));
-            }
-            if (changeTrackerCascadeDeleteTiming != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.CascadeDeleteTiming", changeTrackerCascadeDeleteTiming));
-            }
-            if (changeTrackerContextDatabaseCurrentTransactionTransactionId != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.Database.CurrentTransaction.TransactionId", changeTrackerContextDatabaseCurrentTransactionTransactionId));
-            }
-            if (changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.Database.CurrentTransaction.SupportsSavepoints", changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints));
-            }
-            if (changeTrackerContextDatabaseAutoTransactionsEnabled != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.Database.AutoTransactionsEnabled", changeTrackerContextDatabaseAutoTransactionsEnabled));
-            }
-            if (changeTrackerContextDatabaseProviderName != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.Database.ProviderName", changeTrackerContextDatabaseProviderName));
-            }
-            if (changeTrackerContextChangeTrackerAutoDetectChangesEnabled != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ChangeTracker.AutoDetectChangesEnabled", changeTrackerContextChangeTrackerAutoDetectChangesEnabled));
-            }
-            if (changeTrackerContextChangeTrackerLazyLoadingEnabled != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ChangeTracker.LazyLoadingEnabled", changeTrackerContextChangeTrackerLazyLoadingEnabled));
-            }
-            if (changeTrackerContextChangeTrackerQueryTrackingBehavior != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ChangeTracker.QueryTrackingBehavior", changeTrackerContextChangeTrackerQueryTrackingBehavior));
-            }
-            if (changeTrackerContextChangeTrackerDeleteOrphansTiming != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ChangeTracker.DeleteOrphansTiming", changeTrackerContextChangeTrackerDeleteOrphansTiming));
-            }
-            if (changeTrackerContextChangeTrackerCascadeDeleteTiming != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ChangeTracker.CascadeDeleteTiming", changeTrackerContextChangeTrackerCascadeDeleteTiming));
-            }
-            if (changeTrackerContextChangeTrackerContext != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ChangeTracker.Context", changeTrackerContextChangeTrackerContext));
-            }
-            if (changeTrackerContextChangeTrackerDebugViewLongView != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ChangeTracker.DebugView.LongView", changeTrackerContextChangeTrackerDebugViewLongView));
-            }
-            if (changeTrackerContextChangeTrackerDebugViewShortView != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ChangeTracker.DebugView.ShortView", changeTrackerContextChangeTrackerDebugViewShortView));
-            }
-            if (changeTrackerContextModel != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.Model", changeTrackerContextModel));
-            }
-            if (changeTrackerContextContextIdInstanceId != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ContextId.InstanceId", changeTrackerContextContextIdInstanceId));
-            }
-            if (changeTrackerContextContextIdLease != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ContextId.Lease", changeTrackerContextContextIdLease));
-            }
-            if (changeTrackerDebugViewLongView != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.DebugView.LongView", changeTrackerDebugViewLongView));
-            }
-            if (changeTrackerDebugViewShortView != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.DebugView.ShortView", changeTrackerDebugViewShortView));
-            }
-            if (model != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Model", model));
-            }
-            if (contextIdInstanceId != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ContextId.InstanceId", contextIdInstanceId));
-            }
-            if (contextIdLease != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ContextId.Lease", contextIdLease));
-            }
+            localVarRequestOptions.Data = askForPermissionRequestModel;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -1263,11 +776,11 @@ namespace Org.OpenAPITools.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<Object>("/api/Sign/affiliatedata", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<bool>("/api/Sign/AskForPermission", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiSignAffiliatedataPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiSignAskForPermissionPost", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -1278,145 +791,39 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cryptoCurrencies"> (optional)</param>
-        /// <param name="orders"> (optional)</param>
-        /// <param name="depositAddresses"> (optional)</param>
-        /// <param name="userBalances"> (optional)</param>
-        /// <param name="markets"> (optional)</param>
-        /// <param name="tradingPairs"> (optional)</param>
-        /// <param name="transactions"> (optional)</param>
-        /// <param name="withdrawRequests"> (optional)</param>
-        /// <param name="manualWithdrawRequests"> (optional)</param>
-        /// <param name="trades"> (optional)</param>
-        /// <param name="quotes"> (optional)</param>
-        /// <param name="smsVerificationMessages"> (optional)</param>
-        /// <param name="tradingAmounts"> (optional)</param>
-        /// <param name="rippleDestinationTags"> (optional)</param>
-        /// <param name="bitcoinBasedCurrencies"> (optional)</param>
-        /// <param name="eRC20Tokens"> (optional)</param>
-        /// <param name="balanceActions"> (optional)</param>
-        /// <param name="keysValues"> (optional)</param>
-        /// <param name="applicationTokenAccesses"> (optional)</param>
-        /// <param name="applicationQrCommands"> (optional)</param>
-        /// <param name="pushTokens"> (optional)</param>
-        /// <param name="healthChecks"> (optional)</param>
-        /// <param name="userRoles"> (optional)</param>
-        /// <param name="roles"> (optional)</param>
-        /// <param name="roleClaims"> (optional)</param>
-        /// <param name="users"> (optional)</param>
-        /// <param name="userClaims"> (optional)</param>
-        /// <param name="userLogins"> (optional)</param>
-        /// <param name="userTokens"> (optional)</param>
-        /// <param name="databaseCurrentTransactionTransactionId"> (optional)</param>
-        /// <param name="databaseCurrentTransactionSupportsSavepoints"> (optional)</param>
-        /// <param name="databaseAutoTransactionsEnabled"> (optional)</param>
-        /// <param name="databaseProviderName"> (optional)</param>
-        /// <param name="changeTrackerAutoDetectChangesEnabled"> (optional)</param>
-        /// <param name="changeTrackerLazyLoadingEnabled"> (optional)</param>
-        /// <param name="changeTrackerQueryTrackingBehavior"> (optional)</param>
-        /// <param name="changeTrackerDeleteOrphansTiming"> (optional)</param>
-        /// <param name="changeTrackerCascadeDeleteTiming"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseCurrentTransactionTransactionId"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseAutoTransactionsEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseProviderName"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerAutoDetectChangesEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerLazyLoadingEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerQueryTrackingBehavior"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDeleteOrphansTiming"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerCascadeDeleteTiming"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerContext"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDebugViewLongView"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDebugViewShortView"> (optional)</param>
-        /// <param name="changeTrackerContextModel"> (optional)</param>
-        /// <param name="changeTrackerContextContextIdInstanceId"> (optional)</param>
-        /// <param name="changeTrackerContextContextIdLease"> (optional)</param>
-        /// <param name="changeTrackerDebugViewLongView"> (optional)</param>
-        /// <param name="changeTrackerDebugViewShortView"> (optional)</param>
-        /// <param name="model"> (optional)</param>
-        /// <param name="contextIdInstanceId"> (optional)</param>
-        /// <param name="contextIdLease"> (optional)</param>
+        /// <param name="askForPermissionRequestModel"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task ApiSignAffiliatedataPostAsync(List<CryptoCurrency> cryptoCurrencies = default(List<CryptoCurrency>), List<Order> orders = default(List<Order>), List<DepositAddress> depositAddresses = default(List<DepositAddress>), List<Balance> userBalances = default(List<Balance>), List<Market> markets = default(List<Market>), List<TradingPair> tradingPairs = default(List<TradingPair>), List<Transaction> transactions = default(List<Transaction>), List<WithdrawRequest> withdrawRequests = default(List<WithdrawRequest>), List<ManualWithdrawRequest> manualWithdrawRequests = default(List<ManualWithdrawRequest>), List<Trade> trades = default(List<Trade>), List<Quote> quotes = default(List<Quote>), List<SmsVerificationMessage> smsVerificationMessages = default(List<SmsVerificationMessage>), List<TradingAmount> tradingAmounts = default(List<TradingAmount>), List<RippleDestinationTag> rippleDestinationTags = default(List<RippleDestinationTag>), List<BitcoinBasedCurrency> bitcoinBasedCurrencies = default(List<BitcoinBasedCurrency>), List<ERC20Token> eRC20Tokens = default(List<ERC20Token>), List<BalanceAction> balanceActions = default(List<BalanceAction>), List<KeyValue> keysValues = default(List<KeyValue>), List<IApplicationTokenAccess> applicationTokenAccesses = default(List<IApplicationTokenAccess>), List<IApplicationQrCommand> applicationQrCommands = default(List<IApplicationQrCommand>), List<PushToken> pushTokens = default(List<PushToken>), List<HealthCheck> healthChecks = default(List<HealthCheck>), List<StringIdentityUserRole> userRoles = default(List<StringIdentityUserRole>), List<IdentityRole> roles = default(List<IdentityRole>), List<StringIdentityRoleClaim> roleClaims = default(List<StringIdentityRoleClaim>), List<ApplicationUser> users = default(List<ApplicationUser>), List<StringIdentityUserClaim> userClaims = default(List<StringIdentityUserClaim>), List<StringIdentityUserLogin> userLogins = default(List<StringIdentityUserLogin>), List<StringIdentityUserToken> userTokens = default(List<StringIdentityUserToken>), Guid? databaseCurrentTransactionTransactionId = default(Guid?), bool? databaseCurrentTransactionSupportsSavepoints = default(bool?), bool? databaseAutoTransactionsEnabled = default(bool?), string databaseProviderName = default(string), bool? changeTrackerAutoDetectChangesEnabled = default(bool?), bool? changeTrackerLazyLoadingEnabled = default(bool?), QueryTrackingBehavior? changeTrackerQueryTrackingBehavior = default(QueryTrackingBehavior?), CascadeTiming? changeTrackerDeleteOrphansTiming = default(CascadeTiming?), CascadeTiming? changeTrackerCascadeDeleteTiming = default(CascadeTiming?), Guid? changeTrackerContextDatabaseCurrentTransactionTransactionId = default(Guid?), bool? changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints = default(bool?), bool? changeTrackerContextDatabaseAutoTransactionsEnabled = default(bool?), string changeTrackerContextDatabaseProviderName = default(string), bool? changeTrackerContextChangeTrackerAutoDetectChangesEnabled = default(bool?), bool? changeTrackerContextChangeTrackerLazyLoadingEnabled = default(bool?), QueryTrackingBehavior? changeTrackerContextChangeTrackerQueryTrackingBehavior = default(QueryTrackingBehavior?), CascadeTiming? changeTrackerContextChangeTrackerDeleteOrphansTiming = default(CascadeTiming?), CascadeTiming? changeTrackerContextChangeTrackerCascadeDeleteTiming = default(CascadeTiming?), DbContext changeTrackerContextChangeTrackerContext = default(DbContext), string changeTrackerContextChangeTrackerDebugViewLongView = default(string), string changeTrackerContextChangeTrackerDebugViewShortView = default(string), Object changeTrackerContextModel = default(Object), Guid? changeTrackerContextContextIdInstanceId = default(Guid?), int? changeTrackerContextContextIdLease = default(int?), string changeTrackerDebugViewLongView = default(string), string changeTrackerDebugViewShortView = default(string), Object model = default(Object), Guid? contextIdInstanceId = default(Guid?), int? contextIdLease = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of bool</returns>
+        public async System.Threading.Tasks.Task<bool> ApiSignAskForPermissionPostAsync(AskForPermissionRequestModel askForPermissionRequestModel = default(AskForPermissionRequestModel), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            await ApiSignAffiliatedataPostWithHttpInfoAsync(cryptoCurrencies, orders, depositAddresses, userBalances, markets, tradingPairs, transactions, withdrawRequests, manualWithdrawRequests, trades, quotes, smsVerificationMessages, tradingAmounts, rippleDestinationTags, bitcoinBasedCurrencies, eRC20Tokens, balanceActions, keysValues, applicationTokenAccesses, applicationQrCommands, pushTokens, healthChecks, userRoles, roles, roleClaims, users, userClaims, userLogins, userTokens, databaseCurrentTransactionTransactionId, databaseCurrentTransactionSupportsSavepoints, databaseAutoTransactionsEnabled, databaseProviderName, changeTrackerAutoDetectChangesEnabled, changeTrackerLazyLoadingEnabled, changeTrackerQueryTrackingBehavior, changeTrackerDeleteOrphansTiming, changeTrackerCascadeDeleteTiming, changeTrackerContextDatabaseCurrentTransactionTransactionId, changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints, changeTrackerContextDatabaseAutoTransactionsEnabled, changeTrackerContextDatabaseProviderName, changeTrackerContextChangeTrackerAutoDetectChangesEnabled, changeTrackerContextChangeTrackerLazyLoadingEnabled, changeTrackerContextChangeTrackerQueryTrackingBehavior, changeTrackerContextChangeTrackerDeleteOrphansTiming, changeTrackerContextChangeTrackerCascadeDeleteTiming, changeTrackerContextChangeTrackerContext, changeTrackerContextChangeTrackerDebugViewLongView, changeTrackerContextChangeTrackerDebugViewShortView, changeTrackerContextModel, changeTrackerContextContextIdInstanceId, changeTrackerContextContextIdLease, changeTrackerDebugViewLongView, changeTrackerDebugViewShortView, model, contextIdInstanceId, contextIdLease, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = await ApiSignAskForPermissionPostWithHttpInfoAsync(askForPermissionRequestModel, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
         }
 
         /// <summary>
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cryptoCurrencies"> (optional)</param>
-        /// <param name="orders"> (optional)</param>
-        /// <param name="depositAddresses"> (optional)</param>
-        /// <param name="userBalances"> (optional)</param>
-        /// <param name="markets"> (optional)</param>
-        /// <param name="tradingPairs"> (optional)</param>
-        /// <param name="transactions"> (optional)</param>
-        /// <param name="withdrawRequests"> (optional)</param>
-        /// <param name="manualWithdrawRequests"> (optional)</param>
-        /// <param name="trades"> (optional)</param>
-        /// <param name="quotes"> (optional)</param>
-        /// <param name="smsVerificationMessages"> (optional)</param>
-        /// <param name="tradingAmounts"> (optional)</param>
-        /// <param name="rippleDestinationTags"> (optional)</param>
-        /// <param name="bitcoinBasedCurrencies"> (optional)</param>
-        /// <param name="eRC20Tokens"> (optional)</param>
-        /// <param name="balanceActions"> (optional)</param>
-        /// <param name="keysValues"> (optional)</param>
-        /// <param name="applicationTokenAccesses"> (optional)</param>
-        /// <param name="applicationQrCommands"> (optional)</param>
-        /// <param name="pushTokens"> (optional)</param>
-        /// <param name="healthChecks"> (optional)</param>
-        /// <param name="userRoles"> (optional)</param>
-        /// <param name="roles"> (optional)</param>
-        /// <param name="roleClaims"> (optional)</param>
-        /// <param name="users"> (optional)</param>
-        /// <param name="userClaims"> (optional)</param>
-        /// <param name="userLogins"> (optional)</param>
-        /// <param name="userTokens"> (optional)</param>
-        /// <param name="databaseCurrentTransactionTransactionId"> (optional)</param>
-        /// <param name="databaseCurrentTransactionSupportsSavepoints"> (optional)</param>
-        /// <param name="databaseAutoTransactionsEnabled"> (optional)</param>
-        /// <param name="databaseProviderName"> (optional)</param>
-        /// <param name="changeTrackerAutoDetectChangesEnabled"> (optional)</param>
-        /// <param name="changeTrackerLazyLoadingEnabled"> (optional)</param>
-        /// <param name="changeTrackerQueryTrackingBehavior"> (optional)</param>
-        /// <param name="changeTrackerDeleteOrphansTiming"> (optional)</param>
-        /// <param name="changeTrackerCascadeDeleteTiming"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseCurrentTransactionTransactionId"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseAutoTransactionsEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextDatabaseProviderName"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerAutoDetectChangesEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerLazyLoadingEnabled"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerQueryTrackingBehavior"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDeleteOrphansTiming"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerCascadeDeleteTiming"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerContext"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDebugViewLongView"> (optional)</param>
-        /// <param name="changeTrackerContextChangeTrackerDebugViewShortView"> (optional)</param>
-        /// <param name="changeTrackerContextModel"> (optional)</param>
-        /// <param name="changeTrackerContextContextIdInstanceId"> (optional)</param>
-        /// <param name="changeTrackerContextContextIdLease"> (optional)</param>
-        /// <param name="changeTrackerDebugViewLongView"> (optional)</param>
-        /// <param name="changeTrackerDebugViewShortView"> (optional)</param>
-        /// <param name="model"> (optional)</param>
-        /// <param name="contextIdInstanceId"> (optional)</param>
-        /// <param name="contextIdLease"> (optional)</param>
+        /// <param name="askForPermissionRequestModel"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ApiSignAffiliatedataPostWithHttpInfoAsync(List<CryptoCurrency> cryptoCurrencies = default(List<CryptoCurrency>), List<Order> orders = default(List<Order>), List<DepositAddress> depositAddresses = default(List<DepositAddress>), List<Balance> userBalances = default(List<Balance>), List<Market> markets = default(List<Market>), List<TradingPair> tradingPairs = default(List<TradingPair>), List<Transaction> transactions = default(List<Transaction>), List<WithdrawRequest> withdrawRequests = default(List<WithdrawRequest>), List<ManualWithdrawRequest> manualWithdrawRequests = default(List<ManualWithdrawRequest>), List<Trade> trades = default(List<Trade>), List<Quote> quotes = default(List<Quote>), List<SmsVerificationMessage> smsVerificationMessages = default(List<SmsVerificationMessage>), List<TradingAmount> tradingAmounts = default(List<TradingAmount>), List<RippleDestinationTag> rippleDestinationTags = default(List<RippleDestinationTag>), List<BitcoinBasedCurrency> bitcoinBasedCurrencies = default(List<BitcoinBasedCurrency>), List<ERC20Token> eRC20Tokens = default(List<ERC20Token>), List<BalanceAction> balanceActions = default(List<BalanceAction>), List<KeyValue> keysValues = default(List<KeyValue>), List<IApplicationTokenAccess> applicationTokenAccesses = default(List<IApplicationTokenAccess>), List<IApplicationQrCommand> applicationQrCommands = default(List<IApplicationQrCommand>), List<PushToken> pushTokens = default(List<PushToken>), List<HealthCheck> healthChecks = default(List<HealthCheck>), List<StringIdentityUserRole> userRoles = default(List<StringIdentityUserRole>), List<IdentityRole> roles = default(List<IdentityRole>), List<StringIdentityRoleClaim> roleClaims = default(List<StringIdentityRoleClaim>), List<ApplicationUser> users = default(List<ApplicationUser>), List<StringIdentityUserClaim> userClaims = default(List<StringIdentityUserClaim>), List<StringIdentityUserLogin> userLogins = default(List<StringIdentityUserLogin>), List<StringIdentityUserToken> userTokens = default(List<StringIdentityUserToken>), Guid? databaseCurrentTransactionTransactionId = default(Guid?), bool? databaseCurrentTransactionSupportsSavepoints = default(bool?), bool? databaseAutoTransactionsEnabled = default(bool?), string databaseProviderName = default(string), bool? changeTrackerAutoDetectChangesEnabled = default(bool?), bool? changeTrackerLazyLoadingEnabled = default(bool?), QueryTrackingBehavior? changeTrackerQueryTrackingBehavior = default(QueryTrackingBehavior?), CascadeTiming? changeTrackerDeleteOrphansTiming = default(CascadeTiming?), CascadeTiming? changeTrackerCascadeDeleteTiming = default(CascadeTiming?), Guid? changeTrackerContextDatabaseCurrentTransactionTransactionId = default(Guid?), bool? changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints = default(bool?), bool? changeTrackerContextDatabaseAutoTransactionsEnabled = default(bool?), string changeTrackerContextDatabaseProviderName = default(string), bool? changeTrackerContextChangeTrackerAutoDetectChangesEnabled = default(bool?), bool? changeTrackerContextChangeTrackerLazyLoadingEnabled = default(bool?), QueryTrackingBehavior? changeTrackerContextChangeTrackerQueryTrackingBehavior = default(QueryTrackingBehavior?), CascadeTiming? changeTrackerContextChangeTrackerDeleteOrphansTiming = default(CascadeTiming?), CascadeTiming? changeTrackerContextChangeTrackerCascadeDeleteTiming = default(CascadeTiming?), DbContext changeTrackerContextChangeTrackerContext = default(DbContext), string changeTrackerContextChangeTrackerDebugViewLongView = default(string), string changeTrackerContextChangeTrackerDebugViewShortView = default(string), Object changeTrackerContextModel = default(Object), Guid? changeTrackerContextContextIdInstanceId = default(Guid?), int? changeTrackerContextContextIdLease = default(int?), string changeTrackerDebugViewLongView = default(string), string changeTrackerDebugViewShortView = default(string), Object model = default(Object), Guid? contextIdInstanceId = default(Guid?), int? contextIdLease = default(int?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (bool)</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<bool>> ApiSignAskForPermissionPostWithHttpInfoAsync(AskForPermissionRequestModel askForPermissionRequestModel = default(AskForPermissionRequestModel), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json-patch+json", 
+                "application/json", 
+                "text/json", 
+                "application/_*+json"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
+                "text/plain",
+                "application/json",
+                "text/json"
             };
 
 
@@ -1426,238 +833,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (cryptoCurrencies != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "CryptoCurrencies", cryptoCurrencies));
-            }
-            if (orders != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "Orders", orders));
-            }
-            if (depositAddresses != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "DepositAddresses", depositAddresses));
-            }
-            if (userBalances != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "UserBalances", userBalances));
-            }
-            if (markets != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "Markets", markets));
-            }
-            if (tradingPairs != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "TradingPairs", tradingPairs));
-            }
-            if (transactions != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "Transactions", transactions));
-            }
-            if (withdrawRequests != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "WithdrawRequests", withdrawRequests));
-            }
-            if (manualWithdrawRequests != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "ManualWithdrawRequests", manualWithdrawRequests));
-            }
-            if (trades != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "Trades", trades));
-            }
-            if (quotes != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "Quotes", quotes));
-            }
-            if (smsVerificationMessages != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "SmsVerificationMessages", smsVerificationMessages));
-            }
-            if (tradingAmounts != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "TradingAmounts", tradingAmounts));
-            }
-            if (rippleDestinationTags != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "RippleDestinationTags", rippleDestinationTags));
-            }
-            if (bitcoinBasedCurrencies != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "BitcoinBasedCurrencies", bitcoinBasedCurrencies));
-            }
-            if (eRC20Tokens != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "ERC20Tokens", eRC20Tokens));
-            }
-            if (balanceActions != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "BalanceActions", balanceActions));
-            }
-            if (keysValues != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "KeysValues", keysValues));
-            }
-            if (applicationTokenAccesses != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "ApplicationTokenAccesses", applicationTokenAccesses));
-            }
-            if (applicationQrCommands != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "ApplicationQrCommands", applicationQrCommands));
-            }
-            if (pushTokens != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "PushTokens", pushTokens));
-            }
-            if (healthChecks != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "HealthChecks", healthChecks));
-            }
-            if (userRoles != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "UserRoles", userRoles));
-            }
-            if (roles != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "Roles", roles));
-            }
-            if (roleClaims != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "RoleClaims", roleClaims));
-            }
-            if (users != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "Users", users));
-            }
-            if (userClaims != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "UserClaims", userClaims));
-            }
-            if (userLogins != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "UserLogins", userLogins));
-            }
-            if (userTokens != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("multi", "UserTokens", userTokens));
-            }
-            if (databaseCurrentTransactionTransactionId != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Database.CurrentTransaction.TransactionId", databaseCurrentTransactionTransactionId));
-            }
-            if (databaseCurrentTransactionSupportsSavepoints != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Database.CurrentTransaction.SupportsSavepoints", databaseCurrentTransactionSupportsSavepoints));
-            }
-            if (databaseAutoTransactionsEnabled != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Database.AutoTransactionsEnabled", databaseAutoTransactionsEnabled));
-            }
-            if (databaseProviderName != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Database.ProviderName", databaseProviderName));
-            }
-            if (changeTrackerAutoDetectChangesEnabled != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.AutoDetectChangesEnabled", changeTrackerAutoDetectChangesEnabled));
-            }
-            if (changeTrackerLazyLoadingEnabled != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.LazyLoadingEnabled", changeTrackerLazyLoadingEnabled));
-            }
-            if (changeTrackerQueryTrackingBehavior != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.QueryTrackingBehavior", changeTrackerQueryTrackingBehavior));
-            }
-            if (changeTrackerDeleteOrphansTiming != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.DeleteOrphansTiming", changeTrackerDeleteOrphansTiming));
-            }
-            if (changeTrackerCascadeDeleteTiming != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.CascadeDeleteTiming", changeTrackerCascadeDeleteTiming));
-            }
-            if (changeTrackerContextDatabaseCurrentTransactionTransactionId != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.Database.CurrentTransaction.TransactionId", changeTrackerContextDatabaseCurrentTransactionTransactionId));
-            }
-            if (changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.Database.CurrentTransaction.SupportsSavepoints", changeTrackerContextDatabaseCurrentTransactionSupportsSavepoints));
-            }
-            if (changeTrackerContextDatabaseAutoTransactionsEnabled != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.Database.AutoTransactionsEnabled", changeTrackerContextDatabaseAutoTransactionsEnabled));
-            }
-            if (changeTrackerContextDatabaseProviderName != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.Database.ProviderName", changeTrackerContextDatabaseProviderName));
-            }
-            if (changeTrackerContextChangeTrackerAutoDetectChangesEnabled != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ChangeTracker.AutoDetectChangesEnabled", changeTrackerContextChangeTrackerAutoDetectChangesEnabled));
-            }
-            if (changeTrackerContextChangeTrackerLazyLoadingEnabled != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ChangeTracker.LazyLoadingEnabled", changeTrackerContextChangeTrackerLazyLoadingEnabled));
-            }
-            if (changeTrackerContextChangeTrackerQueryTrackingBehavior != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ChangeTracker.QueryTrackingBehavior", changeTrackerContextChangeTrackerQueryTrackingBehavior));
-            }
-            if (changeTrackerContextChangeTrackerDeleteOrphansTiming != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ChangeTracker.DeleteOrphansTiming", changeTrackerContextChangeTrackerDeleteOrphansTiming));
-            }
-            if (changeTrackerContextChangeTrackerCascadeDeleteTiming != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ChangeTracker.CascadeDeleteTiming", changeTrackerContextChangeTrackerCascadeDeleteTiming));
-            }
-            if (changeTrackerContextChangeTrackerContext != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ChangeTracker.Context", changeTrackerContextChangeTrackerContext));
-            }
-            if (changeTrackerContextChangeTrackerDebugViewLongView != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ChangeTracker.DebugView.LongView", changeTrackerContextChangeTrackerDebugViewLongView));
-            }
-            if (changeTrackerContextChangeTrackerDebugViewShortView != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ChangeTracker.DebugView.ShortView", changeTrackerContextChangeTrackerDebugViewShortView));
-            }
-            if (changeTrackerContextModel != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.Model", changeTrackerContextModel));
-            }
-            if (changeTrackerContextContextIdInstanceId != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ContextId.InstanceId", changeTrackerContextContextIdInstanceId));
-            }
-            if (changeTrackerContextContextIdLease != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.Context.ContextId.Lease", changeTrackerContextContextIdLease));
-            }
-            if (changeTrackerDebugViewLongView != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.DebugView.LongView", changeTrackerDebugViewLongView));
-            }
-            if (changeTrackerDebugViewShortView != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ChangeTracker.DebugView.ShortView", changeTrackerDebugViewShortView));
-            }
-            if (model != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "Model", model));
-            }
-            if (contextIdInstanceId != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ContextId.InstanceId", contextIdInstanceId));
-            }
-            if (contextIdLease != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ContextId.Lease", contextIdLease));
-            }
+            localVarRequestOptions.Data = askForPermissionRequestModel;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -1667,11 +843,11 @@ namespace Org.OpenAPITools.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/api/Sign/affiliatedata", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<bool>("/api/Sign/AskForPermission", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiSignAffiliatedataPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiSignAskForPermissionPost", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -1682,26 +858,36 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns></returns>
-        public void ApiSignCheckIsMobileOnlinePost()
+        /// <param name="askForPermissionRequestModel"> (optional)</param>
+        /// <returns>bool</returns>
+        public bool ApiSignAskPermissionSignInPost(AskForPermissionRequestModel askForPermissionRequestModel = default(AskForPermissionRequestModel))
         {
-            ApiSignCheckIsMobileOnlinePostWithHttpInfo();
+            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = ApiSignAskPermissionSignInPostWithHttpInfo(askForPermissionRequestModel);
+            return localVarResponse.Data;
         }
 
         /// <summary>
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of Object(void)</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Object> ApiSignCheckIsMobileOnlinePostWithHttpInfo()
+        /// <param name="askForPermissionRequestModel"> (optional)</param>
+        /// <returns>ApiResponse of bool</returns>
+        public Org.OpenAPITools.Client.ApiResponse<bool> ApiSignAskPermissionSignInPostWithHttpInfo(AskForPermissionRequestModel askForPermissionRequestModel = default(AskForPermissionRequestModel))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json-patch+json",
+                "application/json",
+                "text/json",
+                "application/_*+json"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
+                "text/plain",
+                "application/json",
+                "text/json"
             };
 
             var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
@@ -1710,6 +896,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
+            localVarRequestOptions.Data = askForPermissionRequestModel;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -1718,11 +905,11 @@ namespace Org.OpenAPITools.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<Object>("/api/Sign/CheckIsMobileOnline", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Post<bool>("/api/Sign/AskPermissionSignIn", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiSignCheckIsMobileOnlinePost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiSignAskPermissionSignInPost", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -1733,29 +920,39 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="askForPermissionRequestModel"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task ApiSignCheckIsMobileOnlinePostAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of bool</returns>
+        public async System.Threading.Tasks.Task<bool> ApiSignAskPermissionSignInPostAsync(AskForPermissionRequestModel askForPermissionRequestModel = default(AskForPermissionRequestModel), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            await ApiSignCheckIsMobileOnlinePostWithHttpInfoAsync(cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = await ApiSignAskPermissionSignInPostWithHttpInfoAsync(askForPermissionRequestModel, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
         }
 
         /// <summary>
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="askForPermissionRequestModel"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ApiSignCheckIsMobileOnlinePostWithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (bool)</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<bool>> ApiSignAskPermissionSignInPostWithHttpInfoAsync(AskForPermissionRequestModel askForPermissionRequestModel = default(AskForPermissionRequestModel), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json-patch+json", 
+                "application/json", 
+                "text/json", 
+                "application/_*+json"
             };
 
             // to determine the Accept header
             String[] _accepts = new String[] {
+                "text/plain",
+                "application/json",
+                "text/json"
             };
 
 
@@ -1765,6 +962,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
+            localVarRequestOptions.Data = askForPermissionRequestModel;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -1774,11 +972,267 @@ namespace Org.OpenAPITools.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/api/Sign/CheckIsMobileOnline", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.PostAsync<bool>("/api/Sign/AskPermissionSignIn", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiSignCheckIsMobileOnlinePost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiSignAskPermissionSignInPost", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="bitflexDeviceId"> (optional)</param>
+        /// <returns>Check2StepVerificationStatusResponse</returns>
+        public Check2StepVerificationStatusResponse ApiSignCheck2StepVerificationStatusGet(string bitflexDeviceId = default(string))
+        {
+            Org.OpenAPITools.Client.ApiResponse<Check2StepVerificationStatusResponse> localVarResponse = ApiSignCheck2StepVerificationStatusGetWithHttpInfo(bitflexDeviceId);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="bitflexDeviceId"> (optional)</param>
+        /// <returns>ApiResponse of Check2StepVerificationStatusResponse</returns>
+        public Org.OpenAPITools.Client.ApiResponse<Check2StepVerificationStatusResponse> ApiSignCheck2StepVerificationStatusGetWithHttpInfo(string bitflexDeviceId = default(string))
+        {
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "text/plain",
+                "application/json",
+                "text/json"
+            };
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            if (bitflexDeviceId != null)
+            {
+                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "bitflexDeviceId", bitflexDeviceId));
+            }
+
+            // authentication (Bearer) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Get<Check2StepVerificationStatusResponse>("/api/Sign/Check2StepVerificationStatus", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("ApiSignCheck2StepVerificationStatusGet", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="bitflexDeviceId"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of Check2StepVerificationStatusResponse</returns>
+        public async System.Threading.Tasks.Task<Check2StepVerificationStatusResponse> ApiSignCheck2StepVerificationStatusGetAsync(string bitflexDeviceId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            Org.OpenAPITools.Client.ApiResponse<Check2StepVerificationStatusResponse> localVarResponse = await ApiSignCheck2StepVerificationStatusGetWithHttpInfoAsync(bitflexDeviceId, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="bitflexDeviceId"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (Check2StepVerificationStatusResponse)</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Check2StepVerificationStatusResponse>> ApiSignCheck2StepVerificationStatusGetWithHttpInfoAsync(string bitflexDeviceId = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "text/plain",
+                "application/json",
+                "text/json"
+            };
+
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            if (bitflexDeviceId != null)
+            {
+                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "bitflexDeviceId", bitflexDeviceId));
+            }
+
+            // authentication (Bearer) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.GetAsync<Check2StepVerificationStatusResponse>("/api/Sign/Check2StepVerificationStatus", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("ApiSignCheck2StepVerificationStatusGet", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="confirmPermissionSignInRequest"> (optional)</param>
+        /// <returns>bool</returns>
+        public bool ApiSignConfirmPermissionSignInPost(ConfirmPermissionSignInRequest confirmPermissionSignInRequest = default(ConfirmPermissionSignInRequest))
+        {
+            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = ApiSignConfirmPermissionSignInPostWithHttpInfo(confirmPermissionSignInRequest);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="confirmPermissionSignInRequest"> (optional)</param>
+        /// <returns>ApiResponse of bool</returns>
+        public Org.OpenAPITools.Client.ApiResponse<bool> ApiSignConfirmPermissionSignInPostWithHttpInfo(ConfirmPermissionSignInRequest confirmPermissionSignInRequest = default(ConfirmPermissionSignInRequest))
+        {
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json-patch+json",
+                "application/json",
+                "text/json",
+                "application/_*+json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "text/plain",
+                "application/json",
+                "text/json"
+            };
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            localVarRequestOptions.Data = confirmPermissionSignInRequest;
+
+            // authentication (Bearer) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<bool>("/api/Sign/ConfirmPermissionSignIn", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("ApiSignConfirmPermissionSignInPost", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="confirmPermissionSignInRequest"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of bool</returns>
+        public async System.Threading.Tasks.Task<bool> ApiSignConfirmPermissionSignInPostAsync(ConfirmPermissionSignInRequest confirmPermissionSignInRequest = default(ConfirmPermissionSignInRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = await ApiSignConfirmPermissionSignInPostWithHttpInfoAsync(confirmPermissionSignInRequest, cancellationToken).ConfigureAwait(false);
+            return localVarResponse.Data;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="confirmPermissionSignInRequest"> (optional)</param>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse (bool)</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<bool>> ApiSignConfirmPermissionSignInPostWithHttpInfoAsync(ConfirmPermissionSignInRequest confirmPermissionSignInRequest = default(ConfirmPermissionSignInRequest), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json-patch+json", 
+                "application/json", 
+                "text/json", 
+                "application/_*+json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+                "text/plain",
+                "application/json",
+                "text/json"
+            };
+
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            localVarRequestOptions.Data = confirmPermissionSignInRequest;
+
+            // authentication (Bearer) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.PostAsync<bool>("/api/Sign/ConfirmPermissionSignIn", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("ApiSignConfirmPermissionSignInPost", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -1918,11 +1372,11 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceName"> (optional)</param>
-        /// <returns>bool</returns>
-        public bool ApiSignEnable2faPost(string deviceName = default(string))
+        /// <param name="id"> (optional)</param>
+        /// <returns>SignInPermissionModel</returns>
+        public SignInPermissionModel ApiSignGetPermissionDetailsGet(string id = default(string))
         {
-            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = ApiSignEnable2faPostWithHttpInfo(deviceName);
+            Org.OpenAPITools.Client.ApiResponse<SignInPermissionModel> localVarResponse = ApiSignGetPermissionDetailsGetWithHttpInfo(id);
             return localVarResponse.Data;
         }
 
@@ -1930,9 +1384,9 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceName"> (optional)</param>
-        /// <returns>ApiResponse of bool</returns>
-        public Org.OpenAPITools.Client.ApiResponse<bool> ApiSignEnable2faPostWithHttpInfo(string deviceName = default(string))
+        /// <param name="id"> (optional)</param>
+        /// <returns>ApiResponse of SignInPermissionModel</returns>
+        public Org.OpenAPITools.Client.ApiResponse<SignInPermissionModel> ApiSignGetPermissionDetailsGetWithHttpInfo(string id = default(string))
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -1952,9 +1406,9 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (deviceName != null)
+            if (id != null)
             {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "deviceName", deviceName));
+                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "id", id));
             }
 
             // authentication (Bearer) required
@@ -1964,11 +1418,11 @@ namespace Org.OpenAPITools.Api
             }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Post<bool>("/api/Sign/enable2fa", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get<SignInPermissionModel>("/api/Sign/GetPermissionDetails", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiSignEnable2faPost", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiSignGetPermissionDetailsGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -1979,12 +1433,12 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceName"> (optional)</param>
+        /// <param name="id"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of bool</returns>
-        public async System.Threading.Tasks.Task<bool> ApiSignEnable2faPostAsync(string deviceName = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of SignInPermissionModel</returns>
+        public async System.Threading.Tasks.Task<SignInPermissionModel> ApiSignGetPermissionDetailsGetAsync(string id = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            Org.OpenAPITools.Client.ApiResponse<bool> localVarResponse = await ApiSignEnable2faPostWithHttpInfoAsync(deviceName, cancellationToken).ConfigureAwait(false);
+            Org.OpenAPITools.Client.ApiResponse<SignInPermissionModel> localVarResponse = await ApiSignGetPermissionDetailsGetWithHttpInfoAsync(id, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
         }
 
@@ -1992,10 +1446,10 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceName"> (optional)</param>
+        /// <param name="id"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (bool)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<bool>> ApiSignEnable2faPostWithHttpInfoAsync(string deviceName = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        /// <returns>Task of ApiResponse (SignInPermissionModel)</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<SignInPermissionModel>> ApiSignGetPermissionDetailsGetWithHttpInfoAsync(string id = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
@@ -2017,9 +1471,9 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (deviceName != null)
+            if (id != null)
             {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "deviceName", deviceName));
+                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "id", id));
             }
 
             // authentication (Bearer) required
@@ -2030,150 +1484,11 @@ namespace Org.OpenAPITools.Api
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.PostAsync<bool>("/api/Sign/enable2fa", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<SignInPermissionModel>("/api/Sign/GetPermissionDetails", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiSignEnable2faPost", localVarResponse);
-                if (_exception != null) throw _exception;
-            }
-
-            return localVarResponse;
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceName"> (optional)</param>
-        /// <param name="ip"> (optional)</param>
-        /// <returns>List&lt;MobileConfirmationRequest&gt;</returns>
-        public List<MobileConfirmationRequest> ApiSignGetRequestsGet(string deviceName = default(string), string ip = default(string))
-        {
-            Org.OpenAPITools.Client.ApiResponse<List<MobileConfirmationRequest>> localVarResponse = ApiSignGetRequestsGetWithHttpInfo(deviceName, ip);
-            return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceName"> (optional)</param>
-        /// <param name="ip"> (optional)</param>
-        /// <returns>ApiResponse of List&lt;MobileConfirmationRequest&gt;</returns>
-        public Org.OpenAPITools.Client.ApiResponse<List<MobileConfirmationRequest>> ApiSignGetRequestsGetWithHttpInfo(string deviceName = default(string), string ip = default(string))
-        {
-            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
-
-            String[] _contentTypes = new String[] {
-            };
-
-            // to determine the Accept header
-            String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
-            };
-
-            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-
-            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-
-            if (deviceName != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "deviceName", deviceName));
-            }
-            if (ip != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ip", ip));
-            }
-
-            // authentication (Bearer) required
-            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
-            }
-
-            // make the HTTP request
-            var localVarResponse = this.Client.Get<List<MobileConfirmationRequest>>("/api/Sign/getRequests", localVarRequestOptions, this.Configuration);
-
-            if (this.ExceptionFactory != null)
-            {
-                Exception _exception = this.ExceptionFactory("ApiSignGetRequestsGet", localVarResponse);
-                if (_exception != null) throw _exception;
-            }
-
-            return localVarResponse;
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceName"> (optional)</param>
-        /// <param name="ip"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of List&lt;MobileConfirmationRequest&gt;</returns>
-        public async System.Threading.Tasks.Task<List<MobileConfirmationRequest>> ApiSignGetRequestsGetAsync(string deviceName = default(string), string ip = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
-        {
-            Org.OpenAPITools.Client.ApiResponse<List<MobileConfirmationRequest>> localVarResponse = await ApiSignGetRequestsGetWithHttpInfoAsync(deviceName, ip, cancellationToken).ConfigureAwait(false);
-            return localVarResponse.Data;
-        }
-
-        /// <summary>
-        ///  
-        /// </summary>
-        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="deviceName"> (optional)</param>
-        /// <param name="ip"> (optional)</param>
-        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
-        /// <returns>Task of ApiResponse (List&lt;MobileConfirmationRequest&gt;)</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<List<MobileConfirmationRequest>>> ApiSignGetRequestsGetWithHttpInfoAsync(string deviceName = default(string), string ip = default(string), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
-        {
-
-            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
-
-            String[] _contentTypes = new String[] {
-            };
-
-            // to determine the Accept header
-            String[] _accepts = new String[] {
-                "text/plain",
-                "application/json",
-                "text/json"
-            };
-
-
-            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
-            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
-
-            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
-            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
-
-            if (deviceName != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "deviceName", deviceName));
-            }
-            if (ip != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "ip", ip));
-            }
-
-            // authentication (Bearer) required
-            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
-            }
-
-            // make the HTTP request
-
-            var localVarResponse = await this.AsynchronousClient.GetAsync<List<MobileConfirmationRequest>>("/api/Sign/getRequests", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
-
-            if (this.ExceptionFactory != null)
-            {
-                Exception _exception = this.ExceptionFactory("ApiSignGetRequestsGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiSignGetPermissionDetailsGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -2313,20 +1628,18 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="requestType"> (optional)</param>
         /// <returns></returns>
-        public void ApiSignMobileConfirmationRequestPost(RequestType? requestType = default(RequestType?))
+        public void ApiSignIsAnyDeviceOnlinePost()
         {
-            ApiSignMobileConfirmationRequestPostWithHttpInfo(requestType);
+            ApiSignIsAnyDeviceOnlinePostWithHttpInfo();
         }
 
         /// <summary>
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="requestType"> (optional)</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        public Org.OpenAPITools.Client.ApiResponse<Object> ApiSignMobileConfirmationRequestPostWithHttpInfo(RequestType? requestType = default(RequestType?))
+        public Org.OpenAPITools.Client.ApiResponse<Object> ApiSignIsAnyDeviceOnlinePostWithHttpInfo()
         {
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
@@ -2343,10 +1656,120 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (requestType != null)
+
+            // authentication (Bearer) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
             {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "requestType", requestType));
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
             }
+
+            // make the HTTP request
+            var localVarResponse = this.Client.Post<Object>("/api/Sign/IsAnyDeviceOnline", localVarRequestOptions, this.Configuration);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("ApiSignIsAnyDeviceOnlinePost", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of void</returns>
+        public async System.Threading.Tasks.Task ApiSignIsAnyDeviceOnlinePostAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+            await ApiSignIsAnyDeviceOnlinePostWithHttpInfoAsync(cancellationToken).ConfigureAwait(false);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
+        /// <returns>Task of ApiResponse</returns>
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ApiSignIsAnyDeviceOnlinePostWithHttpInfoAsync(System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        {
+
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+            };
+
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+
+            // authentication (Bearer) required
+            if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
+            {
+                localVarRequestOptions.HeaderParameters.Add("Authorization", this.Configuration.GetApiKeyWithPrefix("Authorization"));
+            }
+
+            // make the HTTP request
+
+            var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/api/Sign/IsAnyDeviceOnline", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
+
+            if (this.ExceptionFactory != null)
+            {
+                Exception _exception = this.ExceptionFactory("ApiSignIsAnyDeviceOnlinePost", localVarResponse);
+                if (_exception != null) throw _exception;
+            }
+
+            return localVarResponse;
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="postMobileConfirmationRequestModel"> (optional)</param>
+        /// <returns></returns>
+        public void ApiSignMobileConfirmationRequestPost(PostMobileConfirmationRequestModel postMobileConfirmationRequestModel = default(PostMobileConfirmationRequestModel))
+        {
+            ApiSignMobileConfirmationRequestPostWithHttpInfo(postMobileConfirmationRequestModel);
+        }
+
+        /// <summary>
+        ///  
+        /// </summary>
+        /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="postMobileConfirmationRequestModel"> (optional)</param>
+        /// <returns>ApiResponse of Object(void)</returns>
+        public Org.OpenAPITools.Client.ApiResponse<Object> ApiSignMobileConfirmationRequestPostWithHttpInfo(PostMobileConfirmationRequestModel postMobileConfirmationRequestModel = default(PostMobileConfirmationRequestModel))
+        {
+            Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
+
+            String[] _contentTypes = new String[] {
+                "application/json-patch+json",
+                "application/json",
+                "text/json",
+                "application/_*+json"
+            };
+
+            // to determine the Accept header
+            String[] _accepts = new String[] {
+            };
+
+            var localVarContentType = Org.OpenAPITools.Client.ClientUtils.SelectHeaderContentType(_contentTypes);
+            if (localVarContentType != null) localVarRequestOptions.HeaderParameters.Add("Content-Type", localVarContentType);
+
+            var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
+            if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
+
+            localVarRequestOptions.Data = postMobileConfirmationRequestModel;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))
@@ -2370,27 +1793,31 @@ namespace Org.OpenAPITools.Api
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="requestType"> (optional)</param>
+        /// <param name="postMobileConfirmationRequestModel"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task ApiSignMobileConfirmationRequestPostAsync(RequestType? requestType = default(RequestType?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task ApiSignMobileConfirmationRequestPostAsync(PostMobileConfirmationRequestModel postMobileConfirmationRequestModel = default(PostMobileConfirmationRequestModel), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
-            await ApiSignMobileConfirmationRequestPostWithHttpInfoAsync(requestType, cancellationToken).ConfigureAwait(false);
+            await ApiSignMobileConfirmationRequestPostWithHttpInfoAsync(postMobileConfirmationRequestModel, cancellationToken).ConfigureAwait(false);
         }
 
         /// <summary>
         ///  
         /// </summary>
         /// <exception cref="Org.OpenAPITools.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="requestType"> (optional)</param>
+        /// <param name="postMobileConfirmationRequestModel"> (optional)</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ApiSignMobileConfirmationRequestPostWithHttpInfoAsync(RequestType? requestType = default(RequestType?), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<Org.OpenAPITools.Client.ApiResponse<Object>> ApiSignMobileConfirmationRequestPostWithHttpInfoAsync(PostMobileConfirmationRequestModel postMobileConfirmationRequestModel = default(PostMobileConfirmationRequestModel), System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
         {
 
             Org.OpenAPITools.Client.RequestOptions localVarRequestOptions = new Org.OpenAPITools.Client.RequestOptions();
 
             String[] _contentTypes = new String[] {
+                "application/json-patch+json", 
+                "application/json", 
+                "text/json", 
+                "application/_*+json"
             };
 
             // to determine the Accept header
@@ -2404,10 +1831,7 @@ namespace Org.OpenAPITools.Api
             var localVarAccept = Org.OpenAPITools.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (requestType != null)
-            {
-                localVarRequestOptions.QueryParameters.Add(Org.OpenAPITools.Client.ClientUtils.ParameterToMultiMap("", "requestType", requestType));
-            }
+            localVarRequestOptions.Data = postMobileConfirmationRequestModel;
 
             // authentication (Bearer) required
             if (!String.IsNullOrEmpty(this.Configuration.GetApiKeyWithPrefix("Authorization")))

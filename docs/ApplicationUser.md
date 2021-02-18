@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **LockoutEnd** | **DateTime?** |  | [optional] 
 **LockoutEnabled** | **bool** |  | [optional] 
 **AccessFailedCount** | **int** |  | [optional] 
+**Fullname** | **string** |  | [optional] 
 **PinCode** | **string** |  | [optional] 
 **LastIPAccess** | **string** |  | [optional] 
 **LastDateAccess** | **long?** |  | [optional] 
@@ -29,8 +30,11 @@ Name | Type | Description | Notes
 **IsFacebookSignInAllowed** | **bool** |  | [optional] 
 **AffiliateUserId** | **string** |  | [optional] 
 **RegistrationDateTime** | **long** |  | [optional] 
+**VerificationLevel** | **int?** |  | [optional] 
 **TwoStepVerificationType** | **TwoStepVerificationTypes** |  | [optional] 
 **TwoStepBackupCode** | **string** |  | [optional] 
+**KycSefileBlobGuid** | **string** |  | [optional] 
+**KycPassportBlobGuid** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

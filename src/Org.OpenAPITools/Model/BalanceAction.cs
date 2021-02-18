@@ -26,141 +26,25 @@ using OpenAPIDateConverter = Org.OpenAPITools.Client.OpenAPIDateConverter;
 namespace Org.OpenAPITools.Model
 {
     /// <summary>
-    /// BalanceAction
+    /// Defines BalanceAction
     /// </summary>
-    [DataContract(Name = "BalanceAction")]
-    public partial class BalanceAction : IEquatable<BalanceAction>, IValidatableObject
+    
+    [JsonConverter(typeof(StringEnumConverter))]
+    
+    public enum BalanceAction
     {
         /// <summary>
-        /// Gets or Sets Type
+        /// Enum Deposit for value: Deposit
         /// </summary>
-        [DataMember(Name = "type", EmitDefaultValue = false)]
-        public BalanceActionType? Type { get; set; }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="BalanceAction" /> class.
-        /// </summary>
-        /// <param name="amount">amount.</param>
-        /// <param name="dateTime">dateTime.</param>
-        /// <param name="reasonText">reasonText.</param>
-        /// <param name="type">type.</param>
-        public BalanceAction(double amount = default(double), long dateTime = default(long), string reasonText = default(string), BalanceActionType? type = default(BalanceActionType?))
-        {
-            this.Amount = amount;
-            this.DateTime = dateTime;
-            this.ReasonText = reasonText;
-            this.Type = type;
-        }
+        [EnumMember(Value = "Deposit")]
+        Deposit = 1,
 
         /// <summary>
-        /// Gets or Sets Amount
+        /// Enum Withdraw for value: Withdraw
         /// </summary>
-        [DataMember(Name = "amount", EmitDefaultValue = false)]
-        public double Amount { get; set; }
+        [EnumMember(Value = "Withdraw")]
+        Withdraw = 2
 
-        /// <summary>
-        /// Gets or Sets DateTime
-        /// </summary>
-        [DataMember(Name = "dateTime", EmitDefaultValue = false)]
-        public long DateTime { get; set; }
-
-        /// <summary>
-        /// Gets or Sets ReasonText
-        /// </summary>
-        [DataMember(Name = "reasonText", EmitDefaultValue = true)]
-        public string ReasonText { get; set; }
-
-        /// <summary>
-        /// Returns the string presentation of the object
-        /// </summary>
-        /// <returns>String presentation of the object</returns>
-        public override string ToString()
-        {
-            var sb = new StringBuilder();
-            sb.Append("class BalanceAction {\n");
-            sb.Append("  Amount: ").Append(Amount).Append("\n");
-            sb.Append("  DateTime: ").Append(DateTime).Append("\n");
-            sb.Append("  ReasonText: ").Append(ReasonText).Append("\n");
-            sb.Append("  Type: ").Append(Type).Append("\n");
-            sb.Append("}\n");
-            return sb.ToString();
-        }
-
-        /// <summary>
-        /// Returns the JSON string presentation of the object
-        /// </summary>
-        /// <returns>JSON string presentation of the object</returns>
-        public virtual string ToJson()
-        {
-            return Newtonsoft.Json.JsonConvert.SerializeObject(this, Newtonsoft.Json.Formatting.Indented);
-        }
-
-        /// <summary>
-        /// Returns true if objects are equal
-        /// </summary>
-        /// <param name="input">Object to be compared</param>
-        /// <returns>Boolean</returns>
-        public override bool Equals(object input)
-        {
-            return this.Equals(input as BalanceAction);
-        }
-
-        /// <summary>
-        /// Returns true if BalanceAction instances are equal
-        /// </summary>
-        /// <param name="input">Instance of BalanceAction to be compared</param>
-        /// <returns>Boolean</returns>
-        public bool Equals(BalanceAction input)
-        {
-            if (input == null)
-                return false;
-
-            return 
-                (
-                    this.Amount == input.Amount ||
-                    this.Amount.Equals(input.Amount)
-                ) && 
-                (
-                    this.DateTime == input.DateTime ||
-                    this.DateTime.Equals(input.DateTime)
-                ) && 
-                (
-                    this.ReasonText == input.ReasonText ||
-                    (this.ReasonText != null &&
-                    this.ReasonText.Equals(input.ReasonText))
-                ) && 
-                (
-                    this.Type == input.Type ||
-                    this.Type.Equals(input.Type)
-                );
-        }
-
-        /// <summary>
-        /// Gets the hash code
-        /// </summary>
-        /// <returns>Hash code</returns>
-        public override int GetHashCode()
-        {
-            unchecked // Overflow is fine, just wrap
-            {
-                int hashCode = 41;
-                hashCode = hashCode * 59 + this.Amount.GetHashCode();
-                hashCode = hashCode * 59 + this.DateTime.GetHashCode();
-                if (this.ReasonText != null)
-                    hashCode = hashCode * 59 + this.ReasonText.GetHashCode();
-                hashCode = hashCode * 59 + this.Type.GetHashCode();
-                return hashCode;
-            }
-        }
-
-        /// <summary>
-        /// To validate all properties of the instance
-        /// </summary>
-        /// <param name="validationContext">Validation context</param>
-        /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
-        {
-            yield break;
-        }
     }
 
 }

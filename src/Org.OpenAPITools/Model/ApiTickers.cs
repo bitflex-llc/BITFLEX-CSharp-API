@@ -41,7 +41,8 @@ namespace Org.OpenAPITools.Model
         /// <param name="high">high.</param>
         /// <param name="low">low.</param>
         /// <param name="change">change.</param>
-        public ApiTickers(string pair = default(string), double price = default(double), double volume = default(double), double pairVolume = default(double), double high = default(double), double low = default(double), double change = default(double))
+        /// <param name="usdPrice">usdPrice.</param>
+        public ApiTickers(string pair = default(string), double price = default(double), double volume = default(double), double pairVolume = default(double), double high = default(double), double low = default(double), double change = default(double), double usdPrice = default(double))
         {
             this.Pair = pair;
             this.Price = price;
@@ -50,6 +51,7 @@ namespace Org.OpenAPITools.Model
             this.High = high;
             this.Low = low;
             this.Change = change;
+            this.UsdPrice = usdPrice;
         }
 
         /// <summary>
@@ -95,6 +97,12 @@ namespace Org.OpenAPITools.Model
         public double Change { get; set; }
 
         /// <summary>
+        /// Gets or Sets UsdPrice
+        /// </summary>
+        [DataMember(Name = "usdPrice", EmitDefaultValue = false)]
+        public double UsdPrice { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
@@ -109,6 +117,7 @@ namespace Org.OpenAPITools.Model
             sb.Append("  High: ").Append(High).Append("\n");
             sb.Append("  Low: ").Append(Low).Append("\n");
             sb.Append("  Change: ").Append(Change).Append("\n");
+            sb.Append("  UsdPrice: ").Append(UsdPrice).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -171,6 +180,10 @@ namespace Org.OpenAPITools.Model
                 (
                     this.Change == input.Change ||
                     this.Change.Equals(input.Change)
+                ) && 
+                (
+                    this.UsdPrice == input.UsdPrice ||
+                    this.UsdPrice.Equals(input.UsdPrice)
                 );
         }
 
@@ -191,6 +204,7 @@ namespace Org.OpenAPITools.Model
                 hashCode = hashCode * 59 + this.High.GetHashCode();
                 hashCode = hashCode * 59 + this.Low.GetHashCode();
                 hashCode = hashCode * 59 + this.Change.GetHashCode();
+                hashCode = hashCode * 59 + this.UsdPrice.GetHashCode();
                 return hashCode;
             }
         }
